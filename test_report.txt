@@ -53,14 +53,22 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |      100 |     100 |     100 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
-----------|---------|----------|---------|---------|-------------------
+---------------------------|---------|----------|---------|---------|-------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------------|---------|----------|---------|---------|-------------------
+All files                  |      20 |      100 |   33.33 |      20 |                   
+ src                       |     100 |      100 |     100 |     100 |                   
+  App.tsx                  |     100 |      100 |     100 |     100 |                   
+ src/Interface             |       0 |        0 |       0 |       0 |                   
+  classes.tsx              |       0 |        0 |       0 |       0 |                   
+  date-time.tsx            |       0 |        0 |       0 |       0 |                   
+  dateTime.tsx             |       0 |        0 |       0 |       0 |                   
+  semester.tsx             |       0 |        0 |       0 |       0 |                   
+ src/semester-modification |       0 |      100 |       0 |       0 |                   
+  AddClass.tsx             |       0 |      100 |       0 |       0 | 11-17             
+---------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.471 s
+Time:        2.075 s
 Ran all test suites.
