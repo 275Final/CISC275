@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (86 ms)
+  ✕ renders the course name somewhere (97 ms)
 
   ● renders the course name somewhere
 
@@ -28,8 +28,12 @@ FAIL src/App.test.tsx
             [36m<h1[39m
               [33mclass[39m=[32m"Title"[39m
             [36m>[39m
-              [0mUdel Course Scheduler[0m
+              [0mUdel CS Course Scheduler[0m
             [36m</h1>[39m
+            [36m<img[39m
+              [33mclass[39m=[32m"logo"[39m
+              [33msrc[39m=[32m"Udel-Crest.png"[39m
+            [36m/>[39m
           [36m</header>[39m
           [36m<div>[39m
             [36m<div[39m
@@ -247,6 +251,56 @@ FAIL src/App.test.tsx
               [36m</div>[39m
             [36m</div>[39m
           [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"container"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"row"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"col"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSchedule Semester[0m
+                    [36m</button>[39m
+                    [36m<div>[39m
+                      [0mClick Here to create your schedule for the upcoming and future semesters by adding your desired courses.[0m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"col"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mCurrent Plan[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"col"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSaved Plans[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -272,13 +326,15 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   71.42 |      100 |      80 |   71.42 |                   
+All files                  |   66.66 |      100 |   64.28 |   66.66 |                   
  src                       |     100 |      100 |     100 |     100 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
  src/Interface             |       0 |        0 |       0 |       0 |                   
   classes.tsx              |       0 |        0 |       0 |       0 |                   
   dateTime.tsx             |       0 |        0 |       0 |       0 |                   
   semester.tsx             |       0 |        0 |       0 |       0 |                   
+ src/MainScreen            |   57.14 |      100 |      25 |   57.14 |                   
+  MainButtons.tsx          |   57.14 |      100 |      25 |   57.14 | 17-44             
  src/semester              |     100 |      100 |     100 |     100 |                   
   SemesterTable.tsx        |     100 |      100 |     100 |     100 |                   
   SemesterView.tsx         |     100 |      100 |     100 |     100 |                   
@@ -288,5 +344,5 @@ All files                  |   71.42 |      100 |      80 |   71.42 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.539 s
+Time:        2.612 s
 Ran all test suites.
