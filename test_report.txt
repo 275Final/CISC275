@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (74 ms)
+  ✕ renders the course name somewhere (93 ms)
 
   ● renders the course name somewhere
 
@@ -35,6 +35,29 @@ FAIL src/App.test.tsx
               [33msrc[39m=[32m"Udel-Crest.png"[39m
             [36m/>[39m
           [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"App"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"WelcomeMessage"[39m
+            [36m>[39m
+              [36m<h5>[39m
+                [0mWelcome to the University of Delaware Course Scheduler![0m
+              [36m</h5>[39m
+              [36m<h6>[39m
+                [0mHere you can view available courses, create mock semester plans, and submit your desired course plans.[0m
+              [36m</h6>[39m
+              [36m<p>[39m
+                [0mPlease enter your name:[0m
+              [36m</p>[39m
+              [36m<input[39m
+                [33mtype[39m=[32m"text"[39m
+              [36m/>[39m
+              [36m<button>[39m
+                [0mOK[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
           [36m<div>[39m
             [36m<div[39m
               [33mclass[39m=[32m"semesterTable"[39m
@@ -338,9 +361,10 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   51.51 |       75 |    40.9 |   54.83 |                   
- src                       |     100 |      100 |     100 |     100 |                   
+All files                  |   54.38 |       40 |   41.37 |   56.36 |                   
+ src                       |      60 |    16.66 |      50 |      60 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
+  welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 11,15-22,28-34    
  src/Interface             |       0 |        0 |       0 |       0 |                   
   classes.tsx              |       0 |        0 |       0 |       0 |                   
   dateTime.tsx             |       0 |        0 |       0 |       0 |                   
@@ -359,5 +383,5 @@ All files                  |   51.51 |       75 |    40.9 |   54.83 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.503 s
+Time:        2.999 s
 Ran all test suites.
