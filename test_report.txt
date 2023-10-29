@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (80 ms)
+  ✕ renders the course name somewhere (99 ms)
 
   ● renders the course name somewhere
 
@@ -325,6 +325,257 @@ FAIL src/App.test.tsx
                     [36m>[39m
                       [0mSchedule Semester[0m
                     [36m</button>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"display: block;"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"semesterTable"[39m
+                      [36m>[39m
+                        [36m<h2>[39m
+                          [0mSemester Schedule[0m
+                        [36m</h2>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<h3>[39m
+                              [0mFall 2023[0m
+                            [36m</h3>[39m
+                          [36m</div>[39m
+                          [36m<table[39m
+                            [33mclass[39m=[32m"table table-hover table-dark"[39m
+                          [36m>[39m
+                            [36m<thead>[39m
+                              [36m<tr>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCourse Code[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCourse Title[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCredits[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mPrerequisites[0m
+                                [36m</th>[39m
+                              [36m</tr>[39m
+                            [36m</thead>[39m
+                            [36m<tbody>[39m
+                              [36m<tr>[39m
+                                [36m<td>[39m
+                                  [0mCISC108[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mIntroduction to Computer Science I[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0m3[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mNone[0m
+                                [36m</td>[39m
+                              [36m</tr>[39m
+                              [36m<tr>[39m
+                                [36m<td>[39m
+                                  [0mCISC181[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mIntroduction to Computer Science II[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0m3[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mCISC108[0m
+                                [36m</td>[39m
+                              [36m</tr>[39m
+                            [36m</tbody>[39m
+                          [36m</table>[39m
+                          [36m<div>[39m
+                            [0m [0m
+                            [36m<button[39m
+                              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                              [33mtype[39m=[32m"button"[39m
+                            [36m>[39m
+                              [0mClear Courses[0m
+                            [36m</button>[39m
+                            [36m<button[39m
+                              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                              [33mtype[39m=[32m"button"[39m
+                            [36m>[39m
+                              [0mClear Semester[0m
+                            [36m</button>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<h3>[39m
+                              [0mSpring 2023[0m
+                            [36m</h3>[39m
+                          [36m</div>[39m
+                          [36m<table[39m
+                            [33mclass[39m=[32m"table table-hover table-dark"[39m
+                          [36m>[39m
+                            [36m<thead>[39m
+                              [36m<tr>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCourse Code[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCourse Title[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCredits[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mPrerequisites[0m
+                                [36m</th>[39m
+                              [36m</tr>[39m
+                            [36m</thead>[39m
+                            [36m<tbody>[39m
+                              [36m<tr>[39m
+                                [36m<td>[39m
+                                  [0mCISC210[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mIntroduction to Systems Programming[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0m3[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mCISC108[0m
+                                [36m</td>[39m
+                              [36m</tr>[39m
+                              [36m<tr>[39m
+                                [36m<td>[39m
+                                  [0mCISC220[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mData Structures[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0m3[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mCISC210[0m
+                                [36m</td>[39m
+                              [36m</tr>[39m
+                            [36m</tbody>[39m
+                          [36m</table>[39m
+                          [36m<div>[39m
+                            [0m [0m
+                            [36m<button[39m
+                              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                              [33mtype[39m=[32m"button"[39m
+                            [36m>[39m
+                              [0mClear Courses[0m
+                            [36m</button>[39m
+                            [36m<button[39m
+                              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                              [33mtype[39m=[32m"button"[39m
+                            [36m>[39m
+                              [0mClear Semester[0m
+                            [36m</button>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<h3>[39m
+                              [0mWinter 2023[0m
+                            [36m</h3>[39m
+                          [36m</div>[39m
+                          [36m<table[39m
+                            [33mclass[39m=[32m"table table-hover table-dark"[39m
+                          [36m>[39m
+                            [36m<thead>[39m
+                              [36m<tr>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCourse Code[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCourse Title[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mCredits[0m
+                                [36m</th>[39m
+                                [36m<th[39m
+                                  [33mscope[39m=[32m"col"[39m
+                                [36m>[39m
+                                  [0mPrerequisites[0m
+                                [36m</th>[39m
+                              [36m</tr>[39m
+                            [36m</thead>[39m
+                            [36m<tbody>[39m
+                              [36m<tr>[39m
+                                [36m<td>[39m
+                                  [0mCISC108[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mIntroduction to Computer Science I[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0m3[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mNone[0m
+                                [36m</td>[39m
+                              [36m</tr>[39m
+                              [36m<tr>[39m
+                                [36m<td>[39m
+                                  [0mCISC181[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mIntroduction to Computer Science II[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0m3[0m
+                                [36m</td>[39m
+                                [36m<td>[39m
+                                  [0mCISC108[0m
+                                [36m</td>[39m
+                              [36m</tr>[39m
+                            [36m</tbody>[39m
+                          [36m</table>[39m
+                          [36m<div>[39m
+                            [0m [0m
+                            [36m<button[39m
+                              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                              [33mtype[39m=[32m"button"[39m
+                            [36m>[39m
+                              [0mClear Courses[0m
+                            [36m</button>[39m
+                            [36m<button[39m
+                              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                              [33mtype[39m=[32m"button"[39m
+                            [36m>[39m
+                              [0mClear Semester[0m
+                            [36m</button>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
                     [36m<div>[39m
                       [0mClick Here to create your schedule for the upcoming and future semesters by adding your desired courses.[0m
                     [36m</div>[39m
@@ -340,6 +591,17 @@ FAIL src/App.test.tsx
                     [36m>[39m
                       [0mCurrent Plan[0m
                     [36m</button>[39m
+                    [36m<div>[39m
+                      [36m<div>[39m
+                        [36m<input[39m
+                          [33mclass[39m=[32m"form-control"[39m
+                          [33mid[39m=[32m"formFilterSearch"[39m
+                          [33mplaceholder[39m=[32m"Search by Course Code"[39m
+                          [33mtype[39m=[32m"text"[39m
+                          [33mvalue[39m=[32m""[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
                   [36m</div>[39m
                 [36m</div>[39m
                 [36m<div[39m
@@ -394,16 +656,18 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   46.96 |       40 |   32.35 |    49.2 |                   
+All files                  |   46.42 |    42.85 |   29.26 |   48.14 |                   
  src                       |      60 |    16.66 |      50 |      60 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
   welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 11,15-22,28-34    
+ src/FilteringSearch       |   47.05 |       50 |   14.28 |   47.05 |                   
+  FilteringSearch.tsx      |   47.05 |       50 |   14.28 |   47.05 | 41-47,51,55,79-81 
  src/Interface             |       0 |        0 |       0 |       0 |                   
   classes.tsx              |       0 |        0 |       0 |       0 |                   
   dateTime.tsx             |       0 |        0 |       0 |       0 |                   
   semester.tsx             |       0 |        0 |       0 |       0 |                   
- src/MainScreen            |   53.84 |       50 |   14.28 |   63.63 |                   
-  MainButtons.tsx          |   53.84 |       50 |   14.28 |   63.63 | 24-62             
+ src/MainScreen            |      50 |       50 |   14.28 |   58.33 |                   
+  MainButtons.tsx          |      50 |       50 |   14.28 |   58.33 | 26-73             
  src/MainScreen/Modal      |       0 |      100 |       0 |       0 |                   
   addSemesterModal.tsx     |       0 |      100 |       0 |       0 | 11-27             
  src/semester              |      50 |      100 |      50 |   52.94 |                   
@@ -416,5 +680,5 @@ All files                  |   46.96 |       40 |   32.35 |    49.2 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.429 s
+Time:        2.411 s
 Ran all test suites.
