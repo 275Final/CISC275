@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (97 ms)
+  ✕ renders the course name somewhere (138 ms)
 
   ● renders the course name somewhere
 
@@ -298,6 +298,18 @@ FAIL src/App.test.tsx
                     [36m</button>[39m
                   [36m</div>[39m
                 [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"col"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mAdd Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
               [36m</div>[39m
             [36m</div>[39m
           [36m</div>[39m
@@ -326,15 +338,17 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   66.66 |      100 |   64.28 |   66.66 |                   
+All files                  |   58.62 |       75 |   47.36 |   62.96 |                   
  src                       |     100 |      100 |     100 |     100 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
  src/Interface             |       0 |        0 |       0 |       0 |                   
   classes.tsx              |       0 |        0 |       0 |       0 |                   
   dateTime.tsx             |       0 |        0 |       0 |       0 |                   
   semester.tsx             |       0 |        0 |       0 |       0 |                   
- src/MainScreen            |   57.14 |      100 |      25 |   57.14 |                   
-  MainButtons.tsx          |   57.14 |      100 |      25 |   57.14 | 17-44             
+ src/MainScreen            |   53.84 |       50 |   14.28 |   63.63 |                   
+  MainButtons.tsx          |   53.84 |       50 |   14.28 |   63.63 | 24-62             
+ src/MainScreen/Modal      |       0 |      100 |       0 |       0 |                   
+  addSemesterModal.tsx     |       0 |      100 |       0 |       0 | 11-27             
  src/semester              |     100 |      100 |     100 |     100 |                   
   SemesterTable.tsx        |     100 |      100 |     100 |     100 |                   
   SemesterView.tsx         |     100 |      100 |     100 |     100 |                   
@@ -344,5 +358,5 @@ All files                  |   66.66 |      100 |   64.28 |   66.66 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.612 s
+Time:        3.522 s
 Ran all test suites.
