@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (138 ms)
+  ✕ renders the course name somewhere (74 ms)
 
   ● renders the course name somewhere
 
@@ -338,7 +338,7 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   58.62 |       75 |   47.36 |   62.96 |                   
+All files                  |   51.51 |       75 |    40.9 |   54.83 |                   
  src                       |     100 |      100 |     100 |     100 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
  src/Interface             |       0 |        0 |       0 |       0 |                   
@@ -353,10 +353,11 @@ All files                  |   58.62 |       75 |   47.36 |   62.96 |
   SemesterTable.tsx        |     100 |      100 |     100 |     100 |                   
   SemesterView.tsx         |     100 |      100 |     100 |     100 |                   
  src/semester-modification |       0 |      100 |       0 |       0 |                   
-  AddClass.tsx             |       0 |      100 |       0 |       0 | 11-17             
+  AddClass.tsx             |       0 |      100 |       0 |       0 | 16-21             
+  RemoveClass.tsx          |       0 |      100 |       0 |       0 | 15-24             
 ---------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.522 s
+Time:        2.503 s
 Ran all test suites.
