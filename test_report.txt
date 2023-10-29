@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (93 ms)
+  ✕ renders the course name somewhere (80 ms)
 
   ● renders the course name somewhere
 
@@ -67,209 +67,242 @@ FAIL src/App.test.tsx
               [36m</h2>[39m
               [36m<div>[39m
                 [36m<div>[39m
-                  [36m<h1>[39m
+                  [36m<h3>[39m
                     [0mFall 2023[0m
-                  [36m</h1>[39m
-                  [36m<table[39m
-                    [33mclass[39m=[32m"table table-hover table-dark"[39m
+                  [36m</h3>[39m
+                [36m</div>[39m
+                [36m<table[39m
+                  [33mclass[39m=[32m"table table-hover table-dark"[39m
+                [36m>[39m
+                  [36m<thead>[39m
+                    [36m<tr>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCourse Code[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCourse Title[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCredits[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mPrerequisites[0m
+                      [36m</th>[39m
+                    [36m</tr>[39m
+                  [36m</thead>[39m
+                  [36m<tbody>[39m
+                    [36m<tr>[39m
+                      [36m<td>[39m
+                        [0mCISC108[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mIntroduction to Computer Science I[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0m3[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mNone[0m
+                      [36m</td>[39m
+                    [36m</tr>[39m
+                    [36m<tr>[39m
+                      [36m<td>[39m
+                        [0mCISC181[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mIntroduction to Computer Science II[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0m3[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mCISC108[0m
+                      [36m</td>[39m
+                    [36m</tr>[39m
+                  [36m</tbody>[39m
+                [36m</table>[39m
+                [36m<div>[39m
+                  [0m [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
                   [36m>[39m
-                    [36m<thead>[39m
-                      [36m<tr>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mCourse Code[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mCourse Title[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mCredits[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mPrerequisites[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mSchedule[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mLocation[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mInstructor[0m
-                        [36m</th>[39m
-                      [36m</tr>[39m
-                    [36m</thead>[39m
-                    [36m<tbody>[39m
-                      [36m<tr>[39m
-                        [36m<td>[39m
-                          [0mCISC108[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mIntroduction to Computer Science I[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0m3[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mNone[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mTuesday[0m
-                          [0m, [0m
-                          [0m9:35AM - 10:55AM[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mGore208[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mBart,Austin Cory[0m
-                        [36m</td>[39m
-                      [36m</tr>[39m
-                      [36m<tr>[39m
-                        [36m<td>[39m
-                          [0mCISC181[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mIntroduction to Computer Science II[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0m3[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mCISC108[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mTuesday[0m
-                          [0mThursday[0m
-                          [0m, [0m
-                          [0m3:55PM - 5:15PM[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mGore318[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mGibbons, Bert[0m
-                        [36m</td>[39m
-                      [36m</tr>[39m
-                    [36m</tbody>[39m
-                  [36m</table>[39m
+                    [0mClear Courses[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mClear Semester[0m
+                  [36m</button>[39m
                 [36m</div>[39m
               [36m</div>[39m
               [36m<div>[39m
                 [36m<div>[39m
-                  [36m<h1>[39m
+                  [36m<h3>[39m
                     [0mSpring 2023[0m
-                  [36m</h1>[39m
-                  [36m<table[39m
-                    [33mclass[39m=[32m"table table-hover table-dark"[39m
+                  [36m</h3>[39m
+                [36m</div>[39m
+                [36m<table[39m
+                  [33mclass[39m=[32m"table table-hover table-dark"[39m
+                [36m>[39m
+                  [36m<thead>[39m
+                    [36m<tr>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCourse Code[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCourse Title[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCredits[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mPrerequisites[0m
+                      [36m</th>[39m
+                    [36m</tr>[39m
+                  [36m</thead>[39m
+                  [36m<tbody>[39m
+                    [36m<tr>[39m
+                      [36m<td>[39m
+                        [0mCISC210[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mIntroduction to Systems Programming[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0m3[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mCISC108[0m
+                      [36m</td>[39m
+                    [36m</tr>[39m
+                    [36m<tr>[39m
+                      [36m<td>[39m
+                        [0mCISC220[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mData Structures[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0m3[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mCISC210[0m
+                      [36m</td>[39m
+                    [36m</tr>[39m
+                  [36m</tbody>[39m
+                [36m</table>[39m
+                [36m<div>[39m
+                  [0m [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
                   [36m>[39m
-                    [36m<thead>[39m
-                      [36m<tr>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mCourse Code[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mCourse Title[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mCredits[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mPrerequisites[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mSchedule[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mLocation[0m
-                        [36m</th>[39m
-                        [36m<th[39m
-                          [33mscope[39m=[32m"col"[39m
-                        [36m>[39m
-                          [0mInstructor[0m
-                        [36m</th>[39m
-                      [36m</tr>[39m
-                    [36m</thead>[39m
-                    [36m<tbody>[39m
-                      [36m<tr>[39m
-                        [36m<td>[39m
-                          [0mCISC210[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mIntroduction to Systems Programming[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0m3[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mCISC108[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mThursday[0m
-                          [0m, [0m
-                          [0m2:20PM - 3:40PM[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mONLINE[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mRoosen,Andrew Robert[0m
-                        [36m</td>[39m
-                      [36m</tr>[39m
-                      [36m<tr>[39m
-                        [36m<td>[39m
-                          [0mCISC220[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mData Structures[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0m3[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mCISC210[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mMonday[0m
-                          [0mWednesday[0m
-                          [0mFriday[0m
-                          [0m, [0m
-                          [0m12:40PM - 1:35PM[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mGore203[0m
-                        [36m</td>[39m
-                        [36m<td>[39m
-                          [0mHsu,Leighanne Chungan[0m
-                        [36m</td>[39m
-                      [36m</tr>[39m
-                    [36m</tbody>[39m
-                  [36m</table>[39m
+                    [0mClear Courses[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mClear Semester[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<h3>[39m
+                    [0mWinter 2023[0m
+                  [36m</h3>[39m
+                [36m</div>[39m
+                [36m<table[39m
+                  [33mclass[39m=[32m"table table-hover table-dark"[39m
+                [36m>[39m
+                  [36m<thead>[39m
+                    [36m<tr>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCourse Code[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCourse Title[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mCredits[0m
+                      [36m</th>[39m
+                      [36m<th[39m
+                        [33mscope[39m=[32m"col"[39m
+                      [36m>[39m
+                        [0mPrerequisites[0m
+                      [36m</th>[39m
+                    [36m</tr>[39m
+                  [36m</thead>[39m
+                  [36m<tbody>[39m
+                    [36m<tr>[39m
+                      [36m<td>[39m
+                        [0mCISC108[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mIntroduction to Computer Science I[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0m3[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mNone[0m
+                      [36m</td>[39m
+                    [36m</tr>[39m
+                    [36m<tr>[39m
+                      [36m<td>[39m
+                        [0mCISC181[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mIntroduction to Computer Science II[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0m3[0m
+                      [36m</td>[39m
+                      [36m<td>[39m
+                        [0mCISC108[0m
+                      [36m</td>[39m
+                    [36m</tr>[39m
+                  [36m</tbody>[39m
+                [36m</table>[39m
+                [36m<div>[39m
+                  [0m [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mClear Courses[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mClear Semester[0m
+                  [36m</button>[39m
                 [36m</div>[39m
               [36m</div>[39m
             [36m</div>[39m
@@ -361,7 +394,7 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   54.38 |       40 |   41.37 |   56.36 |                   
+All files                  |   46.96 |       40 |   32.35 |    49.2 |                   
  src                       |      60 |    16.66 |      50 |      60 |                   
   App.tsx                  |     100 |      100 |     100 |     100 |                   
   welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 11,15-22,28-34    
@@ -373,9 +406,9 @@ All files                  |   54.38 |       40 |   41.37 |   56.36 |
   MainButtons.tsx          |   53.84 |       50 |   14.28 |   63.63 | 24-62             
  src/MainScreen/Modal      |       0 |      100 |       0 |       0 |                   
   addSemesterModal.tsx     |       0 |      100 |       0 |       0 | 11-27             
- src/semester              |     100 |      100 |     100 |     100 |                   
-  SemesterTable.tsx        |     100 |      100 |     100 |     100 |                   
-  SemesterView.tsx         |     100 |      100 |     100 |     100 |                   
+ src/semester              |      50 |      100 |      50 |   52.94 |                   
+  SemesterTable.tsx        |      50 |      100 |   57.14 |   54.54 | 24-32             
+  SemesterView.tsx         |      50 |      100 |      40 |      50 | 13,63-72          
  src/semester-modification |       0 |      100 |       0 |       0 |                   
   AddClass.tsx             |       0 |      100 |       0 |       0 | 16-21             
   RemoveClass.tsx          |       0 |      100 |       0 |       0 | 15-24             
@@ -383,5 +416,5 @@ All files                  |   54.38 |       40 |   41.37 |   56.36 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.999 s
+Time:        2.429 s
 Ran all test suites.
