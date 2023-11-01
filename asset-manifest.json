@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/CISC275/static/css/main.e480e4e4.css",
-    "main.js": "/CISC275/static/js/main.f994093f.js",
+    "main.js": "/CISC275/static/js/main.3f10e2c6.js",
     "static/js/787.4ef7427d.chunk.js": "/CISC275/static/js/787.4ef7427d.chunk.js",
+    "static/media/BlueHenScene.jpeg": "/CISC275/static/media/BlueHenScene.4eb02c9d5f479ea69fce.jpeg",
     "static/media/Udel-Crest.png": "/CISC275/static/media/Udel-Crest.61bede16a3100c83d530.png",
     "static/media/Delaware-Blue-Hens-Logo.png": "/CISC275/static/media/Delaware-Blue-Hens-Logo.9807463b2b1aadd132a4.png",
     "index.html": "/CISC275/index.html",
     "main.e480e4e4.css.map": "/CISC275/static/css/main.e480e4e4.css.map",
-    "main.f994093f.js.map": "/CISC275/static/js/main.f994093f.js.map",
+    "main.3f10e2c6.js.map": "/CISC275/static/js/main.3f10e2c6.js.map",
     "787.4ef7427d.chunk.js.map": "/CISC275/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e480e4e4.css",
-    "static/js/main.f994093f.js"
+    "static/js/main.3f10e2c6.js"
   ]
 }
