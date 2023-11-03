@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (49 ms)
+  ✕ renders the course name somewhere (41 ms)
 
   ● renders the course name somewhere
 
@@ -98,7 +98,7 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   25.55 |     12.5 |   13.95 |   26.43 |                   
+All files                  |   24.46 |     12.5 |   13.33 |   25.27 |                   
  src                       |   61.29 |       25 |      40 |   61.29 |                   
   App.tsx                  |   71.42 |       50 |   33.33 |   71.42 | 18,21             
   welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45    
@@ -106,21 +106,20 @@ All files                  |   25.55 |     12.5 |   13.95 |   26.43 |
   FilteringSearch.tsx      |    5.88 |        0 |       0 |    5.88 | 36-81             
  src/Interface             |       0 |        0 |       0 |       0 |                   
   classes.tsx              |       0 |        0 |       0 |       0 |                   
-  dateTime.tsx             |       0 |        0 |       0 |       0 |                   
   semester.tsx             |       0 |        0 |       0 |       0 |                   
  src/MainScreen            |       0 |        0 |       0 |       0 |                   
   MainButtons.tsx          |       0 |        0 |       0 |       0 | 10-73             
  src/MainScreen/Modal      |       0 |      100 |       0 |       0 |                   
   addSemesterModal.tsx     |       0 |      100 |       0 |       0 | 12-32             
  src/semester              |   16.66 |        0 |   16.66 |   17.64 |                   
-  SemesterTable.tsx        |      25 |      100 |   28.57 |   27.27 | 21-39             
+  SemesterTable.tsx        |      25 |      100 |   28.57 |   27.27 | 19-37             
   SemesterView.tsx         |       0 |        0 |       0 |       0 | 11-72             
  src/semester-modification |       0 |      100 |       0 |       0 |                   
-  AddClass.tsx             |       0 |      100 |       0 |       0 | 16-21             
-  RemoveClass.tsx          |       0 |      100 |       0 |       0 | 15-24             
+  AddClass.tsx             |       0 |      100 |       0 |       0 | 16-25             
+  RemoveClass.tsx          |       0 |      100 |       0 |       0 | 16-30             
 ---------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.04 s
+Time:        2.964 s
 Ran all test suites.
