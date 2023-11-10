@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (78 ms)
+  ✕ renders the course name somewhere (44 ms)
 
   ● renders the course name somewhere
 
@@ -99,15 +99,16 @@ FAIL src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   20.35 |    11.11 |   11.32 |   21.29 |                   
- src                       |   61.29 |       25 |      40 |   61.29 |                   
-  App.tsx                  |   71.42 |       50 |   33.33 |   71.42 | 18,21             
+All files                  |   19.67 |       10 |   10.52 |   20.51 |                   
+ src                       |   56.75 |       20 |   33.33 |   56.75 |                   
+  App.tsx                  |      70 |       50 |      25 |      70 | 22,25,28          
+  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 10-13             
   welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45    
- src/Audit                 |      25 |      100 |       0 |      25 |                   
-  ChosenMajor.tsx          |      25 |      100 |       0 |      25 | 23-43             
+ src/Audit                 |       0 |      100 |       0 |       0 |                   
+  ChosenMajor.tsx          |       0 |      100 |       0 |       0 | 5-43              
   semesterAudit.tsx        |       0 |        0 |       0 |       0 |                   
  src/FilteringSearch       |       0 |        0 |       0 |       0 |                   
-  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 43-91             
+  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 43-88             
  src/Interface             |       0 |        0 |       0 |       0 |                   
   classes.tsx              |       0 |        0 |       0 |       0 |                   
   semester.tsx             |       0 |        0 |       0 |       0 |                   
@@ -115,6 +116,9 @@ All files                  |   20.35 |    11.11 |   11.32 |   21.29 |
   MainButtons.tsx          |       0 |        0 |       0 |       0 | 11-95             
  src/MainScreen/Modal      |       0 |      100 |       0 |       0 |                   
   addSemesterModal.tsx     |       0 |      100 |       0 |       0 | 12-32             
+ src/SideNav               |       0 |      100 |       0 |       0 |                   
+  SideNav2.tsx             |       0 |      100 |       0 |       0 | 12-15             
+  SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 5                 
  src/semester              |   15.78 |        0 |   15.38 |   16.66 |                   
   SemesterTable.tsx        |      25 |      100 |   28.57 |   27.27 | 19-37             
   SemesterView.tsx         |       0 |        0 |       0 |       0 | 12-84             
@@ -125,5 +129,5 @@ All files                  |   20.35 |    11.11 |   11.32 |   21.29 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.968 s
+Time:        3.54 s
 Ran all test suites.
