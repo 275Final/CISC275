@@ -11,8 +11,8 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/semester-modification/AddClass.test.tsx
 PASS src/semester-modification/RemoveClass.test.tsx
+PASS src/semester-modification/AddClass.test.tsx
 FAIL src/semester/SemesterTable.test.tsx
   ● SemesterTable › Users can see a lists of courses, including the course code, title, credits, and prerequisites.
 
@@ -131,11 +131,13 @@ FAIL src/semester/SemesterTable.test.tsx
 
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:85:43)
 
+PASS src/SideNav/SideNav2.test.tsx
+PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
 ---------------------------|---------|----------|---------|---------|-------------------------
-All files                  |   25.76 |     9.37 |      18 |   25.87 |                         
+All files                  |   32.31 |    15.62 |      24 |   32.45 |                         
  src                       |   54.38 |     12.5 |      30 |   54.38 |                         
   App.text.tsx             |       0 |      100 |       0 |       0 | 5-8                     
   App.tsx                  |   65.38 |     12.5 |   27.27 |   65.38 | 25,28,31,35,39,43,66-77 
@@ -143,8 +145,8 @@ All files                  |   25.76 |     9.37 |      18 |   25.87 |
   welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45          
  src/Audit                 |   14.28 |      100 |       0 |   14.28 |                         
   ChosenMajor.tsx          |   14.28 |      100 |       0 |   14.28 | 23-59                   
- src/FilteringSearch       |       0 |        0 |       0 |       0 |                         
-  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 44-89                   
+ src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                         
+  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 59,89                   
  src/Interface             |       0 |        0 |       0 |       0 |                         
   Plan.tsx                 |       0 |        0 |       0 |       0 |                         
   classes.tsx              |       0 |        0 |       0 |       0 |                         
@@ -153,8 +155,8 @@ All files                  |   25.76 |     9.37 |      18 |   25.87 |
   PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                     
  src/SemesterModal         |       0 |        0 |       0 |       0 |                         
   addSemesterModal.tsx     |       0 |        0 |       0 |       0 | 27-132                  
- src/SideNav               |       0 |      100 |       0 |       0 |                         
-  SideNav2.tsx             |       0 |      100 |       0 |       0 | 23-38                   
+ src/SideNav               |   16.66 |      100 |      20 |   16.66 |                         
+  SideNav2.tsx             |      20 |      100 |      20 |      20 | 26-38                   
   SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 7                       
  src/semester              |    9.83 |       10 |   14.81 |      10 |                         
   SemesterTable.tsx        |       0 |        0 |       0 |       0 | 13-117                  
@@ -165,8 +167,8 @@ All files                  |   25.76 |     9.37 |      18 |   25.87 |
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                         
 ---------------------------|---------|----------|---------|---------|-------------------------
 
-Test Suites: 1 failed, 3 passed, 4 total
-Tests:       3 failed, 7 passed, 10 total
+Test Suites: 1 failed, 5 passed, 6 total
+Tests:       3 failed, 13 passed, 16 total
 Snapshots:   0 total
-Time:        5.26 s
+Time:        5.947 s
 Ran all test suites.
