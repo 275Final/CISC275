@@ -5,127 +5,154 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (54 ms)
+FAIL src/semester/SemesterTable.test.tsx
+  ● SemesterTable › Users can see a lists of courses, including the course code, title, credits, and prerequisites.
 
-  ● renders the course name somewhere
+    expect(received).toBeInTheDocument()
 
-    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      57 |                     exact: false
+      58 |                 })
+    > 59 |             ).toBeInTheDocument();
+         |               ^
+      60 |             expect(
+      61 |                 screen.queryByText(classExample[i].credits, {
+      62 |                     exact: false
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/semester/SemesterTable.test.tsx:59:15)
+
+  ● SemesterTable › Users can see a lists of courses, including the course code, title, credits, and prerequisites.
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="classes"]
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
       [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
+        [36m<div>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mFall[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+          [36m<table[39m
+            [33mclass[39m=[32m"table table-hover table-dark"[39m
           [36m>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Delaware-Blue-Hens-Logo.png"[39m
-            [36m/>[39m
-            [36m<h1[39m
-              [33mclass[39m=[32m"Title"[39m
-            [36m>[39m
-              [0mUdel CS Course Scheduler[0m
-            [36m</h1>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Udel-Crest.png"[39m
-            [36m/>[39m
-          [36m</header>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"WelcomeMessage"[39m
-              [33mstyle[39m=[32m"margin-top: 1.5%;"[39m
-            [36m>[39m
-              [36m<h5>[39m
-                [0mWelcome to the University of Delaware Course Scheduler![0m
-              [36m</h5>[39m
-              [36m<h6>[39m
-                [0mHere you can view available courses, create mock semester plans, and submit your desired course plans.[0m
-              [36m</h6>[39m
-              [36m<p>[39m
-                [0mPlease enter your name:[0m
-              [36m</p>[39m
-              [36m<div>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"d-flex justify-content-center"[39m
+            [36m<thead>[39m
+              [36m<tr>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
                 [36m>[39m
-                  [36m<input[39m
-                    [33mclass[39m=[32m"w-25 form-control"[39m
-                    [33mplaceholder[39m=[32m"Please Enter Valid Name"[39m
-                    [33mtype[39m=[32m"text"[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mOK[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<img[39m
-              [33mid[39m=[32m"picture"[39m
-              [33msrc[39m=[32m"UDFallScene.png"[39m
-            [36m/>[39m
+                  [0mCourse Code[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mCourse Title[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mCredits[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mPrerequisites[0m
+                [36m</th>[39m
+              [36m</tr>[39m
+            [36m</thead>[39m
+            [36m<tbody />[39m
+          [36m</table>[39m
+          [36m<div>[39m
+            [0m [0m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mClear Courses[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mClear Semester[0m
+            [36m</button>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
 
-       5 | test("renders the course name somewhere", () => {
-       6 |     render(<App />);
-    >  7 |     const linkElement = screen.getByText(/CISC275/i);
+      75 |         });
+      76 |         user.click(clearButton);
+    > 77 |         const classes = screen.getByTestId("classes");
          |                                ^
-       8 |     expect(linkElement).toBeInTheDocument();
-       9 | });
-      10 |
+      78 |         expect(classes).toBeNull();
+      79 |     });
+      80 |     test("Clears courses after pressing a button.", () => {
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
       at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
       at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:7:32)
-      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
-      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
-      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
-      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/semester/SemesterTable.test.tsx:77:32)
 
----------------------------|---------|----------|---------|---------|-------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------------------|---------|----------|---------|---------|-------------------
-All files                  |      20 |    11.11 |      10 |   20.14 |                   
- src                       |   58.69 |    16.66 |    37.5 |   58.69 |                   
-  App.tsx                  |   68.42 |       25 |    37.5 |   68.42 | 27,30,33,37,60-67 
-  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23             
-  welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45    
- src/Audit                 |       0 |      100 |       0 |       0 |                   
-  ChosenMajor.tsx          |       0 |      100 |       0 |       0 | 5-43              
-  semesterAudit.tsx        |       0 |        0 |       0 |       0 |                   
- src/FilteringSearch       |       0 |        0 |       0 |       0 |                   
-  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 44-89             
- src/Interface             |       0 |        0 |       0 |       0 |                   
-  classes.tsx              |       0 |        0 |       0 |       0 |                   
-  semester.tsx             |       0 |        0 |       0 |       0 |                   
- src/SemesterModal         |       0 |        0 |       0 |       0 |                   
-  addSemesterModal.tsx     |       0 |        0 |       0 |       0 | 27-132            
- src/SideNav               |       0 |      100 |       0 |       0 |                   
-  SideNav2.tsx             |       0 |      100 |       0 |       0 | 18-25             
-  SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 5                 
- src/semester              |       0 |        0 |       0 |       0 |                   
-  SemesterTable.tsx        |       0 |      100 |       0 |       0 | 14-29             
-  SemesterView.tsx         |       0 |        0 |       0 |       0 | 12-84             
- src/semester-modification |       0 |      100 |       0 |       0 |                   
-  AddClass.tsx             |       0 |      100 |       0 |       0 | 17-42             
-  RemoveClass.tsx          |       0 |      100 |       0 |       0 | 17-47             
----------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
+  ● SemesterTable › Clears courses after pressing a button.
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 0
+    Received length: 2
+    Received array:  [{"code": "CISC181", "credits": 3, "preReq": ["CISC108"], "title": "Introduction to Computer Science II"}, {"code": "CISC220", "credits": 3, "preReq": ["CISC210"], "title": "Data Structures"}]
+
+      83 |         });
+      84 |         fireEvent.click(clearButton);
+    > 85 |         expect(semesterExample.classList).toHaveLength(0);
+         |                                           ^
+      86 |     });
+      87 | });
+      88 |
+
+      at Object.<anonymous> (src/semester/SemesterTable.test.tsx:85:43)
+
+PASS src/App.test.tsx
+---------------------------|---------|----------|---------|---------|-----------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s     
+---------------------------|---------|----------|---------|---------|-----------------------
+All files                  |   18.57 |    11.53 |   14.28 |   18.68 |                       
+ src                       |   58.69 |    16.66 |    37.5 |   58.69 |                       
+  App.tsx                  |   68.42 |       25 |    37.5 |   68.42 | 21,24,27,31,54-61     
+  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                 
+  welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45        
+ src/Audit                 |       0 |      100 |       0 |       0 |                       
+  ChosenMajor.tsx          |       0 |      100 |       0 |       0 | 5-43                  
+  semesterAudit.tsx        |       0 |        0 |       0 |       0 |                       
+ src/FilteringSearch       |       0 |        0 |       0 |       0 |                       
+  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 44-89                 
+ src/Interface             |       0 |        0 |       0 |       0 |                       
+  Plan.tsx                 |       0 |        0 |       0 |       0 |                       
+  classes.tsx              |       0 |        0 |       0 |       0 |                       
+  semester.tsx             |       0 |        0 |       0 |       0 |                       
+ src/PlanView              |       0 |      100 |       0 |       0 |                       
+  PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                   
+ src/SemesterModal         |       0 |        0 |       0 |       0 |                       
+  addSemesterModal.tsx     |       0 |        0 |       0 |       0 | 27-132                
+ src/SideNav               |       0 |      100 |       0 |       0 |                       
+  SideNav2.tsx             |       0 |      100 |       0 |       0 | 18-25                 
+  SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 5                     
+ src/semester              |    9.83 |       10 |   14.81 |      10 |                       
+  SemesterTable.tsx        |       0 |        0 |       0 |       0 | 13-117                
+  SemesterView.tsx         |   42.85 |       50 |      40 |   42.85 | 27-29,33-34,54-73,104 
+ src/semester-modification |    4.76 |      100 |   14.28 |    4.76 |                       
+  AddClass.tsx             |       0 |      100 |       0 |       0 | 17-42                 
+  RemoveClass.tsx          |    9.09 |      100 |      25 |    9.09 | 17-44                 
+---------------------------|---------|----------|---------|---------|-----------------------
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        4.16 s
+Time:        4.55 s
 Ran all test suites.
