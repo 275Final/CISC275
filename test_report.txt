@@ -5,6 +5,14 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+PASS src/semester-modification/AddClass.test.tsx
+PASS src/semester-modification/RemoveClass.test.tsx
 FAIL src/semester/SemesterTable.test.tsx
   ● SemesterTable › Users can see a lists of courses, including the course code, title, credits, and prerequisites.
 
@@ -63,6 +71,11 @@ FAIL src/semester/SemesterTable.test.tsx
                 [36m>[39m
                   [0mPrerequisites[0m
                 [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mRemove Class[0m
+                [36m</th>[39m
               [36m</tr>[39m
             [36m</thead>[39m
             [36m<tbody />[39m
@@ -119,40 +132,41 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:85:43)
 
 PASS src/App.test.tsx
----------------------------|---------|----------|---------|---------|-----------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s     
----------------------------|---------|----------|---------|---------|-----------------------
-All files                  |   18.57 |    11.53 |   14.28 |   18.68 |                       
- src                       |   58.69 |    16.66 |    37.5 |   58.69 |                       
-  App.tsx                  |   68.42 |       25 |    37.5 |   68.42 | 21,24,27,31,54-61     
-  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                 
-  welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45        
- src/Audit                 |       0 |      100 |       0 |       0 |                       
-  ChosenMajor.tsx          |       0 |      100 |       0 |       0 | 5-43                  
-  semesterAudit.tsx        |       0 |        0 |       0 |       0 |                       
- src/FilteringSearch       |       0 |        0 |       0 |       0 |                       
-  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 44-89                 
- src/Interface             |       0 |        0 |       0 |       0 |                       
-  Plan.tsx                 |       0 |        0 |       0 |       0 |                       
-  classes.tsx              |       0 |        0 |       0 |       0 |                       
-  semester.tsx             |       0 |        0 |       0 |       0 |                       
- src/PlanView              |       0 |      100 |       0 |       0 |                       
-  PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                   
- src/SemesterModal         |       0 |        0 |       0 |       0 |                       
-  addSemesterModal.tsx     |       0 |        0 |       0 |       0 | 27-132                
- src/SideNav               |       0 |      100 |       0 |       0 |                       
-  SideNav2.tsx             |       0 |      100 |       0 |       0 | 18-25                 
-  SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 5                     
- src/semester              |    9.83 |       10 |   14.81 |      10 |                       
-  SemesterTable.tsx        |       0 |        0 |       0 |       0 | 13-117                
-  SemesterView.tsx         |   42.85 |       50 |      40 |   42.85 | 27-29,33-34,54-73,104 
- src/semester-modification |    4.76 |      100 |   14.28 |    4.76 |                       
-  AddClass.tsx             |       0 |      100 |       0 |       0 | 17-42                 
-  RemoveClass.tsx          |    9.09 |      100 |      25 |    9.09 | 17-44                 
----------------------------|---------|----------|---------|---------|-----------------------
+---------------------------|---------|----------|---------|---------|-------------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
+---------------------------|---------|----------|---------|---------|-------------------------
+All files                  |   25.76 |     9.37 |      18 |   25.87 |                         
+ src                       |   54.38 |     12.5 |      30 |   54.38 |                         
+  App.text.tsx             |       0 |      100 |       0 |       0 | 5-8                     
+  App.tsx                  |   65.38 |     12.5 |   27.27 |   65.38 | 25,28,31,35,39,43,66-77 
+  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                   
+  welcome.tsx              |   58.33 |    16.66 |   42.85 |   58.33 | 22,26-33,39-45          
+ src/Audit                 |   14.28 |      100 |       0 |   14.28 |                         
+  ChosenMajor.tsx          |   14.28 |      100 |       0 |   14.28 | 23-59                   
+ src/FilteringSearch       |       0 |        0 |       0 |       0 |                         
+  FilteringSearch.tsx      |       0 |        0 |       0 |       0 | 44-89                   
+ src/Interface             |       0 |        0 |       0 |       0 |                         
+  Plan.tsx                 |       0 |        0 |       0 |       0 |                         
+  classes.tsx              |       0 |        0 |       0 |       0 |                         
+  semester.tsx             |       0 |        0 |       0 |       0 |                         
+ src/PlanView              |       0 |      100 |       0 |       0 |                         
+  PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                     
+ src/SemesterModal         |       0 |        0 |       0 |       0 |                         
+  addSemesterModal.tsx     |       0 |        0 |       0 |       0 | 27-132                  
+ src/SideNav               |       0 |      100 |       0 |       0 |                         
+  SideNav2.tsx             |       0 |      100 |       0 |       0 | 23-38                   
+  SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 7                       
+ src/semester              |    9.83 |       10 |   14.81 |      10 |                         
+  SemesterTable.tsx        |       0 |        0 |       0 |       0 | 13-117                  
+  SemesterView.tsx         |   42.85 |       50 |      40 |   42.85 | 27-29,33-34,59-78,109   
+ src/semester-modification |   41.17 |        0 |   34.78 |   41.17 |                         
+  AddClass.tsx             |     100 |      100 |     100 |     100 |                         
+  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 22-149                  
+  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                         
+---------------------------|---------|----------|---------|---------|-------------------------
 
-Test Suites: 1 failed, 1 passed, 2 total
-Tests:       3 failed, 1 passed, 4 total
+Test Suites: 1 failed, 3 passed, 4 total
+Tests:       3 failed, 7 passed, 10 total
 Snapshots:   0 total
-Time:        4.55 s
+Time:        5.26 s
 Ran all test suites.
