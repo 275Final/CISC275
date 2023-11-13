@@ -8,46 +8,62 @@ Browserslist: caniuse-lite is outdated. Please run:
 PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/semester-modification/AddClass.test.tsx
 PASS src/FilteringSearch/FilteringSearch.test.tsx
-PASS src/semester/SemesterView.test.tsx
+FAIL src/semester/SemesterView.test.tsx
+  ● SemesterView › ClearCourses is called after clicking button.
+
+    expect(element).not.toBeInTheDocument()
+
+    expected document not to contain element, found <td>Introduction to Computer Science II</td> instead
+
+      74 |         fireEvent.click(clearCoursesButton);
+      75 |         const classExample = semesterExample.classList[0].title;
+    > 76 |         expect(screen.queryByText(classExample)).not.toBeInTheDocument();
+         |                                                      ^
+      77 |     });
+      78 | });
+      79 |
+
+      at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
+
 PASS src/welcome.test.tsx
 PASS src/SideNav/SideNav2.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
 PASS src/semester/SemesterTable.test.tsx
 PASS src/App.test.tsx
----------------------------|---------|----------|---------|---------|---------------------------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                     
----------------------------|---------|----------|---------|---------|---------------------------------------
-All files                  |   43.85 |     37.5 |      34 |   44.05 |                                       
- src                       |   59.64 |       25 |      40 |   59.64 |                                       
-  App.text.tsx             |       0 |      100 |       0 |       0 | 5-8                                   
-  App.tsx                  |   65.38 |     12.5 |   27.27 |   65.38 | 25,28,31,35,39,43,66-77               
-  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                 
-  welcome.tsx              |   70.83 |       50 |   71.42 |   70.83 | 22,27,40-45                           
- src/Audit                 |   14.28 |      100 |       0 |   14.28 |                                       
-  ChosenMajor.tsx          |   14.28 |      100 |       0 |   14.28 | 23-59                                 
- src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                       
-  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,55                                 
- src/Interface             |       0 |        0 |       0 |       0 |                                       
-  Plan.tsx                 |       0 |        0 |       0 |       0 |                                       
-  classes.tsx              |       0 |        0 |       0 |       0 |                                       
-  semester.tsx             |       0 |        0 |       0 |       0 |                                       
- src/PlanView              |       0 |      100 |       0 |       0 |                                       
-  PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                                   
- src/SemesterModal         |   31.03 |       50 |    8.33 |   31.03 |                                       
-  addSemesterModal.tsx     |   31.03 |       50 |    8.33 |   31.03 | 32-33,37-43,47,51-63,105-134          
- src/SideNav               |      20 |      100 |      20 |      20 |                                       
-  SideNav2.tsx             |      20 |      100 |      20 |      20 | 22-34                                 
- src/semester              |   32.78 |       50 |   40.74 |   33.33 |                                       
-  SemesterTable.tsx        |   27.65 |     37.5 |   35.29 |   28.26 | 22,39-46,61-74,82-105,111-112,127-128 
-  SemesterView.tsx         |      50 |      100 |      50 |      50 | 31-33,37-38,63-82                     
- src/semester-modification |   41.17 |        0 |   34.78 |   41.17 |                                       
-  AddClass.tsx             |     100 |      100 |     100 |     100 |                                       
-  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 22-149                                
-  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                       
----------------------------|---------|----------|---------|---------|---------------------------------------
+---------------------------|---------|----------|---------|---------|----------------------------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                      
+---------------------------|---------|----------|---------|---------|----------------------------------------
+All files                  |   40.66 |    35.29 |   31.13 |   41.17 |                                        
+ src                       |   59.64 |       25 |      40 |   59.64 |                                        
+  App.text.tsx             |       0 |      100 |       0 |       0 | 5-8                                    
+  App.tsx                  |   65.38 |     12.5 |   27.27 |   65.38 | 25,28,31,35,39,43,66-77                
+  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                  
+  welcome.tsx              |   70.83 |       50 |   71.42 |   70.83 | 22,27,40-45                            
+ src/Audit                 |   14.28 |      100 |       0 |   14.28 |                                        
+  ChosenMajor.tsx          |   14.28 |      100 |       0 |   14.28 | 23-59                                  
+ src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                        
+  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,55                                  
+ src/Interface             |       0 |        0 |       0 |       0 |                                        
+  Plan.tsx                 |       0 |        0 |       0 |       0 |                                        
+  classes.tsx              |       0 |        0 |       0 |       0 |                                        
+  semester.tsx             |       0 |        0 |       0 |       0 |                                        
+ src/PlanView              |       0 |      100 |       0 |       0 |                                        
+  PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                                    
+ src/SemesterModal         |   31.03 |       50 |    8.33 |   31.03 |                                        
+  addSemesterModal.tsx     |   31.03 |       50 |    8.33 |   31.03 | 32-33,37-43,47,51-63,105-134           
+ src/SideNav               |      20 |      100 |      20 |      20 |                                        
+  SideNav2.tsx             |      20 |      100 |      20 |      20 | 22-34                                  
+ src/semester              |   24.32 |    41.66 |    30.3 |   25.35 |                                        
+  SemesterTable.tsx        |   20.96 |       30 |      25 |   22.03 | 22,39-46,61-97,105-138,145-146,161-162 
+  SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 29-31,35-36,61-80                      
+ src/semester-modification |   41.17 |        0 |   34.78 |   41.17 |                                        
+  AddClass.tsx             |     100 |      100 |     100 |     100 |                                        
+  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 22-149                                 
+  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                        
+---------------------------|---------|----------|---------|---------|----------------------------------------
 
-Test Suites: 9 passed, 9 total
-Tests:       24 passed, 24 total
+Test Suites: 1 failed, 8 passed, 9 total
+Tests:       1 failed, 23 passed, 24 total
 Snapshots:   0 total
-Time:        11.46 s
+Time:        9.563 s
 Ran all test suites.
