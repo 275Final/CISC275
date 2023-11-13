@@ -38,7 +38,7 @@ All files                  |   43.85 |     37.5 |      34 |   44.05 |
  src/SideNav               |      20 |      100 |      20 |      20 |                                       
   SideNav2.tsx             |      20 |      100 |      20 |      20 | 22-34                                 
  src/semester              |   32.78 |       50 |   40.74 |   33.33 |                                       
-  SemesterTable.tsx        |   27.65 |     37.5 |   35.29 |   28.26 | 24,38-45,60-73,81-104,110-111,126-127 
+  SemesterTable.tsx        |   27.65 |     37.5 |   35.29 |   28.26 | 22,39-46,61-74,82-105,111-112,127-128 
   SemesterView.tsx         |      50 |      100 |      50 |      50 | 31-33,37-38,63-82                     
  src/semester-modification |   41.17 |        0 |   34.78 |   41.17 |                                       
   AddClass.tsx             |     100 |      100 |     100 |     100 |                                       
@@ -49,5 +49,5 @@ All files                  |   43.85 |     37.5 |      34 |   44.05 |
 Test Suites: 9 passed, 9 total
 Tests:       24 passed, 24 total
 Snapshots:   0 total
-Time:        11.38 s
+Time:        11.46 s
 Ran all test suites.
