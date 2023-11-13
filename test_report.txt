@@ -13,7 +13,6 @@ Browserslist: caniuse-lite is outdated. Please run:
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/semester-modification/AddClass.test.tsx
-PASS src/SideNav/SideNav2.test.tsx
 FAIL src/semester/SemesterTable.test.tsx
   ● SemesterTable › Users can see a lists of courses, including the course code, title, credits, and prerequisites.
 
@@ -132,13 +131,14 @@ FAIL src/semester/SemesterTable.test.tsx
 
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:85:43)
 
-PASS src/FilteringSearch/FilteringSearch.test.tsx
-PASS src/App.test.tsx
+PASS src/SideNav/SideNav2.test.tsx
 PASS src/welcome.test.tsx
+PASS src/App.test.tsx
+PASS src/FilteringSearch/FilteringSearch.test.tsx
 ---------------------------|---------|----------|---------|---------|-------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
 ---------------------------|---------|----------|---------|---------|-------------------------
-All files                  |   33.62 |    21.87 |      26 |   33.77 |                         
+All files                  |   33.77 |    21.87 |      26 |   33.92 |                         
  src                       |   59.64 |       25 |      40 |   59.64 |                         
   App.text.tsx             |       0 |      100 |       0 |       0 | 5-8                     
   App.tsx                  |   65.38 |     12.5 |   27.27 |   65.38 | 25,28,31,35,39,43,66-77 
@@ -147,7 +147,7 @@ All files                  |   33.62 |    21.87 |      26 |   33.77 |
  src/Audit                 |   14.28 |      100 |       0 |   14.28 |                         
   ChosenMajor.tsx          |   14.28 |      100 |       0 |   14.28 | 23-59                   
  src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                         
-  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 61,91                   
+  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,55                   
  src/Interface             |       0 |        0 |       0 |       0 |                         
   Plan.tsx                 |       0 |        0 |       0 |       0 |                         
   classes.tsx              |       0 |        0 |       0 |       0 |                         
@@ -156,9 +156,8 @@ All files                  |   33.62 |    21.87 |      26 |   33.77 |
   PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                     
  src/SemesterModal         |       0 |        0 |       0 |       0 |                         
   addSemesterModal.tsx     |       0 |        0 |       0 |       0 | 27-132                  
- src/SideNav               |   16.66 |      100 |      20 |   16.66 |                         
-  SideNav2.tsx             |      20 |      100 |      20 |      20 | 26-38                   
-  SideNavInfo.tsx          |       0 |      100 |     100 |       0 | 7                       
+ src/SideNav               |      20 |      100 |      20 |      20 |                         
+  SideNav2.tsx             |      20 |      100 |      20 |      20 | 22-34                   
  src/semester              |    9.83 |       10 |   14.81 |      10 |                         
   SemesterTable.tsx        |       0 |        0 |       0 |       0 | 13-117                  
   SemesterView.tsx         |   42.85 |       50 |      40 |   42.85 | 27-29,33-34,59-78,109   
@@ -171,5 +170,5 @@ All files                  |   33.62 |    21.87 |      26 |   33.77 |
 Test Suites: 1 failed, 6 passed, 7 total
 Tests:       3 failed, 17 passed, 20 total
 Snapshots:   0 total
-Time:        6.279 s
+Time:        5.935 s
 Ran all test suites.
