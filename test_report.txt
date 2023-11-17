@@ -5,9 +5,14 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/semester-modification/RemoveClass.test.tsx
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/semester-modification/AddClass.test.tsx
-PASS src/FilteringSearch/FilteringSearch.test.tsx
+PASS src/semester-modification/RemoveClass.test.tsx
 FAIL src/semester/SemesterView.test.tsx
   ● SemesterView › ClearCourses is called after clicking button.
 
@@ -25,18 +30,18 @@ FAIL src/semester/SemesterView.test.tsx
 
       at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
 
-PASS src/welcome.test.tsx
 PASS src/SideNav/SideNav2.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
 PASS src/semester/SemesterTable.test.tsx
+PASS src/FilteringSearch/FilteringSearch.test.tsx
+PASS src/welcome.test.tsx
 PASS src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                      
 ---------------------------|---------|----------|---------|---------|----------------------------------------
-All files                  |   40.66 |    35.29 |   31.13 |   41.17 |                                        
- src                       |   59.64 |       25 |      40 |   59.64 |                                        
-  App.text.tsx             |       0 |      100 |       0 |       0 | 5-8                                    
-  App.tsx                  |   65.38 |     12.5 |   27.27 |   65.38 | 25,28,31,35,39,43,66-77                
+All files                  |   40.71 |    33.33 |   29.82 |    41.2 |                                        
+ src                       |    66.1 |    22.22 |   42.85 |    66.1 |                                        
+  App.tsx                  |   68.75 |       10 |   30.76 |   68.75 | 28,31,34,38,42,46,50,75-86             
   SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                  
   welcome.tsx              |   70.83 |       50 |   71.42 |   70.83 | 22,27,40-45                            
  src/Audit                 |   14.28 |      100 |       0 |   14.28 |                                        
@@ -48,11 +53,11 @@ All files                  |   40.66 |    35.29 |   31.13 |   41.17 |
   classes.tsx              |       0 |        0 |       0 |       0 |                                        
   semester.tsx             |       0 |        0 |       0 |       0 |                                        
  src/PlanView              |       0 |      100 |       0 |       0 |                                        
-  PlanView.tsx             |       0 |      100 |       0 |       0 | 5-6                                    
+  PlanView.tsx             |       0 |      100 |       0 |       0 | 18-64                                  
  src/SemesterModal         |   31.03 |       50 |    8.33 |   31.03 |                                        
-  addSemesterModal.tsx     |   31.03 |       50 |    8.33 |   31.03 | 32-33,37-43,47,51-63,105-134           
- src/SideNav               |      20 |      100 |      20 |      20 |                                        
-  SideNav2.tsx             |      20 |      100 |      20 |      20 | 22-34                                  
+  addSemesterModal.tsx     |   31.03 |       50 |    8.33 |   31.03 | 33-34,38-44,48,52-64,106-138           
+ src/SideNav               |   16.66 |      100 |   16.66 |   16.66 |                                        
+  SideNav2.tsx             |   16.66 |      100 |   16.66 |   16.66 | 25-41                                  
  src/semester              |   24.32 |    41.66 |    30.3 |   25.35 |                                        
   SemesterTable.tsx        |   20.96 |       30 |      25 |   22.03 | 22,39-46,61-97,105-138,145-146,161-162 
   SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 29-31,35-36,61-80                      
@@ -65,5 +70,5 @@ All files                  |   40.66 |    35.29 |   31.13 |   41.17 |
 Test Suites: 1 failed, 8 passed, 9 total
 Tests:       1 failed, 23 passed, 24 total
 Snapshots:   0 total
-Time:        9.563 s
+Time:        6.561 s
 Ran all test suites.
