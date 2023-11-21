@@ -11,8 +11,8 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/semester-modification/AddClass.test.tsx
 PASS src/semester-modification/RemoveClass.test.tsx
+PASS src/semester-modification/AddClass.test.tsx
 PASS src/SideNav/SideNav2.test.tsx
 FAIL src/semester/SemesterView.test.tsx
   ● SemesterView › ClearCourses is called after clicking button.
@@ -68,7 +68,7 @@ PASS src/App.test.tsx
 ---------------------------|---------|----------|---------|---------|----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                      
 ---------------------------|---------|----------|---------|---------|----------------------------------------
-All files                  |      37 |       35 |   28.46 |   37.28 |                                        
+All files                  |   36.87 |       35 |   28.68 |   37.03 |                                        
  src                       |   66.17 |       25 |   52.17 |   65.67 |                                        
   App.tsx                  |   68.29 |    16.66 |   46.66 |    67.5 | 30,33,36,40,44,48,52,71,81-88          
   SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                  
@@ -90,16 +90,16 @@ All files                  |      37 |       35 |   28.46 |   37.28 |
  src/semester              |   25.64 |    42.85 |   29.41 |   26.66 |                                        
   SemesterTable.tsx        |   20.96 |       30 |      25 |   22.03 | 22,39-46,61-97,105-138,145-146,161-162 
   SemesterView.tsx         |   43.75 |       75 |      40 |   43.75 | 35-37,40-41,46-47,73-92                
- src/semester-modification |   25.92 |        0 |   22.85 |   26.25 |                                        
+ src/semester-modification |    25.6 |        0 |   23.52 |    25.6 |                                        
   AddClass.tsx             |     100 |      100 |     100 |     100 |                                        
   AddToSemester.tsx        |       0 |        0 |       0 |       0 | 22-155                                 
   EditClass.tsx            |       0 |      100 |       0 |       0 | 18-29                                  
-  EditClassInfoModal.tsx   |       0 |      100 |       0 |       0 | 15-100                                 
+  EditClassInfoModal.tsx   |       0 |      100 |       0 |       0 | 15-108                                 
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                        
 ---------------------------|---------|----------|---------|---------|----------------------------------------
 
 Test Suites: 1 failed, 8 passed, 9 total
 Tests:       1 failed, 23 passed, 24 total
 Snapshots:   0 total
-Time:        6.948 s
+Time:        6.844 s
 Ran all test suites.
