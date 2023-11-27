@@ -32,30 +32,30 @@ FAIL src/semester/SemesterView.test.tsx
       at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
 
 PASS src/SemesterModal/addSemesterModal.test.tsx
-PASS src/semester/SemesterTable.test.tsx
 PASS src/FilteringSearch/FilteringSearch.test.tsx
+PASS src/semester/SemesterTable.test.tsx
 PASS src/welcome.test.tsx
   ● Console
 
     console.log
       sike i lied
 
-      at updatingPlans (src/App.tsx:109:21)
+      at updatingPlans (src/App.tsx:115:21)
 
     console.log
       sike i lied
 
-      at updatingPlans (src/App.tsx:109:21)
+      at updatingPlans (src/App.tsx:115:21)
 
     console.log
       sike i lied
 
-      at updatingPlans (src/App.tsx:109:21)
+      at updatingPlans (src/App.tsx:115:21)
 
     console.log
       sike i lied
 
-      at updatingPlans (src/App.tsx:109:21)
+      at updatingPlans (src/App.tsx:115:21)
 
 PASS src/App.test.tsx
   ● Console
@@ -63,44 +63,46 @@ PASS src/App.test.tsx
     console.log
       sike i lied
 
-      at updatingPlans (src/App.tsx:109:21)
+      at updatingPlans (src/App.tsx:115:21)
 
----------------------------|---------|----------|---------|---------|----------------------------------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                            
----------------------------|---------|----------|---------|---------|----------------------------------------------
-All files                  |   31.13 |     17.8 |   21.93 |   31.28 |                                              
- src                       |   62.96 |    20.83 |   42.85 |   63.29 |                                              
-  App.tsx                  |   62.96 |     12.5 |      35 |   63.46 | 34,37,40,44,48,52,56,60,64,75-82,101,111-118 
-  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                        
-  welcome.tsx              |   70.83 |       50 |   71.42 |   70.83 | 22,27,40-45                                  
- src/Audit                 |    4.91 |        0 |       0 |    4.91 |                                              
-  ChosenMajor.tsx          |    8.82 |        0 |       0 |    8.82 | 57-137                                       
-  SeeAuditPage.tsx         |       0 |        0 |       0 |       0 | 24-134                                       
- src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                              
-  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,56                                        
- src/Interface             |       0 |        0 |       0 |       0 |                                              
-  Plan.tsx                 |       0 |        0 |       0 |       0 |                                              
-  classes.tsx              |       0 |        0 |       0 |       0 |                                              
-  semester.tsx             |       0 |        0 |       0 |       0 |                                              
- src/PlanView              |       0 |        0 |       0 |       0 |                                              
-  DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 16-92                                        
-  PlanView.tsx             |       0 |      100 |       0 |       0 | 20-67                                        
- src/SemesterModal         |   28.12 |       50 |    7.69 |   28.12 |                                              
-  addSemesterModal.tsx     |   28.12 |       50 |    7.69 |   28.12 | 27-28,32-38,42,46-75,117-152                 
- src/SideNav               |   14.28 |      100 |   14.28 |   14.28 |                                              
-  SideNav2.tsx             |   14.28 |      100 |   14.28 |   14.28 | 28-48                                        
- src/semester              |   15.87 |       25 |   20.68 |   16.66 |                                              
-  SemesterTable.tsx        |     9.8 |        0 |      10 |   10.41 | 67-104,127-166,173-174,189-190               
-  SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 34-36,40-41,67-86                            
- src/semester-modification |   35.29 |       30 |   26.47 |   35.29 |                                              
-  AddClass.tsx             |     100 |      100 |     100 |     100 |                                              
-  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 21-154                                       
-  EditClassInfoModal.tsx   |   26.47 |     37.5 |    9.09 |   26.47 | 24-27,30-31,34-35,43-78,124-136              
-  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                              
----------------------------|---------|----------|---------|---------|----------------------------------------------
+---------------------------|---------|----------|---------|---------|-------------------------------------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                               
+---------------------------|---------|----------|---------|---------|-------------------------------------------------
+All files                  |    30.3 |    16.88 |   21.11 |   30.43 |                                                 
+ src                       |   63.09 |    19.23 |   41.37 |   63.41 |                                                 
+  App.tsx                  |   63.15 |    11.11 |   33.33 |   63.63 | 36,39,42,46,50,54,58,62,66,70,81-88,107,117-124 
+  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                           
+  welcome.tsx              |   70.83 |       50 |   71.42 |   70.83 | 22,27,40-45                                     
+ src/Audit                 |    4.91 |        0 |       0 |    4.91 |                                                 
+  ChosenMajor.tsx          |    8.82 |        0 |       0 |    8.82 | 57-137                                          
+  SeeAuditPage.tsx         |       0 |        0 |       0 |       0 | 24-134                                          
+ src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                                 
+  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,56                                           
+ src/Interface             |       0 |        0 |       0 |       0 |                                                 
+  Plan.tsx                 |       0 |        0 |       0 |       0 |                                                 
+  classes.tsx              |       0 |        0 |       0 |       0 |                                                 
+  semester.tsx             |       0 |        0 |       0 |       0 |                                                 
+ src/PlanView              |       0 |        0 |       0 |       0 |                                                 
+  DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 16-92                                           
+  PlanView.tsx             |       0 |      100 |       0 |       0 | 20-67                                           
+ src/SemesterModal         |      25 |       25 |    7.69 |      25 |                                                 
+  addSemesterModal.tsx     |      25 |       25 |    7.69 |      25 | 27-28,32-38,42,46-92,135-170                    
+ src/SideNav               |    12.5 |      100 |   14.28 |    12.5 |                                                 
+  SideNav2.tsx             |    12.5 |      100 |   14.28 |    12.5 | 30-56                                           
+ src/addPlan               |       0 |      100 |       0 |       0 |                                                 
+  AddPlan.tsx              |       0 |      100 |       0 |       0 | 16-54                                           
+ src/semester              |   15.87 |       25 |   20.68 |   16.66 |                                                 
+  SemesterTable.tsx        |     9.8 |        0 |      10 |   10.41 | 67-104,127-166,173-174,189-190                  
+  SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 34-36,40-41,67-86                               
+ src/semester-modification |   35.29 |       30 |   26.47 |   35.29 |                                                 
+  AddClass.tsx             |     100 |      100 |     100 |     100 |                                                 
+  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 21-154                                          
+  EditClassInfoModal.tsx   |   26.47 |     37.5 |    9.09 |   26.47 | 24-27,30-31,34-35,43-78,124-136                 
+  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                                 
+---------------------------|---------|----------|---------|---------|-------------------------------------------------
 
 Test Suites: 1 failed, 8 passed, 9 total
 Tests:       1 failed, 23 passed, 24 total
 Snapshots:   0 total
-Time:        6.758 s
+Time:        7.006 s
 Ran all test suites.
