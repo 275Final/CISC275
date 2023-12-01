@@ -11,6 +11,7 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+PASS src/semester-modification/RemoveClass.test.tsx
 FAIL src/semester-modification/AddClass.test.tsx
   ● AddClass Component tests › Button adds class to semester
 
@@ -46,7 +47,6 @@ FAIL src/semester-modification/AddClass.test.tsx
 
       at Object.<anonymous> (src/semester-modification/AddClass.test.tsx:143:41)
 
-PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/SideNav/SideNav2.test.tsx
 FAIL src/semester/SemesterView.test.tsx
   ● SemesterView › ClearCourses is called after clicking button.
@@ -66,8 +66,8 @@ FAIL src/semester/SemesterView.test.tsx
       at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
 
 PASS src/SemesterModal/addSemesterModal.test.tsx
-PASS src/semester/SemesterTable.test.tsx
 PASS src/FilteringSearch/FilteringSearch.test.tsx
+PASS src/semester/SemesterTable.test.tsx
 PASS src/welcome.test.tsx
   ● Console
 
@@ -131,12 +131,12 @@ All files                  |   30.07 |    15.66 |   20.48 |   30.19 |
  src/semester-modification |   34.28 |    18.75 |   23.07 |   34.28 |                                                 
   AddClass.tsx             |     100 |      100 |     100 |     100 |                                                 
   AddToSemester.tsx        |       0 |        0 |       0 |       0 | 21-154                                          
-  EditClassInfoModal.tsx   |   23.52 |    21.42 |    6.25 |   23.52 | 29-32,35-36,39-40,48-119,164-183                
+  EditClassInfoModal.tsx   |   23.52 |    21.42 |    6.25 |   23.52 | 29-32,35-36,39-40,48-118,163-182                
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                                 
 ---------------------------|---------|----------|---------|---------|-------------------------------------------------
 
 Test Suites: 2 failed, 7 passed, 9 total
 Tests:       3 failed, 21 passed, 24 total
 Snapshots:   0 total
-Time:        6.845 s
+Time:        6.684 s
 Ran all test suites.
