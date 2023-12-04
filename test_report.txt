@@ -48,6 +48,318 @@ FAIL src/semester-modification/AddClass.test.tsx
 
 PASS src/semester-modification/RemoveClass.test.tsx
 FAIL src/semester/SemesterView.test.tsx
+  ● SemesterView › SemesterView renders a heading with the season of the semester.
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "heading" and name "Fall 2023"
+
+    Here are the accessible roles:
+
+      heading:
+
+      Name "Semester Name: Fall 2023":
+      [36m<h3 />[39m
+
+      --------------------------------------------------
+      table:
+
+      Name "":
+      [36m<table[39m
+        [33mclass[39m=[32m"table table-hover table-dark"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      rowgroup:
+
+      Name "":
+      [36m<thead />[39m
+
+      Name "":
+      [36m<tbody />[39m
+
+      --------------------------------------------------
+      row:
+
+      Name "Course Code Course Title Credits: 6 Prerequisites Remove Class Edit Course":
+      [36m<tr />[39m
+
+      Name "CISC181 Introduction to Computer Science II 3 CISC108 Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      Name "CISC220 Data Structures 3 CISC210 Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      columnheader:
+
+      Name "Course Code":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Course Title":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Credits: 6":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Prerequisites":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      cell:
+
+      Name "CISC181":
+      [36m<td />[39m
+
+      Name "Introduction to Computer Science II":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "CISC108":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      Name "CISC220":
+      [36m<td />[39m
+
+      Name "Data Structures":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "CISC210":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Courses":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Semester":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<div>[39m
+            [36m<h3>[39m
+              [0mSemester Name: Fall 2023[0m
+            [36m</h3>[39m
+          [36m</div>[39m
+          [36m<table[39m
+            [33mclass[39m=[32m"table table-hover table-dark"[39m
+          [36m>[39m
+            [36m<thead>[39m
+              [36m<tr>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mCourse Code[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mCourse Title[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mCredits: [0m
+                  [0m6[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mPrerequisites[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mRemove Class[0m
+                [36m</th>[39m
+                [36m<th[39m
+                  [33mscope[39m=[32m"col"[39m
+                [36m>[39m
+                  [0mEdit Course[0m
+                [36m</th>[39m
+              [36m</tr>[39m
+            [36m</thead>[39m
+            [36m<tbody>[39m
+              [36m<tr[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<td>[39m
+                  [0mCISC181[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [0mIntroduction to Computer Science II[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [0m3[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [0mCISC108[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mRemove Class[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mEdit Course[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</td>[39m
+              [36m</tr>[39m
+              [36m<tr[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<td>[39m
+                  [0mCISC220[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [0mData Structures[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [0m3[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [0mCISC210[0m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mRemove Class[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</td>[39m
+                [36m<td>[39m
+                  [36m<div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mEdit Course[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</td>[39m
+              [36m</tr>[39m
+            [36m</tbody>[39m
+          [36m</table>[39m
+          [36m<div>[39m
+            [0m [0m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mClear Courses[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-outline-danger"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mClear Semester[0m
+            [36m</button>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      52 |     });
+      53 |     test("SemesterView renders a heading with the season of the semester.", () => {
+    > 54 |         screen.getByRole("heading", { name: semesterExample.season });
+         |                ^
+      55 |     });
+      56 |
+      57 |     test("ClearSemester is called after clicking button, and the semester is cleared.", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/semester/SemesterView.test.tsx:54:16)
+
   ● SemesterView › ClearCourses is called after clicking button.
 
     expect(element).not.toBeInTheDocument()
@@ -65,9 +377,936 @@ FAIL src/semester/SemesterView.test.tsx
       at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
 
 PASS src/FilteringSearch/FilteringSearch.test.tsx
+FAIL src/welcome.test.tsx
+  ● Test suite failed to run
+
+    ReferenceError: TextDecoder is not defined
+
+      1 | // Import the functions you need from the SDKs you need
+      2 | import { initializeApp } from "firebase/app";
+    > 3 | import { getAuth } from "firebase/auth";
+        | ^
+      4 | import { getDatabase } from "firebase/database";
+      5 | // TODO: Add SDKs for Firebase products that you want to use
+      6 | // https://firebase.google.com/docs/web/setup#available-libraries
+
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/decodeText.js:4:21)
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/parseParams.js:4:20)
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/types/multipart.js:15:21)
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/main.js:7:25)
+      at Object.<anonymous> (node_modules/undici/lib/fetch/body.js:3:16)
+      at Object.<anonymous> (node_modules/undici/lib/fetch/response.js:4:47)
+      at Object.<anonymous> (node_modules/undici/index.js:117:29)
+      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-58078139.js:7:14)
+      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/index.js:5:12)
+      at Object.<anonymous> (node_modules/firebase/auth/dist/index.cjs.js:5:12)
+      at Object.<anonymous> (src/firebase.ts:3:1)
+      at Object.<anonymous> (src/Signin.tsx:2:1)
+      at Object.<anonymous> (src/welcome.tsx:6:1)
+      at Object.<anonymous> (src/App.tsx:6:1)
+      at Object.<anonymous> (src/welcome.test.tsx:4:1)
+
 PASS src/SemesterModal/addSemesterModal.test.tsx
-PASS src/semester/SemesterTable.test.tsx
-FAIL src/SideNav/SideNav2.test.tsx (7.271 s)
+FAIL src/App.test.tsx
+  ● Test suite failed to run
+
+    ReferenceError: TextDecoder is not defined
+
+      1 | // Import the functions you need from the SDKs you need
+      2 | import { initializeApp } from "firebase/app";
+    > 3 | import { getAuth } from "firebase/auth";
+        | ^
+      4 | import { getDatabase } from "firebase/database";
+      5 | // TODO: Add SDKs for Firebase products that you want to use
+      6 | // https://firebase.google.com/docs/web/setup#available-libraries
+
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/decodeText.js:4:21)
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/parseParams.js:4:20)
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/types/multipart.js:15:21)
+      at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/main.js:7:25)
+      at Object.<anonymous> (node_modules/undici/lib/fetch/body.js:3:16)
+      at Object.<anonymous> (node_modules/undici/lib/fetch/response.js:4:47)
+      at Object.<anonymous> (node_modules/undici/index.js:117:29)
+      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-58078139.js:7:14)
+      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/index.js:5:12)
+      at Object.<anonymous> (node_modules/firebase/auth/dist/index.cjs.js:5:12)
+      at Object.<anonymous> (src/firebase.ts:3:1)
+      at Object.<anonymous> (src/Signin.tsx:2:1)
+      at Object.<anonymous> (src/welcome.tsx:6:1)
+      at Object.<anonymous> (src/App.tsx:6:1)
+      at Object.<anonymous> (src/App.test.tsx:3:1)
+
+FAIL src/semester/SemesterTable.test.tsx
+  ● SemesterTable › SemesterTable renders a heading to test to make sure it is properly rendering.
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "heading" and name "Semester Schedule"
+
+    Here are the accessible roles:
+
+      heading:
+
+      Name "Plan Name: dildo":
+      [36m<h2 />[39m
+
+      Name "Semester Name: Fall 2023":
+      [36m<h3 />[39m
+
+      Name "Semester Name: Spring 2023":
+      [36m<h3 />[39m
+
+      Name "Semester Name: Winter 2023":
+      [36m<h3 />[39m
+
+      --------------------------------------------------
+      table:
+
+      Name "":
+      [36m<table[39m
+        [33mclass[39m=[32m"table table-hover table-dark"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<table[39m
+        [33mclass[39m=[32m"table table-hover table-dark"[39m
+      [36m/>[39m
+
+      Name "":
+      [36m<table[39m
+        [33mclass[39m=[32m"table table-hover table-dark"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      rowgroup:
+
+      Name "":
+      [36m<thead />[39m
+
+      Name "":
+      [36m<tbody />[39m
+
+      Name "":
+      [36m<thead />[39m
+
+      Name "":
+      [36m<tbody />[39m
+
+      Name "":
+      [36m<thead />[39m
+
+      Name "":
+      [36m<tbody />[39m
+
+      --------------------------------------------------
+      row:
+
+      Name "Course Code Course Title Credits: 6 Prerequisites Remove Class Edit Course":
+      [36m<tr />[39m
+
+      Name "CISC108 Introduction to Computer Science I 3 None Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      Name "CISC181 Introduction to Computer Science II 3 CISC108 Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      Name "Course Code Course Title Credits: 6 Prerequisites Remove Class Edit Course":
+      [36m<tr />[39m
+
+      Name "CISC210 Introduction to Systems Programming 3 CISC108 Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      Name "CISC220 Data Structures 3 CISC210 Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      Name "Course Code Course Title Credits: 6 Prerequisites Remove Class Edit Course":
+      [36m<tr />[39m
+
+      Name "CISC108 Introduction to Computer Science I 3 None Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      Name "CISC181 Introduction to Computer Science II 3 CISC108 Remove Class Edit Course":
+      [36m<tr[39m
+        [33mdraggable[39m=[32m"true"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      columnheader:
+
+      Name "Course Code":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Course Title":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Credits: 6":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Prerequisites":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Course Code":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Course Title":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Credits: 6":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Prerequisites":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Course Code":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Course Title":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Credits: 6":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Prerequisites":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<th[39m
+        [33mscope[39m=[32m"col"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      cell:
+
+      Name "CISC108":
+      [36m<td />[39m
+
+      Name "Introduction to Computer Science I":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "None":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      Name "CISC181":
+      [36m<td />[39m
+
+      Name "Introduction to Computer Science II":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "CISC108":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      Name "CISC210":
+      [36m<td />[39m
+
+      Name "Introduction to Systems Programming":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "CISC108":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      Name "CISC220":
+      [36m<td />[39m
+
+      Name "Data Structures":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "CISC210":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      Name "CISC108":
+      [36m<td />[39m
+
+      Name "Introduction to Computer Science I":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "None":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      Name "CISC181":
+      [36m<td />[39m
+
+      Name "Introduction to Computer Science II":
+      [36m<td />[39m
+
+      Name "3":
+      [36m<td />[39m
+
+      Name "CISC108":
+      [36m<td />[39m
+
+      Name "Remove Class":
+      [36m<td />[39m
+
+      Name "Edit Course":
+      [36m<td />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Courses":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Semester":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Courses":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Semester":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Remove Class":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Edit Course":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Courses":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Clear Semester":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-outline-danger"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"semesterTable"[39m
+        [36m>[39m
+          [36m<h2>[39m
+            [0mPlan Name: dildo[0m
+          [36m</h2>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<h3>[39m
+                [0mSemester Name: Fall 2023[0m
+              [36m</h3>[39m
+            [36m</div>[39m
+            [36m<table[39m
+              [33mclass[39m=[32m"table table-hover table-dark"[39m
+            [36m>[39m
+              [36m<thead>[39m
+                [36m<tr>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCourse Code[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCourse Title[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCredits: [0m
+                    [0m6[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mPrerequisites[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mRemove Class[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mEdit Course[0m
+                  [36m</th>[39m
+                [36m</tr>[39m
+              [36m</thead>[39m
+              [36m<tbody>[39m
+                [36m<tr[39m
+                  [33mdraggable[39m=[32m"true"[39m
+                [36m>[39m
+                  [36m<td>[39m
+                    [0mCISC108[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mIntroduction to Computer Science I[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0m3[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mNone[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Course[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                [36m</tr>[39m
+                [36m<tr[39m
+                  [33mdraggable[39m=[32m"true"[39m
+                [36m>[39m
+                  [36m<td>[39m
+                    [0mCISC181[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mIntroduction to Computer Science II[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0m3[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mCISC108[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Course[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                [36m</tr>[39m
+              [36m</tbody>[39m
+            [36m</table>[39m
+            [36m<div>[39m
+              [0m [0m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Courses[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Semester[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<h3>[39m
+                [0mSemester Name: Spring 2023[0m
+              [36m</h3>[39m
+            [36m</div>[39m
+            [36m<table[39m
+              [33mclass[39m=[32m"table table-hover table-dark"[39m
+            [36m>[39m
+              [36m<thead>[39m
+                [36m<tr>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCourse Code[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCourse Title[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCredits: [0m
+                    [0m6[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mPrerequisites[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mRemove Class[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mEdit Course[0m
+                  [36m</th>[39m
+                [36m</tr>[39m
+              [36m</thead>[39m
+              [36m<tbody>[39m
+                [36m<tr[39m
+                  [33mdraggable[39m=[32m"true"[39m
+                [36m>[39m
+                  [36m<td>[39m
+                    [0mCISC210[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mIntroduction to Systems Programming[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0m3[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mCISC108[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Course[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                [36m</tr>[39m
+                [36m<tr[39m
+                  [33mdraggable[39m=[32m"true"[39m
+                [36m>[39m
+                  [36m<td>[39m
+                    [0mCISC220[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mData Structures[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0m3[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mCISC210[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Course[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                [36m</tr>[39m
+              [36m</tbody>[39m
+            [36m</table>[39m
+            [36m<div>[39m
+              [0m [0m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Courses[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Semester[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<h3>[39m
+                [0mSemester Name: Winter 2023[0m
+              [36m</h3>[39m
+            [36m</div>[39m
+            [36m<table[39m
+              [33mclass[39m=[32m"table table-hover table-dark"[39m
+            [36m>[39m
+              [36m<thead>[39m
+                [36m<tr>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCourse Code[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCourse Title[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mCredits: [0m
+                    [0m6[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mPrerequisites[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mRemove Class[0m
+                  [36m</th>[39m
+                  [36m<th[39m
+                    [33mscope[39m=[32m"col"[39m
+                  [36m>[39m
+                    [0mEdit Course[0m
+                  [36m</th>[39m
+                [36m</tr>[39m
+              [36m</thead>[39m
+              [36m<tbody>[39m
+                [36m<tr[39m
+                  [33mdraggable[39m=[32m"true"[39m
+                [36m>[39m
+                  [36m<td>[39m
+                    [0mCISC108[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mIntroduction to Computer Science I[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0m3[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mNone[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Course[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                [36m</tr>[39m
+                [36m<tr[39m
+                  [33mdraggable[39m=[32m"true"[39m
+                [36m>[39m
+                  [36m<td>[39m
+                    [0mCISC181[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mIntroduction to Computer Science II[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0m3[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [0mCISC108[0m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mRemove Class[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                  [36m<td>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEdit Course[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</td>[39m
+                [36m</tr>[39m
+              [36m</tbody>[39m
+            [36m</table>[39m
+            [36m<div>[39m
+              [0m [0m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Courses[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-outline-danger"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mClear Semester[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      31 |     });
+      32 |     test("SemesterTable renders a heading to test to make sure it is properly rendering.", () => {
+    > 33 |         screen.getByRole("heading", { name: "Semester Schedule" });
+         |                ^
+      34 |     });
+      35 |     test("SemesterTable renders all the seasons, and classes for the file", () => {
+      36 |         for (let i = 0; i < semesterExamples.length; i++) {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/semester/SemesterTable.test.tsx:33:16)
+
+  ● SemesterTable › SemesterTable renders all the seasons, and classes for the file
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+      37 |             expect(
+      38 |                 screen.queryByText(semesterExamples[i].season)
+    > 39 |             ).toBeInTheDocument();
+         |               ^
+      40 |         }
+      41 |     });
+      42 | });
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:386:30)
+      at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
+      at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
+
+FAIL src/SideNav/SideNav2.test.tsx (6.668 s)
   ● FilteringSearchTests › render the search box
 
     TestingLibraryElementError: Unable to find an element with the text: /Add Degree Plan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -268,855 +1507,48 @@ FAIL src/SideNav/SideNav2.test.tsx (7.271 s)
       at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
       at Object.<anonymous> (src/SideNav/SideNav2.test.tsx:35:23)
 
-FAIL src/welcome.test.tsx (8.652 s)
-  ● Console
-
-    console.log
-      Database {
-        _repoInternal: Repo {
-          repoInfo_: RepoInfo {
-            secure: true,
-            namespace: 'cisc2-7ec71-default-rtdb',
-            webSocketOnly: false,
-            nodeAdmin: false,
-            persistenceKey: '',
-            includeNamespaceInQueryParams: false,
-            isUsingEmulator: false,
-            _host: 'cisc2-7ec71-default-rtdb.firebaseio.com',
-            _domain: 'firebaseio.com',
-            internalHost: 'cisc2-7ec71-default-rtdb.firebaseio.com'
-          },
-          forceRestClient_: false,
-          authTokenProvider_: FirebaseAuthTokenProvider {
-            appName_: '[DEFAULT]',
-            firebaseOptions_: [Object],
-            authProvider_: [Provider],
-            auth_: [AuthInterop]
-          },
-          appCheckProvider_: AppCheckTokenProvider {
-            appName_: '[DEFAULT]',
-            appCheckProvider: [Provider],
-            appCheck: null
-          },
-          dataUpdateCount: 0,
-          statsListener_: null,
-          eventQueue_: EventQueue { eventLists_: [], recursionDepth_: 0 },
-          nextWriteId_: 1,
-          interceptServerDataCallback_: null,
-          onDisconnect_: { value: null, children: Map(0) {} },
-          transactionQueueTree_: Tree { name: '', parent: null, node: [Object] },
-          persistentConnection_: null,
-          key: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-        },
-        app: FirebaseAppImpl {
-          _isDeleted: false,
-          _options: {
-            apiKey: 'AIzaSyDSRgKf95i8A7xcCiBS_8k35RPuJLhgEs8',
-            authDomain: 'cisc2-7ec71.firebaseapp.com',
-            projectId: 'cisc2-7ec71',
-            storageBucket: 'cisc2-7ec71.appspot.com',
-            messagingSenderId: '1027003655179',
-            appId: '1:1027003655179:web:47cfa65529f7aaaa2e530e',
-            measurementId: 'G-97F55P83F1',
-            databaseURL: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-          },
-          _config: { name: '[DEFAULT]', automaticDataCollectionEnabled: false },
-          _name: '[DEFAULT]',
-          _automaticDataCollectionEnabled: false,
-          _container: ComponentContainer { name: '[DEFAULT]', providers: [Map] }
-        },
-        type: 'database',
-        _instanceStarted: false
-      }
-
-      at src/AuthDetails.tsx:38:17
-
-    console.log
-      sike i lied
-
-      at updatingPlans (src/App.tsx:136:21)
-
-    console.log
-      Database {
-        _repoInternal: Repo {
-          repoInfo_: RepoInfo {
-            secure: true,
-            namespace: 'cisc2-7ec71-default-rtdb',
-            webSocketOnly: false,
-            nodeAdmin: false,
-            persistenceKey: '',
-            includeNamespaceInQueryParams: false,
-            isUsingEmulator: false,
-            _host: 'cisc2-7ec71-default-rtdb.firebaseio.com',
-            _domain: 'firebaseio.com',
-            internalHost: 'cisc2-7ec71-default-rtdb.firebaseio.com'
-          },
-          forceRestClient_: false,
-          authTokenProvider_: FirebaseAuthTokenProvider {
-            appName_: '[DEFAULT]',
-            firebaseOptions_: [Object],
-            authProvider_: [Provider],
-            auth_: [AuthInterop]
-          },
-          appCheckProvider_: AppCheckTokenProvider {
-            appName_: '[DEFAULT]',
-            appCheckProvider: [Provider],
-            appCheck: null
-          },
-          dataUpdateCount: 0,
-          statsListener_: null,
-          eventQueue_: EventQueue { eventLists_: [], recursionDepth_: 0 },
-          nextWriteId_: 1,
-          interceptServerDataCallback_: null,
-          onDisconnect_: { value: null, children: Map(0) {} },
-          transactionQueueTree_: Tree { name: '', parent: null, node: [Object] },
-          persistentConnection_: null,
-          key: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-        },
-        app: FirebaseAppImpl {
-          _isDeleted: false,
-          _options: {
-            apiKey: 'AIzaSyDSRgKf95i8A7xcCiBS_8k35RPuJLhgEs8',
-            authDomain: 'cisc2-7ec71.firebaseapp.com',
-            projectId: 'cisc2-7ec71',
-            storageBucket: 'cisc2-7ec71.appspot.com',
-            messagingSenderId: '1027003655179',
-            appId: '1:1027003655179:web:47cfa65529f7aaaa2e530e',
-            measurementId: 'G-97F55P83F1',
-            databaseURL: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-          },
-          _config: { name: '[DEFAULT]', automaticDataCollectionEnabled: false },
-          _name: '[DEFAULT]',
-          _automaticDataCollectionEnabled: false,
-          _container: ComponentContainer { name: '[DEFAULT]', providers: [Map] }
-        },
-        type: 'database',
-        _instanceStarted: false
-      }
-
-      at src/AuthDetails.tsx:38:17
-
-    console.log
-      sike i lied
-
-      at updatingPlans (src/App.tsx:136:21)
-
-    console.log
-      Database {
-        _repoInternal: Repo {
-          repoInfo_: RepoInfo {
-            secure: true,
-            namespace: 'cisc2-7ec71-default-rtdb',
-            webSocketOnly: false,
-            nodeAdmin: false,
-            persistenceKey: '',
-            includeNamespaceInQueryParams: false,
-            isUsingEmulator: false,
-            _host: 'cisc2-7ec71-default-rtdb.firebaseio.com',
-            _domain: 'firebaseio.com',
-            internalHost: 'cisc2-7ec71-default-rtdb.firebaseio.com'
-          },
-          forceRestClient_: false,
-          authTokenProvider_: FirebaseAuthTokenProvider {
-            appName_: '[DEFAULT]',
-            firebaseOptions_: [Object],
-            authProvider_: [Provider],
-            auth_: [AuthInterop]
-          },
-          appCheckProvider_: AppCheckTokenProvider {
-            appName_: '[DEFAULT]',
-            appCheckProvider: [Provider],
-            appCheck: null
-          },
-          dataUpdateCount: 0,
-          statsListener_: null,
-          eventQueue_: EventQueue { eventLists_: [], recursionDepth_: 0 },
-          nextWriteId_: 1,
-          interceptServerDataCallback_: null,
-          onDisconnect_: { value: null, children: Map(0) {} },
-          transactionQueueTree_: Tree { name: '', parent: null, node: [Object] },
-          persistentConnection_: null,
-          key: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-        },
-        app: FirebaseAppImpl {
-          _isDeleted: false,
-          _options: {
-            apiKey: 'AIzaSyDSRgKf95i8A7xcCiBS_8k35RPuJLhgEs8',
-            authDomain: 'cisc2-7ec71.firebaseapp.com',
-            projectId: 'cisc2-7ec71',
-            storageBucket: 'cisc2-7ec71.appspot.com',
-            messagingSenderId: '1027003655179',
-            appId: '1:1027003655179:web:47cfa65529f7aaaa2e530e',
-            measurementId: 'G-97F55P83F1',
-            databaseURL: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-          },
-          _config: { name: '[DEFAULT]', automaticDataCollectionEnabled: false },
-          _name: '[DEFAULT]',
-          _automaticDataCollectionEnabled: false,
-          _container: ComponentContainer { name: '[DEFAULT]', providers: [Map] }
-        },
-        type: 'database',
-        _instanceStarted: false
-      }
-
-      at src/AuthDetails.tsx:38:17
-
-    console.log
-      sike i lied
-
-      at updatingPlans (src/App.tsx:136:21)
-
-    console.log
-      Database {
-        _repoInternal: Repo {
-          repoInfo_: RepoInfo {
-            secure: true,
-            namespace: 'cisc2-7ec71-default-rtdb',
-            webSocketOnly: false,
-            nodeAdmin: false,
-            persistenceKey: '',
-            includeNamespaceInQueryParams: false,
-            isUsingEmulator: false,
-            _host: 'cisc2-7ec71-default-rtdb.firebaseio.com',
-            _domain: 'firebaseio.com',
-            internalHost: 'cisc2-7ec71-default-rtdb.firebaseio.com'
-          },
-          forceRestClient_: false,
-          authTokenProvider_: FirebaseAuthTokenProvider {
-            appName_: '[DEFAULT]',
-            firebaseOptions_: [Object],
-            authProvider_: [Provider],
-            auth_: [AuthInterop]
-          },
-          appCheckProvider_: AppCheckTokenProvider {
-            appName_: '[DEFAULT]',
-            appCheckProvider: [Provider],
-            appCheck: null
-          },
-          dataUpdateCount: 0,
-          statsListener_: null,
-          eventQueue_: EventQueue { eventLists_: [], recursionDepth_: 0 },
-          nextWriteId_: 1,
-          interceptServerDataCallback_: null,
-          onDisconnect_: { value: null, children: Map(0) {} },
-          transactionQueueTree_: Tree { name: '', parent: null, node: [Object] },
-          persistentConnection_: null,
-          key: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-        },
-        app: FirebaseAppImpl {
-          _isDeleted: false,
-          _options: {
-            apiKey: 'AIzaSyDSRgKf95i8A7xcCiBS_8k35RPuJLhgEs8',
-            authDomain: 'cisc2-7ec71.firebaseapp.com',
-            projectId: 'cisc2-7ec71',
-            storageBucket: 'cisc2-7ec71.appspot.com',
-            messagingSenderId: '1027003655179',
-            appId: '1:1027003655179:web:47cfa65529f7aaaa2e530e',
-            measurementId: 'G-97F55P83F1',
-            databaseURL: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-          },
-          _config: { name: '[DEFAULT]', automaticDataCollectionEnabled: false },
-          _name: '[DEFAULT]',
-          _automaticDataCollectionEnabled: false,
-          _container: ComponentContainer { name: '[DEFAULT]', providers: [Map] }
-        },
-        type: 'database',
-        _instanceStarted: false
-      }
-
-      at src/AuthDetails.tsx:38:17
-
-    console.log
-      sike i lied
-
-      at updatingPlans (src/App.tsx:136:21)
-
-  ● Welcome screen test › Check for enter name textbox
-
-    TestingLibraryElementError: Found multiple elements with the role "textbox"
-
-    Here are the matching elements:
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<input[39m
-      [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-      [33mtype[39m=[32m"email"[39m
-      [33mvalue[39m=[32m""[39m
-    [36m/>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<input[39m
-      [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-      [33mtype[39m=[32m"email"[39m
-      [33mvalue[39m=[32m""[39m
-    [36m/>[39m
-
-    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Delaware-Blue-Hens-Logo.png"[39m
-            [36m/>[39m
-            [36m<h1[39m
-              [33mclass[39m=[32m"Title"[39m
-            [36m>[39m
-              [0mUdel CS Course Scheduler[0m
-            [36m</h1>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Udel-Crest.png"[39m
-            [36m/>[39m
-          [36m</header>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
-          [36m>[39m
-            [36m<div>[39m
-              [36m<p>[39m
-                [0mSigned Out[0m
-              [36m</p>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"WelcomeMessage"[39m
-              [33mstyle[39m=[32m"margin-top: 1.5%;"[39m
-            [36m>[39m
-              [36m<h5>[39m
-                [0mWelcome to the University of Delaware Course Scheduler![0m
-              [36m</h5>[39m
-              [36m<h6>[39m
-                [0mHere you can view available courses, create mock semester plans, and submit your desired course plans.[0m
-              [36m</h6>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"sign-in-container"[39m
-              [36m>[39m
-                [36m<form>[39m
-                  [36m<h1>[39m
-                    [0mLog In to your Account[0m
-                  [36m</h1>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-                    [33mtype[39m=[32m"email"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your password"[39m
-                    [33mtype[39m=[32m"password"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"submit"[39m
-                  [36m>[39m
-                    [0mLog In[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"sign-up-container"[39m
-              [36m>[39m
-                [36m<form>[39m
-                  [36m<h1>[39m
-                    [0mCreate Account[0m
-                  [36m</h1>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-                    [33mtype[39m=[32m"email"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your password"[39m
-                    [33mtype[39m=[32m"password"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"submit"[39m
-                  [36m>[39m
-                    [0mSign Up[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"UD Fall Scene"[39m
-              [33mid[39m=[32m"picture"[39m
-              [33msrc[39m=[32m"UDFallScene.png"[39m
-            [36m/>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      15 |     test("Check for enter name textbox", () => {
-      16 |         render(<App />);
-    > 17 |         const textBox = screen.getByRole("textbox");
-         |                                ^
-      18 |         expect(textBox).toBeInTheDocument();
-      19 |     });
-      20 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
-      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
-      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/welcome.test.tsx:17:32)
-
-  ● Welcome screen test › Check for enter name OK button
-
-    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/OK/i`
-
-    Here are the accessible roles:
-
-      banner:
-
-      Name "":
-      [36m<header[39m
-        [33mclass[39m=[32m"App-header"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      img:
-
-      Name "":
-      [36m<img[39m
-        [33mclass[39m=[32m"logo"[39m
-        [33msrc[39m=[32m"Delaware-Blue-Hens-Logo.png"[39m
-      [36m/>[39m
-
-      Name "":
-      [36m<img[39m
-        [33mclass[39m=[32m"logo"[39m
-        [33msrc[39m=[32m"Udel-Crest.png"[39m
-      [36m/>[39m
-
-      Name "UD Fall Scene":
-      [36m<img[39m
-        [33malt[39m=[32m"UD Fall Scene"[39m
-        [33mid[39m=[32m"picture"[39m
-        [33msrc[39m=[32m"UDFallScene.png"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      heading:
-
-      Name "Udel CS Course Scheduler":
-      [36m<h1[39m
-        [33mclass[39m=[32m"Title"[39m
-      [36m/>[39m
-
-      Name "Welcome to the University of Delaware Course Scheduler!":
-      [36m<h5 />[39m
-
-      Name "Here you can view available courses, create mock semester plans, and submit your desired course plans.":
-      [36m<h6 />[39m
-
-      Name "Log In to your Account":
-      [36m<h1 />[39m
-
-      Name "Create Account":
-      [36m<h1 />[39m
-
-      --------------------------------------------------
-      textbox:
-
-      Name "":
-      [36m<input[39m
-        [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-        [33mtype[39m=[32m"email"[39m
-        [33mvalue[39m=[32m""[39m
-      [36m/>[39m
-
-      Name "":
-      [36m<input[39m
-        [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-        [33mtype[39m=[32m"email"[39m
-        [33mvalue[39m=[32m""[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      button:
-
-      Name "Log In":
-      [36m<button[39m
-        [33mtype[39m=[32m"submit"[39m
-      [36m/>[39m
-
-      Name "Sign Up":
-      [36m<button[39m
-        [33mtype[39m=[32m"submit"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Delaware-Blue-Hens-Logo.png"[39m
-            [36m/>[39m
-            [36m<h1[39m
-              [33mclass[39m=[32m"Title"[39m
-            [36m>[39m
-              [0mUdel CS Course Scheduler[0m
-            [36m</h1>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Udel-Crest.png"[39m
-            [36m/>[39m
-          [36m</header>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
-          [36m>[39m
-            [36m<div>[39m
-              [36m<p>[39m
-                [0mSigned Out[0m
-              [36m</p>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"WelcomeMessage"[39m
-              [33mstyle[39m=[32m"margin-top: 1.5%;"[39m
-            [36m>[39m
-              [36m<h5>[39m
-                [0mWelcome to the University of Delaware Course Scheduler![0m
-              [36m</h5>[39m
-              [36m<h6>[39m
-                [0mHere you can view available courses, create mock semester plans, and submit your desired course plans.[0m
-              [36m</h6>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"sign-in-container"[39m
-              [36m>[39m
-                [36m<form>[39m
-                  [36m<h1>[39m
-                    [0mLog In to your Account[0m
-                  [36m</h1>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-                    [33mtype[39m=[32m"email"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your password"[39m
-                    [33mtype[39m=[32m"password"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"submit"[39m
-                  [36m>[39m
-                    [0mLog In[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"sign-up-container"[39m
-              [36m>[39m
-                [36m<form>[39m
-                  [36m<h1>[39m
-                    [0mCreate Account[0m
-                  [36m</h1>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-                    [33mtype[39m=[32m"email"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your password"[39m
-                    [33mtype[39m=[32m"password"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"submit"[39m
-                  [36m>[39m
-                    [0mSign Up[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"UD Fall Scene"[39m
-              [33mid[39m=[32m"picture"[39m
-              [33msrc[39m=[32m"UDFallScene.png"[39m
-            [36m/>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      21 |     test("Check for enter name OK button", () => {
-      22 |         render(<App />);
-    > 23 |         const okButton = screen.getByRole("button", { name: /OK/i });
-         |                                 ^
-      24 |         expect(okButton).toBeInTheDocument();
-      25 |     });
-      26 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/welcome.test.tsx:23:33)
-
-  ● Welcome screen test › Check that empty box raises error message
-
-    TestingLibraryElementError: Found multiple elements with the role "button"
-
-    Here are the matching elements:
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<button[39m
-      [33mtype[39m=[32m"submit"[39m
-    [36m>[39m
-      [0mLog In[0m
-    [36m</button>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<button[39m
-      [33mtype[39m=[32m"submit"[39m
-    [36m>[39m
-      [0mSign Up[0m
-    [36m</button>[39m
-
-    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Delaware-Blue-Hens-Logo.png"[39m
-            [36m/>[39m
-            [36m<h1[39m
-              [33mclass[39m=[32m"Title"[39m
-            [36m>[39m
-              [0mUdel CS Course Scheduler[0m
-            [36m</h1>[39m
-            [36m<img[39m
-              [33mclass[39m=[32m"logo"[39m
-              [33msrc[39m=[32m"Udel-Crest.png"[39m
-            [36m/>[39m
-          [36m</header>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
-          [36m>[39m
-            [36m<div>[39m
-              [36m<p>[39m
-                [0mSigned Out[0m
-              [36m</p>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"WelcomeMessage"[39m
-              [33mstyle[39m=[32m"margin-top: 1.5%;"[39m
-            [36m>[39m
-              [36m<h5>[39m
-                [0mWelcome to the University of Delaware Course Scheduler![0m
-              [36m</h5>[39m
-              [36m<h6>[39m
-                [0mHere you can view available courses, create mock semester plans, and submit your desired course plans.[0m
-              [36m</h6>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"sign-in-container"[39m
-              [36m>[39m
-                [36m<form>[39m
-                  [36m<h1>[39m
-                    [0mLog In to your Account[0m
-                  [36m</h1>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-                    [33mtype[39m=[32m"email"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your password"[39m
-                    [33mtype[39m=[32m"password"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"submit"[39m
-                  [36m>[39m
-                    [0mLog In[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"sign-up-container"[39m
-              [36m>[39m
-                [36m<form>[39m
-                  [36m<h1>[39m
-                    [0mCreate Account[0m
-                  [36m</h1>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your Udel email"[39m
-                    [33mtype[39m=[32m"email"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<input[39m
-                    [33mplaceholder[39m=[32m"Enter your password"[39m
-                    [33mtype[39m=[32m"password"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"submit"[39m
-                  [36m>[39m
-                    [0mSign Up[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"UD Fall Scene"[39m
-              [33mid[39m=[32m"picture"[39m
-              [33msrc[39m=[32m"UDFallScene.png"[39m
-            [36m/>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      32 |             // eslint-disable-next-line @typescript-eslint/no-empty-function
-      33 |             .mockImplementation(() => {});
-    > 34 |         const okButton = screen.getByRole("button");
-         |                                 ^
-      35 |         userEvent.click(okButton);
-      36 |         expect(mockAlert).toHaveBeenCalledWith("Please enter a valid name.");
-      37 |         mockAlert.mockRestore();
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
-      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
-      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/welcome.test.tsx:34:33)
-
-PASS src/App.test.tsx (6.405 s)
-  ● Console
-
-    console.log
-      Database {
-        _repoInternal: Repo {
-          repoInfo_: RepoInfo {
-            secure: true,
-            namespace: 'cisc2-7ec71-default-rtdb',
-            webSocketOnly: false,
-            nodeAdmin: false,
-            persistenceKey: '',
-            includeNamespaceInQueryParams: false,
-            isUsingEmulator: false,
-            _host: 'cisc2-7ec71-default-rtdb.firebaseio.com',
-            _domain: 'firebaseio.com',
-            internalHost: 'cisc2-7ec71-default-rtdb.firebaseio.com'
-          },
-          forceRestClient_: false,
-          authTokenProvider_: FirebaseAuthTokenProvider {
-            appName_: '[DEFAULT]',
-            firebaseOptions_: [Object],
-            authProvider_: [Provider],
-            auth_: [AuthInterop]
-          },
-          appCheckProvider_: AppCheckTokenProvider {
-            appName_: '[DEFAULT]',
-            appCheckProvider: [Provider],
-            appCheck: null
-          },
-          dataUpdateCount: 0,
-          statsListener_: null,
-          eventQueue_: EventQueue { eventLists_: [], recursionDepth_: 0 },
-          nextWriteId_: 1,
-          interceptServerDataCallback_: null,
-          onDisconnect_: { value: null, children: Map(0) {} },
-          transactionQueueTree_: Tree { name: '', parent: null, node: [Object] },
-          persistentConnection_: null,
-          key: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-        },
-        app: FirebaseAppImpl {
-          _isDeleted: false,
-          _options: {
-            apiKey: 'AIzaSyDSRgKf95i8A7xcCiBS_8k35RPuJLhgEs8',
-            authDomain: 'cisc2-7ec71.firebaseapp.com',
-            projectId: 'cisc2-7ec71',
-            storageBucket: 'cisc2-7ec71.appspot.com',
-            messagingSenderId: '1027003655179',
-            appId: '1:1027003655179:web:47cfa65529f7aaaa2e530e',
-            measurementId: 'G-97F55P83F1',
-            databaseURL: 'https://cisc2-7ec71-default-rtdb.firebaseio.com/'
-          },
-          _config: { name: '[DEFAULT]', automaticDataCollectionEnabled: false },
-          _name: '[DEFAULT]',
-          _automaticDataCollectionEnabled: false,
-          _container: ComponentContainer { name: '[DEFAULT]', providers: [Map] }
-        },
-        type: 'database',
-        _instanceStarted: false
-      }
-
-      at src/AuthDetails.tsx:38:17
-
-    console.log
-      sike i lied
-
-      at updatingPlans (src/App.tsx:136:21)
-
----------------------------|---------|----------|---------|---------|-----------------------------------------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                   
----------------------------|---------|----------|---------|---------|-----------------------------------------------------
-All files                  |   30.06 |     14.6 |   19.68 |   30.17 |                                                     
- src                       |   57.14 |    19.23 |   34.04 |   57.26 |                                                     
-  App.tsx                  |   59.32 |    11.11 |   30.43 |   59.64 | 37,40,44,48,52,56,60,64,68,79-86,94-100,128,138-145 
-  AuthDetails.tsx          |    61.9 |       50 |    62.5 |    61.9 | 23-25,42-48                                         
-  SignUp.tsx               |   45.45 |      100 |   16.66 |   45.45 | 10-16,28-34                                         
-  Signin.tsx               |   45.45 |      100 |   16.66 |   45.45 | 10-16,28-34                                         
-  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 15-23                                               
-  databaseconfig.tsx       |       0 |      100 |     100 |       0 | 4-11                                                
-  firebase.ts              |     100 |      100 |     100 |     100 |                                                     
-  welcome.tsx              |   85.71 |       50 |   66.66 |   85.71 | 19                                                  
- src/Audit                 |    4.91 |        0 |       0 |    4.91 |                                                     
-  ChosenMajor.tsx          |    8.82 |        0 |       0 |    8.82 | 57-137                                              
-  SeeAuditPage.tsx         |       0 |        0 |       0 |       0 | 24-134                                              
- src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                                     
-  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,56                                               
- src/Interface             |       0 |        0 |       0 |       0 |                                                     
-  Plan.tsx                 |       0 |        0 |       0 |       0 |                                                     
-  classes.tsx              |       0 |        0 |       0 |       0 |                                                     
-  semester.tsx             |       0 |        0 |       0 |       0 |                                                     
- src/PlanView              |       0 |        0 |       0 |       0 |                                                     
-  DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 16-92                                               
-  PlanView.tsx             |       0 |      100 |       0 |       0 | 20-67                                               
- src/SemesterModal         |   23.07 |       25 |    7.69 |   23.07 |                                                     
-  addSemesterModal.tsx     |   23.07 |       25 |    7.69 |   23.07 | 27-28,32-38,42,46-95,138-173                        
- src/SideNav               |   11.11 |      100 |    12.5 |   11.11 |                                                     
-  SideNav2.tsx             |   11.11 |      100 |    12.5 |   11.11 | 34-64                                               
- src/addPlan               |       0 |        0 |       0 |       0 |                                                     
-  AddDeletePlan.tsx        |       0 |        0 |       0 |       0 | 17-143                                              
- src/semester              |   15.87 |       25 |   20.68 |   16.66 |                                                     
-  SemesterTable.tsx        |     9.8 |        0 |      10 |   10.41 | 67-104,127-166,173-174,189-190                      
-  SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 36-38,42-43,69-88                                   
- src/semester-modification |   34.28 |    18.75 |   23.07 |   34.28 |                                                     
-  AddClass.tsx             |     100 |      100 |     100 |     100 |                                                     
-  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 21-154                                              
-  EditClassInfoModal.tsx   |   23.52 |    21.42 |    6.25 |   23.52 | 29-32,35-36,39-40,48-118,163-182                    
-  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                                     
----------------------------|---------|----------|---------|---------|-----------------------------------------------------
-
-Test Suites: 4 failed, 5 passed, 9 total
-Tests:       7 failed, 17 passed, 24 total
+---------------------------|---------|----------|---------|---------|----------------------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
+---------------------------|---------|----------|---------|---------|----------------------------------
+All files                  |   14.83 |     8.24 |   11.39 |   14.98 |                                  
+ src                       |       0 |        0 |       0 |       0 |                                  
+  App.tsx                  |       0 |        0 |       0 |       0 | 25-143                           
+  AuthDetails.tsx          |       0 |        0 |       0 |       0 | 13-51                            
+  SignUp.tsx               |       0 |      100 |       0 |       0 | 5-34                             
+  Signin.tsx               |       0 |      100 |       0 |       0 | 5-34                             
+  SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 17-26                            
+  databaseconfig.tsx       |       0 |      100 |     100 |       0 | 4-11                             
+  firebase.ts              |       0 |      100 |     100 |       0 | 10-24                            
+  welcome.tsx              |       0 |        0 |       0 |       0 | 15-28                            
+ src/Audit                 |       0 |        0 |       0 |       0 |                                  
+  ChosenMajor.tsx          |       0 |        0 |       0 |       0 | 6-137                            
+  SeeAuditPage.tsx         |       0 |        0 |       0 |       0 | 24-134                           
+ src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                  
+  FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,56                            
+ src/Interface             |       0 |        0 |       0 |       0 |                                  
+  Plan.tsx                 |       0 |        0 |       0 |       0 |                                  
+  classes.tsx              |       0 |        0 |       0 |       0 |                                  
+  semester.tsx             |       0 |        0 |       0 |       0 |                                  
+ src/PlanView              |       0 |        0 |       0 |       0 |                                  
+  DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 16-92                            
+  PlanView.tsx             |       0 |        0 |       0 |       0 | 22-101                           
+ src/SemesterModal         |   23.07 |       25 |    7.69 |   23.07 |                                  
+  addSemesterModal.tsx     |   23.07 |       25 |    7.69 |   23.07 | 27-28,32-38,42,46-95,138-173     
+ src/SideNav               |   11.11 |      100 |    12.5 |   11.11 |                                  
+  SideNav2.tsx             |   11.11 |      100 |    12.5 |   11.11 | 34-64                            
+ src/addPlan               |       0 |        0 |       0 |       0 |                                  
+  AddDeletePlan.tsx        |       0 |        0 |       0 |       0 | 22-164                           
+ src/semester              |   15.87 |       25 |   20.68 |   16.66 |                                  
+  SemesterTable.tsx        |     9.8 |        0 |      10 |   10.41 | 69-106,129-168,175-176,191-192   
+  SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 36-38,42-43,69-88                
+ src/semester-modification |   34.28 |    18.75 |   23.07 |   34.28 |                                  
+  AddClass.tsx             |     100 |      100 |     100 |     100 |                                  
+  AddToSemester.tsx        |       0 |        0 |       0 |       0 | 21-154                           
+  EditClassInfoModal.tsx   |   23.52 |    21.42 |    6.25 |   23.52 | 29-32,35-36,39-40,48-118,163-182 
+  RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                  
+---------------------------|---------|----------|---------|---------|----------------------------------
+Test Suites: 6 failed, 3 passed, 9 total
+Tests:       7 failed, 12 passed, 19 total
 Snapshots:   0 total
-Time:        14.255 s
+Time:        10.991 s
 Ran all test suites.
