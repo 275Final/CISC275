@@ -11,7 +11,30 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+PASS src/semester-modification/RemoveClass.test.tsx
 FAIL src/semester-modification/AddClass.test.tsx
+  ● Console
+
+    console.log
+      false
+
+      at checkPreReqs (src/semester-modification/AddClass.tsx:57:21)
+
+    console.log
+      Does this [object Object] have all prereqs metfalse
+
+      at addClass (src/semester-modification/AddClass.tsx:66:17)
+
+    console.log
+      false
+
+      at checkPreReqs (src/semester-modification/AddClass.tsx:57:21)
+
+    console.log
+      Does this [object Object] have all prereqs metfalse
+
+      at addClass (src/semester-modification/AddClass.tsx:66:17)
+
   ● AddClass Component tests › Button adds class to semester
 
     expect(received).toContainEqual(expected) // deep equality
@@ -46,7 +69,6 @@ FAIL src/semester-modification/AddClass.test.tsx
 
       at Object.<anonymous> (src/semester-modification/AddClass.test.tsx:143:41)
 
-PASS src/semester-modification/RemoveClass.test.tsx
 FAIL src/semester/SemesterView.test.tsx
   ● SemesterView › SemesterView renders a heading with the season of the semester.
 
@@ -376,7 +398,6 @@ FAIL src/semester/SemesterView.test.tsx
 
       at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
 
-PASS src/FilteringSearch/FilteringSearch.test.tsx (5.09 s)
 FAIL src/welcome.test.tsx
   ● Test suite failed to run
 
@@ -406,6 +427,7 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (src/App.tsx:6:1)
       at Object.<anonymous> (src/welcome.test.tsx:4:1)
 
+PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
 FAIL src/App.test.tsx
   ● Test suite failed to run
@@ -1306,7 +1328,7 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
 
-FAIL src/SideNav/SideNav2.test.tsx (7.873 s)
+FAIL src/SideNav/SideNav2.test.tsx (6.749 s)
   ● FilteringSearchTests › render the search box
 
     TestingLibraryElementError: Unable to find an element with the text: /Add Degree Plan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -1441,7 +1463,7 @@ FAIL src/SideNav/SideNav2.test.tsx (7.873 s)
               [36m</div>[39m
             [36m</li>[39m
             [36m<li[39m
-              [33mclass[39m=[32m"row"[39m
+              [33mclass[39m=[32m"rowDownload"[39m
             [36m>[39m
               [36m<div[39m
                 [33mid[39m=[32m"picture"[39m
@@ -1465,7 +1487,7 @@ FAIL src/SideNav/SideNav2.test.tsx (7.873 s)
               [36m</div>[39m
             [36m</li>[39m
             [36m<li[39m
-              [33mclass[39m=[32m"row"[39m
+              [33mclass[39m=[32m"rowLogout"[39m
             [36m>[39m
               [36m<div[39m
                 [33mid[39m=[32m"picture"[39m
@@ -1510,7 +1532,7 @@ FAIL src/SideNav/SideNav2.test.tsx (7.873 s)
 ---------------------------|---------|----------|---------|---------|----------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
 ---------------------------|---------|----------|---------|---------|----------------------------------
-All files                  |   14.61 |      8.1 |   11.51 |   14.76 |                                  
+All files                  |   17.03 |     8.77 |   14.64 |   17.21 |                                  
  src                       |       0 |        0 |       0 |       0 |                                  
   App.tsx                  |       0 |        0 |       0 |       0 | 25-145                           
   AuthDetails.tsx          |       0 |        0 |       0 |       0 | 13-51                            
@@ -1541,14 +1563,14 @@ All files                  |   14.61 |      8.1 |   11.51 |   14.76 |
  src/semester              |   15.87 |       30 |   20.68 |   16.66 |                                  
   SemesterTable.tsx        |     9.8 |     12.5 |      10 |   10.41 | 69-106,129-168,175-176,191-192   
   SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 36-38,42-43,69-88                
- src/semester-modification |   33.96 |       15 |    22.5 |   33.96 |                                  
+ src/semester-modification |   41.66 |    17.39 |   34.04 |   41.66 |                                  
   AddClass.tsx             |     100 |      100 |     100 |     100 |                                  
   AddToSemester.tsx        |       0 |        0 |       0 |       0 | 23-173                           
-  EditClassInfoModal.tsx   |   23.52 |    21.42 |    6.25 |   23.52 | 29-32,35-36,39-40,48-118,163-182 
+  EditClassInfoModal.tsx   |   23.52 |    23.52 |    6.25 |   23.52 | 30-33,36-37,40-41,49-119,166-190 
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                  
 ---------------------------|---------|----------|---------|---------|----------------------------------
 Test Suites: 6 failed, 3 passed, 9 total
 Tests:       7 failed, 12 passed, 19 total
 Snapshots:   0 total
-Time:        12.766 s
+Time:        10.816 s
 Ran all test suites.
