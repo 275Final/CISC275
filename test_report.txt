@@ -74,331 +74,71 @@ FAIL src/semester/SemesterView.test.tsx
 
     TestingLibraryElementError: Unable to find an accessible element with the role "heading" and name "Fall 2023"
 
-    Here are the accessible roles:
-
-      heading:
-
-      Name "Semester Name: Fall 2023":
-      [36m<h3 />[39m
-
-      --------------------------------------------------
-      table:
-
-      Name "":
-      [36m<table[39m
-        [33mclass[39m=[32m"table table-hover table-dark"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      rowgroup:
-
-      Name "":
-      [36m<thead />[39m
-
-      Name "":
-      [36m<tbody />[39m
-
-      --------------------------------------------------
-      row:
-
-      Name "Course Code Course Title Credits: 6 Prerequisites Remove Class Edit Course":
-      [36m<tr />[39m
-
-      Name "CISC181 Introduction to Computer Science II 3 CISC108 Remove Class Edit Course":
-      [36m<tr[39m
-        [33mdraggable[39m=[32m"true"[39m
-      [36m/>[39m
-
-      Name "CISC220 Data Structures 3 CISC210 Remove Class Edit Course":
-      [36m<tr[39m
-        [33mdraggable[39m=[32m"true"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      columnheader:
-
-      Name "Course Code":
-      [36m<th[39m
-        [33mscope[39m=[32m"col"[39m
-      [36m/>[39m
-
-      Name "Course Title":
-      [36m<th[39m
-        [33mscope[39m=[32m"col"[39m
-      [36m/>[39m
-
-      Name "Credits: 6":
-      [36m<th[39m
-        [33mscope[39m=[32m"col"[39m
-      [36m/>[39m
-
-      Name "Prerequisites":
-      [36m<th[39m
-        [33mscope[39m=[32m"col"[39m
-      [36m/>[39m
-
-      Name "Remove Class":
-      [36m<th[39m
-        [33mscope[39m=[32m"col"[39m
-      [36m/>[39m
-
-      Name "Edit Course":
-      [36m<th[39m
-        [33mscope[39m=[32m"col"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      cell:
-
-      Name "CISC181":
-      [36m<td />[39m
-
-      Name "Introduction to Computer Science II":
-      [36m<td />[39m
-
-      Name "3":
-      [36m<td />[39m
-
-      Name "CISC108":
-      [36m<td />[39m
-
-      Name "Remove Class":
-      [36m<td />[39m
-
-      Name "Edit Course":
-      [36m<td />[39m
-
-      Name "CISC220":
-      [36m<td />[39m
-
-      Name "Data Structures":
-      [36m<td />[39m
-
-      Name "3":
-      [36m<td />[39m
-
-      Name "CISC210":
-      [36m<td />[39m
-
-      Name "Remove Class":
-      [36m<td />[39m
-
-      Name "Edit Course":
-      [36m<td />[39m
-
-      --------------------------------------------------
-      button:
-
-      Name "Remove Class":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Remove Class":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Clear Courses":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Clear Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-outline-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
+    There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mSemester Name: Fall 2023[0m
-            [36m</h3>[39m
-          [36m</div>[39m
-          [36m<table[39m
-            [33mclass[39m=[32m"table table-hover table-dark"[39m
-          [36m>[39m
-            [36m<thead>[39m
-              [36m<tr>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mCourse Code[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mCourse Title[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mCredits: [0m
-                  [0m6[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mPrerequisites[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mRemove Class[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mEdit Course[0m
-                [36m</th>[39m
-              [36m</tr>[39m
-            [36m</thead>[39m
-            [36m<tbody>[39m
-              [36m<tr[39m
-                [33mdraggable[39m=[32m"true"[39m
-              [36m>[39m
-                [36m<td>[39m
-                  [0mCISC181[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0mIntroduction to Computer Science II[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0m3[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0mCISC108[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [36m<div>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mRemove Class[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [36m<div>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mEdit Course[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</td>[39m
-              [36m</tr>[39m
-              [36m<tr[39m
-                [33mdraggable[39m=[32m"true"[39m
-              [36m>[39m
-                [36m<td>[39m
-                  [0mCISC220[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0mData Structures[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0m3[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0mCISC210[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [36m<div>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mRemove Class[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [36m<div>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mEdit Course[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</td>[39m
-              [36m</tr>[39m
-            [36m</tbody>[39m
-          [36m</table>[39m
-          [36m<div>[39m
-            [0m [0m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-outline-danger"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mClear Courses[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-outline-danger"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mClear Semester[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+    [36m<body />[39m
 
-      52 |     });
-      53 |     test("SemesterView renders a heading with the season of the semester.", () => {
-    > 54 |         screen.getByRole("heading", { name: semesterExample.season });
+      47 |     // });
+      48 |     test("SemesterView renders a heading with the season of the semester.", () => {
+    > 49 |         screen.getByRole("heading", { name: semesterExample.season });
          |                ^
-      55 |     });
-      56 |
-      57 |     test("ClearSemester is called after clicking button, and the semester is cleared.", () => {
+      50 |     });
+      51 |
+      52 |     test("ClearSemester is called after clicking button, and the semester is cleared.", () => {
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
       at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
       at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
       at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/semester/SemesterView.test.tsx:54:16)
+      at Object.<anonymous> (src/semester/SemesterView.test.tsx:49:16)
+
+  ● SemesterView › ClearSemester is called after clicking button, and the semester is cleared.
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Clear Semester/i`
+
+    There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body />[39m
+
+      51 |
+      52 |     test("ClearSemester is called after clicking button, and the semester is cleared.", () => {
+    > 53 |         const clearSemesterButton = screen.getByRole("button", {
+         |                                            ^
+      54 |             name: /Clear Semester/i
+      55 |         });
+      56 |         fireEvent.click(clearSemesterButton);
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/semester/SemesterView.test.tsx:53:44)
 
   ● SemesterView › ClearCourses is called after clicking button.
 
-    expect(element).not.toBeInTheDocument()
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Clear Courses/i`
 
-    expected document not to contain element, found <td>Introduction to Computer Science II</td> instead
+    There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
 
-      74 |         fireEvent.click(clearCoursesButton);
-      75 |         const classExample = semesterExample.classList[0].title;
-    > 76 |         expect(screen.queryByText(classExample)).not.toBeInTheDocument();
-         |                                                      ^
-      77 |     });
-      78 | });
-      79 |
+    Ignored nodes: comments, <script />, <style />
+    [36m<body />[39m
 
-      at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
+      64 |
+      65 |     test("ClearCourses is called after clicking button.", () => {
+    > 66 |         const clearCoursesButton = screen.getByRole("button", {
+         |                                           ^
+      67 |             name: /Clear Courses/i
+      68 |         });
+      69 |         fireEvent.click(clearCoursesButton);
 
-PASS src/FilteringSearch/FilteringSearch.test.tsx
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/semester/SemesterView.test.tsx:66:43)
+
 FAIL src/welcome.test.tsx
   ● Test suite failed to run
 
@@ -428,6 +168,7 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (src/App.tsx:7:1)
       at Object.<anonymous> (src/welcome.test.tsx:4:1)
 
+PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
 FAIL src/App.test.tsx
   ● Test suite failed to run
@@ -1329,7 +1070,7 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
 
-FAIL src/SideNav/SideNav2.test.tsx (6.832 s)
+FAIL src/SideNav/SideNav2.test.tsx (6.608 s)
   ● FilteringSearchTests › render the search box
 
     TestingLibraryElementError: Unable to find an element with the text: /Add Degree Plan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -1533,7 +1274,7 @@ FAIL src/SideNav/SideNav2.test.tsx (6.832 s)
 ---------------------------|---------|----------|---------|---------|----------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
 ---------------------------|---------|----------|---------|---------|----------------------------------
-All files                  |   16.56 |     8.33 |   14.42 |   16.69 |                                  
+All files                  |   15.99 |     8.06 |   13.17 |   16.11 |                                  
  src                       |       0 |        0 |       0 |       0 |                                  
   App.tsx                  |       0 |        0 |       0 |       0 | 30-155                           
   AuthDetails.tsx          |       0 |        0 |       0 |       0 | 13-51                            
@@ -1561,9 +1302,9 @@ All files                  |   16.56 |     8.33 |   14.42 |   16.69 |
   SideNav2.tsx             |   11.11 |      100 |    12.5 |   11.11 | 34-64                            
  src/addPlan               |       0 |        0 |       0 |       0 |                                  
   AddDeletePlan.tsx        |       0 |        0 |       0 |       0 | 24-161                           
- src/semester              |   15.87 |       30 |   20.68 |   16.66 |                                  
-  SemesterTable.tsx        |     9.8 |     12.5 |      10 |   10.41 | 69-106,129-168,175-176,194-195   
-  SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 36-38,42-43,69-88                
+ src/semester              |      12 |    21.42 |   12.12 |    12.5 |                                  
+  SemesterTable.tsx        |     9.8 |     12.5 |      10 |   10.41 | 26-63,86-125,132-133,150-151     
+  SemesterView.tsx         |   16.66 |    33.33 |   15.38 |   16.66 | 38-40,46-69,75-77,104-168        
  src/semester-modification |   41.66 |    17.39 |   34.04 |   41.66 |                                  
   AddClass.tsx             |     100 |      100 |     100 |     100 |                                  
   AddToSemester.tsx        |       0 |        0 |       0 |       0 | 23-173                           
@@ -1571,7 +1312,7 @@ All files                  |   16.56 |     8.33 |   14.42 |   16.69 |
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                  
 ---------------------------|---------|----------|---------|---------|----------------------------------
 Test Suites: 6 failed, 3 passed, 9 total
-Tests:       7 failed, 12 passed, 19 total
+Tests:       8 failed, 11 passed, 19 total
 Snapshots:   0 total
-Time:        11.02 s
+Time:        10.742 s
 Ran all test suites.
