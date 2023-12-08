@@ -398,6 +398,7 @@ FAIL src/semester/SemesterView.test.tsx
 
       at Object.<anonymous> (src/semester/SemesterView.test.tsx:76:54)
 
+PASS src/FilteringSearch/FilteringSearch.test.tsx
 FAIL src/welcome.test.tsx
   ● Test suite failed to run
 
@@ -424,10 +425,9 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (src/firebase.ts:3:1)
       at Object.<anonymous> (src/Signin.tsx:2:1)
       at Object.<anonymous> (src/welcome.tsx:6:1)
-      at Object.<anonymous> (src/App.tsx:6:1)
+      at Object.<anonymous> (src/App.tsx:7:1)
       at Object.<anonymous> (src/welcome.test.tsx:4:1)
 
-PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
 FAIL src/App.test.tsx
   ● Test suite failed to run
@@ -455,7 +455,7 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (src/firebase.ts:3:1)
       at Object.<anonymous> (src/Signin.tsx:2:1)
       at Object.<anonymous> (src/welcome.tsx:6:1)
-      at Object.<anonymous> (src/App.tsx:6:1)
+      at Object.<anonymous> (src/App.tsx:7:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
 
 FAIL src/semester/SemesterTable.test.tsx
@@ -882,6 +882,7 @@ FAIL src/semester/SemesterTable.test.tsx
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"semesterTable"[39m
+          [33mstyle[39m=[32m"overflow-y: scroll; max-height: 700px;"[39m
         [36m>[39m
           [36m<h2>[39m
             [0mPlan Name: dildo[0m
@@ -1328,7 +1329,7 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
 
-FAIL src/SideNav/SideNav2.test.tsx (6.749 s)
+FAIL src/SideNav/SideNav2.test.tsx (6.819 s)
   ● FilteringSearchTests › render the search box
 
     TestingLibraryElementError: Unable to find an element with the text: /Add Degree Plan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -1532,9 +1533,9 @@ FAIL src/SideNav/SideNav2.test.tsx (6.749 s)
 ---------------------------|---------|----------|---------|---------|----------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
 ---------------------------|---------|----------|---------|---------|----------------------------------
-All files                  |   17.03 |     8.77 |   14.64 |   17.21 |                                  
+All files                  |   17.03 |     8.62 |   14.64 |   17.21 |                                  
  src                       |       0 |        0 |       0 |       0 |                                  
-  App.tsx                  |       0 |        0 |       0 |       0 | 25-145                           
+  App.tsx                  |       0 |        0 |       0 |       0 | 26-146                           
   AuthDetails.tsx          |       0 |        0 |       0 |       0 | 13-51                            
   SignUp.tsx               |       0 |      100 |       0 |       0 | 5-34                             
   Signin.tsx               |       0 |      100 |       0 |       0 | 5-34                             
@@ -1561,7 +1562,7 @@ All files                  |   17.03 |     8.77 |   14.64 |   17.21 |
  src/addPlan               |       0 |        0 |       0 |       0 |                                  
   AddDeletePlan.tsx        |       0 |        0 |       0 |       0 | 24-161                           
  src/semester              |   15.87 |       30 |   20.68 |   16.66 |                                  
-  SemesterTable.tsx        |     9.8 |     12.5 |      10 |   10.41 | 69-106,129-168,175-176,191-192   
+  SemesterTable.tsx        |     9.8 |     12.5 |      10 |   10.41 | 69-106,129-168,175-176,194-195   
   SemesterView.tsx         |   41.66 |      100 |   44.44 |   41.66 | 36-38,42-43,69-88                
  src/semester-modification |   41.66 |    17.39 |   34.04 |   41.66 |                                  
   AddClass.tsx             |     100 |      100 |     100 |     100 |                                  
@@ -1572,5 +1573,5 @@ All files                  |   17.03 |     8.77 |   14.64 |   17.21 |
 Test Suites: 6 failed, 3 passed, 9 total
 Tests:       7 failed, 12 passed, 19 total
 Snapshots:   0 total
-Time:        10.816 s
+Time:        11.093 s
 Ran all test suites.
