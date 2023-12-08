@@ -419,7 +419,7 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (node_modules/undici/lib/fetch/body.js:3:16)
       at Object.<anonymous> (node_modules/undici/lib/fetch/response.js:4:47)
       at Object.<anonymous> (node_modules/undici/index.js:117:29)
-      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-58078139.js:7:14)
+      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-fe65684a.js:7:14)
       at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/index.js:5:12)
       at Object.<anonymous> (node_modules/firebase/auth/dist/index.cjs.js:5:12)
       at Object.<anonymous> (src/firebase.ts:3:1)
@@ -449,7 +449,7 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (node_modules/undici/lib/fetch/body.js:3:16)
       at Object.<anonymous> (node_modules/undici/lib/fetch/response.js:4:47)
       at Object.<anonymous> (node_modules/undici/index.js:117:29)
-      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-58078139.js:7:14)
+      at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-fe65684a.js:7:14)
       at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/index.js:5:12)
       at Object.<anonymous> (node_modules/firebase/auth/dist/index.cjs.js:5:12)
       at Object.<anonymous> (src/firebase.ts:3:1)
@@ -1329,7 +1329,7 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
 
-FAIL src/SideNav/SideNav2.test.tsx (6.855 s)
+FAIL src/SideNav/SideNav2.test.tsx (6.701 s)
   ● FilteringSearchTests › render the search box
 
     TestingLibraryElementError: Unable to find an element with the text: /Add Degree Plan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -1533,9 +1533,9 @@ FAIL src/SideNav/SideNav2.test.tsx (6.855 s)
 ---------------------------|---------|----------|---------|---------|----------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
 ---------------------------|---------|----------|---------|---------|----------------------------------
-All files                  |   17.03 |     8.62 |   14.64 |   17.21 |                                  
+All files                  |   16.56 |     8.33 |   14.42 |   16.69 |                                  
  src                       |       0 |        0 |       0 |       0 |                                  
-  App.tsx                  |       0 |        0 |       0 |       0 | 26-146                           
+  App.tsx                  |       0 |        0 |       0 |       0 | 30-155                           
   AuthDetails.tsx          |       0 |        0 |       0 |       0 | 13-51                            
   SignUp.tsx               |       0 |      100 |       0 |       0 | 5-34                             
   Signin.tsx               |       0 |      100 |       0 |       0 | 5-34                             
@@ -1544,8 +1544,8 @@ All files                  |   17.03 |     8.62 |   14.64 |   17.21 |
   firebase.ts              |       0 |      100 |     100 |       0 | 10-24                            
   welcome.tsx              |       0 |        0 |       0 |       0 | 15-28                            
  src/Audit                 |       0 |        0 |       0 |       0 |                                  
-  ChosenMajor.tsx          |       0 |        0 |       0 |       0 | 6-137                            
-  SeeAuditPage.tsx         |       0 |        0 |       0 |       0 | 24-134                           
+  ChosenMajor.tsx          |       0 |        0 |       0 |       0 | 6-143                            
+  SeeAuditPage.tsx         |       0 |        0 |       0 |       0 | 28-175                           
  src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                  
   FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 25,56                            
  src/Interface             |       0 |        0 |       0 |       0 |                                  
@@ -1573,5 +1573,5 @@ All files                  |   17.03 |     8.62 |   14.64 |   17.21 |
 Test Suites: 6 failed, 3 passed, 9 total
 Tests:       7 failed, 12 passed, 19 total
 Snapshots:   0 total
-Time:        11.119 s
+Time:        10.801 s
 Ran all test suites.
