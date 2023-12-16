@@ -1,3 +1,9 @@
+/*
+The sideNav2 component provides a side navigation bar that remains displayed at all times on the website, after the user 
+has logged in, in which users can interact with its "Add / Delete Degree Plan", "View Degree Plan", Add Semester", 
+"Add Course", "Degree Audit", "Download Plan", and "Logout" buttons. This is essentially, the root point for all interactivity 
+that the website provides. 
+*/
 import React from "react";
 import "../App.css";
 import SchoolIcon from "@mui/icons-material/School";
@@ -69,9 +75,3 @@ export function SideNav2({
         </div>
     );
 }
-
-/*
-The sideNav2 component provides a side navigation menu for every screen displayed on the website, in which users
-can interact with its "Add Degree Plan", "Add Semester", "Add Course", and "Degree Audit" buttons. This is essentially,
-the root point for all interactivity that the website provides. 
-*/
