@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
@@ -34,10 +33,13 @@ export const generalClasses: string[] = [
     "Discrete Mathematics I",
     "Analytic Geometry and Calculus A",
     "Computers, Ethics and Society",
-    "Lab Science (8 credit sequence)",
+    "Lab Science Path",
     "Written Communications in Business or Technical Writing"
 ];
 
+export const generalCredits: number[] = [
+    3, 3, 3, 3, 3, 3, 3, 6, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 8, 3
+];
 // will be many arrays with specific lists of classes needed
 const fix: string[] = ["added from fix"];
 
@@ -47,12 +49,14 @@ export function ChosenMajor({
     handleClose,
     show,
     majorPageView,
-    reqList
+    reqList,
+    newMajor
 }: {
     handleClose: () => void;
     show: boolean;
     majorPageView: () => void;
     reqList: (finalList: string[]) => void;
+    newMajor: (newString: string) => void;
 }) {
     const [selectedMajor, setSelectedMajor] = useState<string>(" ");
     const [totalClasses, setTotalClasses] = useState<string[]>(generalClasses);
@@ -62,7 +66,7 @@ export function ChosenMajor({
     }
 
     //Currently not working and causes indent error, will need to change function
-    function setFinalList() {
+    /*function setFinalList() {
         const words: string[] = [...generalClasses];
         switch (selectedMajor) {
             case "Artificial Intelligence and Robotics Concentration":
@@ -94,8 +98,42 @@ export function ChosenMajor({
                 break;
         }
     }
+    */
+    function setFinalList() {
+        const words: string[] = [...generalClasses];
+        if (
+            selectedMajor ===
+            "Artificial Intelligence and Robotics Concentration"
+        ) {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "Bioinformatics Concentration") {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "Cybersecurity Concentration") {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "Data Science Concentration") {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "High Performance Computing Concentration") {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "Systems and Networks Concentration") {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "Theory and Computation Concentration") {
+            setTotalClasses(words.concat(fix));
+        }
+        if (selectedMajor === "Traditional Program with Custom Focus Area") {
+            setTotalClasses(["dumb major that screws up my idea"]);
+        } else {
+            setTotalClasses([""]);
+        }
+    }
 
     function handleSubmit(): void {
+        newMajor(selectedMajor);
         setFinalList();
         reqList(totalClasses);
         majorPageView();

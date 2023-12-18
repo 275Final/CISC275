@@ -1,3 +1,12 @@
+/* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React from "react";
 import { Button } from "react-bootstrap";
 import { classes } from "../Interface/classes";
@@ -100,10 +109,15 @@ export function AddClass({
             updatedSchedule[semesterIndex] = updatedSemester;
 
             onAddClass(updatedSchedule);
-        } else {
+        }
+        if (showAlert) {
             return (
                 <>
-                    <Alert show={showAlert} variant="success">
+                    <Alert
+                        variant="danger"
+                        onClose={() => setShowAlert(false)}
+                        dismissible
+                    >
                         <Alert.Heading>Cannot Add course</Alert.Heading>
                         <p>
                             Ths course cannot be added because its pre requisite
@@ -111,20 +125,7 @@ export function AddClass({
                             Please add pre requisite courses before adding
                             higher lever courses.
                         </p>
-                        <div className="d-flex justify-content-end">
-                            <Button
-                                onClick={() => setShowAlert(false)}
-                                variant="outline-success"
-                            >
-                                Close
-                            </Button>
-                        </div>
                     </Alert>
-                    {!showAlert && (
-                        <Button onClick={() => setShowAlert(true)}>
-                            Show Alert
-                        </Button>
-                    )}
                 </>
             );
         }

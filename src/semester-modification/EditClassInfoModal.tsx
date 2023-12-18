@@ -1,13 +1,19 @@
+/*
+EditClassInfoModal:
+This components provides the functionality of being able to edit a course's code, title, and credits within the displayed table of courses
+that represent a semester. This functionality is intended to be used in the event that the University updates a cours's information, and 
+therefore even if the website does not recieve the latest information about a course, users can manually edit the information themselves. 
+This component itself displayes a modal that has 3 text boxes for users to input the new code, title, and credits, and then this input is
+displayed in place of previous codes, titles, and credits in the row of the class being edited. In addition, this component also provides,
+a revert course functionality that allows users to change a course's information back to its original starting information, if the course
+has been edited. 
+*/
 import React from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { classes } from "../Interface/classes";
 import { useState } from "react";
 import { semester } from "../Interface/semester";
-//import { red } from "@mui/material/colors";
-//import realData from "../data/corrected_data.json";
 
-//import { semester } from "../Interface/semester";
-//import { EditClass } from "./EditClass";
 export function EditClassInfoModal({
     courseToEdit,
     semester,
@@ -24,7 +30,6 @@ export function EditClassInfoModal({
     const [ogTitle] = useState(courseToEdit.originalTitle);
     const [ogCredits] = useState(courseToEdit.originalCredits);
     const [modalView, setModalView] = useState(false);
-    //const [newPrereqs, setNewPrereqs] = useState(courseToEdit.preReq);
 
     const inputChange1 = (event: React.ChangeEvent<HTMLInputElement>) => {
         const searchValue1 = event.target.value;
@@ -40,17 +45,10 @@ export function EditClassInfoModal({
         const searchValue3 = event.target.value;
         setNewCredits(parseInt(searchValue3));
     };
-    /*const inputChange4 = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const searchValue4 = event.target.list;
-        setNewPrereqs(searchValue4);
-    };
-    */
     const flipModalView = () => {
         setModalView(!modalView);
     };
     function editClass(classToEdit: classes) {
-        //const ogCode: string[] = [];
-        //ogCode.push(classToEdit.code);
         const updatedClass = {
             ...classToEdit,
             code: newCode,
@@ -73,7 +71,6 @@ export function EditClassInfoModal({
             totalCredits: totalCredits
         };
         updateSemester(updatedSemester);
-        //console.log(classToEdit.originalCode);
     }
 
     function revertClass(classToEdit: classes) {
@@ -137,7 +134,7 @@ export function EditClassInfoModal({
                             />
                         </Form.Group>
                         <hr></hr>
-                        <Form.Label>Course Title</Form.Label>
+                        <Form.Label>Course Title:</Form.Label>
                         <Form.Group controlId="courseTitle">
                             <Form.Control
                                 type="text"
@@ -147,7 +144,7 @@ export function EditClassInfoModal({
                             />
                         </Form.Group>
                         <hr></hr>
-                        <Form.Label>Course Credits</Form.Label>
+                        <Form.Label>Course Credits:</Form.Label>
                         <Form.Group controlId="courseCredits">
                             <Form.Control
                                 type="text"
