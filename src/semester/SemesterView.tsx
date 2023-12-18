@@ -1,4 +1,3 @@
-/* eslint-disable no-extra-parens */
 import React from "react";
 import { semester } from "../Interface/semester";
 import { classes } from "../Interface/classes";

@@ -38,7 +38,7 @@ const SignUp = () => {
                 ></input>
                 <input
                     type="password"
-                    placeholder="Enter your password"
+                    placeholder="8+ Character Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 ></input>

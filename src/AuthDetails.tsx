@@ -8,6 +8,14 @@ The user interface displays the user's email when authenticated, along with a "S
 */
 
 /* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React, { useEffect, useState } from "react";
 import { auth } from "./firebase";
 import { onAuthStateChanged, User, signOut } from "firebase/auth";

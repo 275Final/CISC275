@@ -16,7 +16,7 @@ const semesterExamples = sample.map(
     })
 );
 
-const currentPlan = "dildo";
+const currentPlan = "best";
 
 describe("SemesterTable", () => {
     beforeEach(() => {
