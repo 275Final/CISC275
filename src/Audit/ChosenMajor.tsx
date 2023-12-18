@@ -1,5 +1,12 @@
-/* eslint-disable indent */
 /* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 
@@ -41,69 +48,170 @@ export const generalClasses: string[] = [
 export const generalCredits: number[] = [
     3, 3, 3, 3, 3, 3, 3, 6, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 8, 3
 ];
-// will be many arrays with specific lists of classes needed
-const fix: string[] = ["added from fix"];
-
-//List of all classes for each major needed in seperate constants
+// Lists of specific requirement for degree and credits
+const AIREQ: string[] = [
+    "Logic for Programming",
+    "Introduction to Computer Vision",
+    "Artificial Intelligence",
+    "Introduction to Data Mining",
+    "Introduction to Machine Learning",
+    "Statistical Methods or Probability Theory and Simulation Methods",
+    "Operating Systems or Parallel Computing",
+    "Restricted Electives (12 credits)",
+    "Elective"
+];
+const AIREQnum: number[] = [3, 3, 3, 3, 3, 3, 3, 12, 3];
+const BIOREQ: string[] = [
+    "Introductory Biology I",
+    "Introductory Biology II",
+    "Molecular Biology of the Cell",
+    "General Chemistry (103)",
+    "General Chemistry Laboratory (133)",
+    "General Chemistry (104)",
+    "General Chemistry Laboratory (134)",
+    "Parallel Computing",
+    "Computational Biology and Bioinformatics",
+    "Analytic Geometry and Calculus B",
+    "Elementary Linear Algebra",
+    "Organic Chemistry Sequence",
+    "Statistical Methods or Probability Theory and Simulation Methods",
+    "Introduction to Data Mining or Introduction to Machine Learning",
+    "Restricted Electives",
+    "Elective"
+];
+const BIOREQnum: number[] = [4, 4, 3, 3, 1, 3, 1, 3, 3, 4, 3, 4, 3, 3, 6, 3];
+const CYBERREQ: string[] = [
+    "Operating Systems",
+    "Parallel Computing",
+    "Computer Networks I",
+    "Introduction to Network Security",
+    "Introduction to Cybersecurity",
+    "System Hardening and Protection",
+    "Probability/Statistics",
+    "Advanced Cybersecurity",
+    "Restricted Electives",
+    "Elective"
+];
+const CYBERREQnum: number[] = [3, 3, 3, 3, 3, 3, 3, 6, 6, 3];
+const DATAREQ: string[] = [
+    "Logic for Programming",
+    "Parallel Computing",
+    "Database Systems",
+    "Artificial Intelligence",
+    "Statistical Methods",
+    "Analytic Geometry and Calculus B",
+    "Analytic Geometry and Calculus C",
+    "Elementary Linear Algebra",
+    "Introduction to Data Mining or Introduction to Machine Learning",
+    "Advanced Math",
+    "Restricted Electives",
+    "Elective"
+];
+const DATAREQnum: number[] = [3, 3, 3, 3, 4, 4, 4, 3, 3, 3, 3, 3];
+const HPCREQ: string[] = [
+    "Computer Architecture",
+    "Operating Systems",
+    "Parallel Computing",
+    "Computer Networks I",
+    "Compiler Design",
+    "Analytic Geometry and Calculus B",
+    "Analytic Geometry and Calculus C",
+    "Math Track or Data Track Cources",
+    "Elective"
+];
+const HPCREQnum: number[] = [3, 3, 3, 3, 3, 4, 4, 14, 3];
+const SNREQ: string[] = [
+    "Computer Architecture",
+    "Operating Systems",
+    "Parallel Computing",
+    "Computer Networks I",
+    "Compiler Design",
+    "Statistical Methods or Probability Theory and Simulation Methods",
+    "Security Requirement",
+    "Advanced Systems Requirement",
+    "Restricted Electives",
+    "Elective"
+];
+const SNREQnum: number[] = [3, 3, 3, 3, 3, 3, 3, 6, 6, 3];
+const TACREQ: string[] = [
+    "Logic for Programming",
+    "Elements of the Theory of Computation",
+    "Analytic Geometry and Calculus B",
+    "Elementary Linear Algebra",
+    "Statistical Methods or Probability Theory and Simulation Methods",
+    "Discrete Track or Continuous Track",
+    "Restricted Electives",
+    "Elective"
+];
+const TACREQnum: number[] = [3, 3, 4, 3, 3, 12, 6, 3];
 
 export function ChosenMajor({
     handleClose,
     show,
     majorPageView,
     reqList,
-    newMajor
+    newMajor,
+    creditList
 }: {
     handleClose: () => void;
     show: boolean;
     majorPageView: () => void;
     reqList: (finalList: string[]) => void;
     newMajor: (newString: string) => void;
+    creditList: (allNums: number[]) => void;
 }) {
     const [selectedMajor, setSelectedMajor] = useState<string>(" ");
-    const [totalClasses, setTotalClasses] = useState<string[]>(generalClasses);
 
     function updateMajor(event: React.ChangeEvent<HTMLSelectElement>): void {
         setSelectedMajor(event.target.value);
     }
-
-    //Currently not working and causes indent error, will need to change function
     function setFinalList() {
-        const words: string[] = [...generalClasses];
-        switch (selectedMajor) {
-            case "Artificial Intelligence and Robotics Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "Bioinformatics Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "Cybersecurity Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "Data Science Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "High Performance Computing Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "Systems and Networks Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "Theory and Computation Concentration":
-                setTotalClasses(words.concat(fix));
-                break;
-            case "Traditional Program with Custom Focus Area":
-                setTotalClasses(["dumb major that screws up my idea"]);
-                break;
-            default:
-                setTotalClasses([""]);
-                break;
+        let credits: number[] = [...generalCredits];
+        if (
+            selectedMajor ===
+            "Artificial Intelligence and Robotics Concentration"
+        ) {
+            credits = [...generalCredits, ...AIREQnum];
+            reqList([...generalClasses, ...AIREQ]);
         }
+        if (selectedMajor === "Bioinformatics Concentration") {
+            credits = [...generalCredits, ...BIOREQnum];
+            reqList([...generalClasses, ...BIOREQ]);
+        }
+        if (selectedMajor === "Cybersecurity Concentration") {
+            credits = [...generalCredits, ...CYBERREQnum];
+            reqList([...generalClasses, ...CYBERREQ]);
+        }
+        if (selectedMajor === "Data Science Concentration") {
+            credits = [...generalCredits, ...DATAREQnum];
+            reqList([...generalClasses, ...DATAREQ]);
+        }
+        if (selectedMajor === "High Performance Computing Concentration") {
+            credits = [...generalCredits, ...HPCREQnum];
+            reqList([...generalClasses, ...HPCREQ]);
+        }
+        if (selectedMajor === "Systems and Networks Concentration") {
+            credits = [...generalCredits, ...SNREQnum];
+            reqList([...generalClasses, ...SNREQ]);
+        }
+        if (selectedMajor === "Theory and Computation Concentration") {
+            credits = [...generalCredits, ...TACREQnum];
+            reqList([...generalClasses, ...TACREQ]);
+        }
+        if (selectedMajor === "Traditional Program with Custom Focus Area") {
+            credits = [...generalCredits];
+            reqList([...generalClasses]);
+        } else {
+            credits = [...generalCredits];
+            reqList([...generalClasses]);
+        }
+        creditList(credits);
     }
 
     function handleSubmit(): void {
+        //functions handeled once you attempt to close the modal
         newMajor(selectedMajor);
         setFinalList();
-        reqList(totalClasses);
         majorPageView();
         handleClose();
     }
@@ -121,6 +229,7 @@ export function ChosenMajor({
                             style={{ textAlign: "center" }}
                         >
                             {majors.map(
+                                //linter error due to paren before html element
                                 (option: string): JSX.Element => (
                                     <option key={option} value={option}>
                                         {option}

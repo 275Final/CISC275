@@ -1,4 +1,21 @@
+/*Documentation(used chatGPT to help write): 
+The AuthDetails component is a React functional component designed to manage user authentication details within a Firebase-powered application. 
+It utilizes Firebase authentication features to track and respond to changes in the user's authentication state. 
+The component takes callback functions for login (onLogin), logout (onLogout), and page navigation (flipPage). 
+Upon user authentication, it updates the authUser state and triggers the provided callbacks, facilitating dynamic user interface changes. 
+The component also includes a method (handleUserSignOut) for initiating the sign-out process, updating the state accordingly, and logging any potential errors. 
+The user interface displays the user's email when authenticated, along with a "Sign Out" button to log the user out, providing a seamless and interactive authentication experience.
+*/
+
 /* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React, { useEffect, useState } from "react";
 import { auth } from "./firebase";
 import { onAuthStateChanged, User, signOut } from "firebase/auth";

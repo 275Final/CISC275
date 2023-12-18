@@ -1,7 +1,18 @@
+/* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React from "react";
 import { Button } from "react-bootstrap";
 import { classes } from "../Interface/classes";
 import { semester } from "../Interface/semester";
+import { useState } from "react";
+import { Alert } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
 import { useState } from "react";
 
@@ -18,7 +29,7 @@ export function AddClass({
     newClass: classes;
     onAddClass: (updatedSchedule: semester[]) => void;
 }): JSX.Element {
-    const [show, setShow] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
     function addClass() {
         // Create a new array of semesters
         const updatedSchedule: semester[] = [...schedule];
@@ -44,6 +55,7 @@ export function AddClass({
                     return true;
                 }
             }
+
             //const initArray: string[] = [];
             const previousClassList = filteredSemesters
                 .map((semester: semester): string[] =>
@@ -105,6 +117,25 @@ export function AddClass({
             updatedSchedule[semesterIndex] = updatedSemester;
 
             onAddClass(updatedSchedule);
+        }
+        if (showAlert) {
+            return (
+                <>
+                    <Alert
+                        variant="danger"
+                        onClose={() => setShowAlert(false)}
+                        dismissible
+                    >
+                        <Alert.Heading>Cannot Add course</Alert.Heading>
+                        <p>
+                            Ths course cannot be added because its pre requisite
+                            courses have not been met in previous semesters.
+                            Please add pre requisite courses before adding
+                            higher lever courses.
+                        </p>
+                    </Alert>
+                </>
+            );
         }
     }
 

@@ -1,4 +1,12 @@
 /* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Image1 from "./Images/Delaware-Blue-Hens-Logo.png";
@@ -65,6 +73,10 @@ function App(): JSX.Element {
         setDownloadPlan(!downloadPlan);
     };
 
+    const flipMajorPageViewOn = () => {
+        setMajorPageView(true);
+    };
+
     const flipMajorPageView = () => {
         setMajorPageView(!majorPageView);
     };
@@ -77,7 +89,7 @@ function App(): JSX.Element {
     //Classes for each major
     const [degreeRequirements, setDegreeRequirements] =
         useState<string[]>(generalClasses);
-    const [basicCredits] = useState<number[]>(generalCredits);
+    const [Credits, setCredits] = useState<number[]>(generalCredits);
     const [usedClasses, setUsedClasses] = useState<classes[][]>([]);
     const [major, setMajor] = useState<string>("");
 
@@ -85,15 +97,16 @@ function App(): JSX.Element {
         setDegreeRequirements(finalList);
     }
 
+    function creditList(allCredit: number[]) {
+        setCredits(allCredit);
+    }
+
     function setNewMajor(newMajor: string) {
-        if (major !== newMajor) {
-            setUsedClasses([]);
-        }
         setMajor(newMajor);
     }
 
-    function pushCurrList(classesUsed: classes[][]) {
-        setUsedClasses(classesUsed);
+    function resetCurrList() {
+        setUsedClasses([]);
     }
     const handleLogout = () => {
         // console.log(page);
@@ -168,7 +181,7 @@ function App(): JSX.Element {
                 <div
                     style={{
                         backgroundImage:
-                            "linear-gradient(#fcf0a7 10%, #ffd902 85%)"
+                            "linear-gradient(#fcf0b6 10%, #ffd902 85%)"
                     }}
                 >
                     {
@@ -211,9 +224,10 @@ function App(): JSX.Element {
                                 <ChosenMajor
                                     handleClose={flipAudit}
                                     show={seeAudit}
-                                    majorPageView={flipMajorPageView}
+                                    majorPageView={flipMajorPageViewOn}
                                     reqList={reqList}
                                     newMajor={setNewMajor}
+                                    creditList={creditList}
                                 />
                             )}
                             {displayPlan && (
@@ -225,7 +239,7 @@ function App(): JSX.Element {
                                     setCurrentPlan={setCurrentPlan}
                                 />
                             )}
-                            {currentPlan === "" && (
+                            {currentPlan === "" && majorPageView !== true && (
                                 <img
                                     src={Image3}
                                     alt=""
@@ -264,9 +278,9 @@ function App(): JSX.Element {
                                 reqList={degreeRequirements}
                                 plan={semesters}
                                 prevUsedClasses={usedClasses}
+                                creditList={Credits}
                                 major={major}
-                                creditList={basicCredits}
-                                pushCurrList={pushCurrList}
+                                resetCurrList={resetCurrList}
                                 stopView={flipMajorPageView}
                             ></SeeAuditPage>
                         </Col>

@@ -1,4 +1,22 @@
+/*
+AddDeletePlan:
+This component introduces the functionality of being able add and remove degrees plans to and from a list of degree plans. It
+accomplishes this by providing a modal that changes its contents based on which button, "Add Plan" or "Delete Plan", has been
+clicked by the user. If the user clicks on the "Add Plan" button, they are prompted with a textbox that allows them to enter
+their desired degree plan name, and once they hit done, this degree plan is added to a list of plans. If the user clicks 
+"Delete Plan", they are prompted with a drop down list that asks them to select which plan in the list of plans they would like
+to delete. If users have no created plans and click "Delete Plan", they will be shown a message saying "Please add a degree plan".
+ */
+
 /* eslint-disable no-extra-parens */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { Plan } from "../Interface/Plan";
@@ -132,6 +150,7 @@ export function AddDeletePlan({
                                         value={selectPlan}
                                         onChange={selectedPlan}
                                         style={{ textAlign: "center" }}
+                                        data-testid="dropdown"
                                     >
                                         <option>
                                             Please select a degree plan
