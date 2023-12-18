@@ -4,6 +4,13 @@ import { classes } from "../Interface/classes";
 import { RemoveClass } from "../semester-modification/RemoveClass";
 import { EditClassInfoModal } from "../semester-modification/EditClassInfoModal";
 
+/*
+SemesterView:
+This component hosts the individual semesters and displays their columns in a table that was created using bootstrap.
+It uses some of the functions passed in from the table to edit the individual semesters such as being able to clear the semeser,
+clear the courses within a semester and being able to drag courses from one semestr to another.
+*/
+
 export function SemesterView({
     semester,
     clearSemester,
@@ -23,8 +30,6 @@ export function SemesterView({
     updateSemester: (semester: semester) => void;
     dragCourse: classes | undefined;
 }): JSX.Element {
-    //const [revertKey, setRevertKey] = useState(0);
-    //setRevertKey(revertKey + 1);
     const handleDragStart = (
         event: React.DragEvent<HTMLTableRowElement>,
         course: classes
@@ -83,10 +88,6 @@ export function SemesterView({
                         <th scope="col">Prerequisites</th>
                         <th scope="col">Remove Class</th>
                         <th scope="col">Edit Course</th>
-                        {/*<th scope="col">Schedule</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Instructor</th>
-    */}
                     </tr>
                 </thead>
                 <tbody>
