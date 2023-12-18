@@ -19,7 +19,6 @@ PASS src/PlanView/PlanView.test.tsx
 
       at Object.<anonymous> (src/PlanView/PlanView.test.tsx:88:9)
 
-PASS src/semester/SemesterView.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
   ● Console
 
@@ -55,6 +54,8 @@ PASS src/SemesterModal/addSemesterModal.test.tsx
 
       at addSemester (src/SemesterModal/addSemesterModal.tsx:90:17)
 
+PASS src/semester/SemesterView.test.tsx
+PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/semester-modification/AddClass.test.tsx
   ● Console
 
@@ -88,7 +89,6 @@ PASS src/semester-modification/AddClass.test.tsx
 
       at addClass (src/semester-modification/AddClass.tsx:86:17)
 
-PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/addPlan/AddDeletePlan.test.tsx
   ● Console
 
@@ -127,8 +127,8 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (src/welcome.test.tsx:4:1)
 
 PASS src/Audit/SeeAuditPage.test.tsx
-PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/semester-modification/EditClassInfoModal.test.tsx
+PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/semester-modification/AddToSemester.test.tsx
 PASS src/Audit/ChosenMajor.test.tsx
 PASS src/semester/SemesterTable.test.tsx
@@ -161,7 +161,7 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (src/App.tsx:15:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
 
-PASS src/SideNav/SideNav2.test.tsx (6.576 s)
+PASS src/SideNav/SideNav2.test.tsx (6.801 s)
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
@@ -207,5 +207,5 @@ All files                  |   36.01 |    25.33 |   31.48 |   36.33 |
 Test Suites: 2 failed, 13 passed, 15 total
 Tests:       34 passed, 34 total
 Snapshots:   0 total
-Time:        11.47 s
+Time:        11.961 s
 Ran all test suites.
