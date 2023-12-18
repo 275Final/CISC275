@@ -12,6 +12,13 @@ import { Button, Form, Modal } from "react-bootstrap";
 import { Plan } from "../Interface/Plan";
 import { semester } from "../Interface/semester";
 
+/*
+Download Plan:
+This component allows the plan to be downloaded as a csv. It was created using the Lost Chapters on the tome. As stated we
+referenced the Stack Overflow link that was posted and edited to be able to handle our specific interface. We also used the
+download method that was shown with little to no changes.
+*/
+
 export function DownloadPlan({
     handleClose,
     show,

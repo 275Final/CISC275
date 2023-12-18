@@ -7,11 +7,9 @@ import Alert from "react-bootstrap/Alert";
 
 /*
 SemesterTable:
-This component provides a side navigation bar that remains displayed at all times on the website, after the user 
-has logged in, in which users can interact with its "Add / Delete Degree Plan", "View Degree Plan", Add Semester", 
-"Add Course", "Degree Audit", "Download Plan", and "Logout" buttons to achieve their goal of creating their desired plan. 
-This is essentially, the root point for all interactivity that the website provides and it works by taking in several
-"flipView" functions so that specific components can be displayed when corresponding elements of the navbar list are clicked.
+This component is used to host the different semesters in a plan by mapping each individual semester to its own "view". 
+It also has some of the functionality needed and used for the individual semesters. Such as clearSemester, 
+clearCourses and updateSemesters. It has some of the code for drag as well.
 */
 //Created a function to map all the given semesters into their own view.
 export function SemesterTable({
