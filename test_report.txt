@@ -19,6 +19,7 @@ PASS src/PlanView/PlanView.test.tsx
 
       at Object.<anonymous> (src/PlanView/PlanView.test.tsx:88:9)
 
+PASS src/semester/SemesterView.test.tsx
 PASS src/SemesterModal/addSemesterModal.test.tsx
   ● Console
 
@@ -54,8 +55,6 @@ PASS src/SemesterModal/addSemesterModal.test.tsx
 
       at addSemester (src/SemesterModal/addSemesterModal.tsx:90:17)
 
-PASS src/semester/SemesterView.test.tsx
-PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/semester-modification/AddClass.test.tsx
   ● Console
 
@@ -89,6 +88,7 @@ PASS src/semester-modification/AddClass.test.tsx
 
       at addClass (src/semester-modification/AddClass.tsx:86:17)
 
+PASS src/semester-modification/RemoveClass.test.tsx
 PASS src/addPlan/AddDeletePlan.test.tsx
   ● Console
 
@@ -126,181 +126,11 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (src/App.tsx:15:1)
       at Object.<anonymous> (src/welcome.test.tsx:4:1)
 
-FAIL src/Audit/SeeAuditPage.test.tsx
-  ● SeeAuditPage component › renders component with provided props
-
-    TestingLibraryElementError: Found multiple elements with the text: Add Class
-
-    Here are the matching elements:
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<button[39m
-      [33mclass[39m=[32m"btn btn-primary"[39m
-      [33mtype[39m=[32m"button"[39m
-    [36m>[39m
-      [0mAdd Class[0m
-    [36m</button>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<button[39m
-      [33mclass[39m=[32m"btn btn-primary"[39m
-      [33mtype[39m=[32m"button"[39m
-    [36m>[39m
-      [0mAdd Class[0m
-    [36m</button>[39m
-
-    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<h3>[39m
-            [0mbasic test[0m
-          [36m</h3>[39m
-          [36m<table[39m
-            [33mclass[39m=[32m"table table-hover table-dark"[39m
-          [36m>[39m
-            [36m<thead>[39m
-              [36m<tr>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mRequirement[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mFilled Classes[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mAdd Class To Fill[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mReset List[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mCredits[0m
-                [36m</th>[39m
-                [36m<th[39m
-                  [33mscope[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mComplete[0m
-                [36m</th>[39m
-              [36m</tr>[39m
-            [36m</thead>[39m
-            [36m<tbody>[39m
-              [36m<tr>[39m
-                [36m<td>[39m
-                  [0mRequirement1[0m
-                [36m</td>[39m
-                [36m<td />[39m
-                [36m<td>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mAdd Class[0m
-                  [36m</button>[39m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mReset[0m
-                  [36m</button>[39m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0m6[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0mIncomplete[0m
-                [36m</td>[39m
-              [36m</tr>[39m
-              [36m<tr>[39m
-                [36m<td>[39m
-                  [0mRequirement2[0m
-                [36m</td>[39m
-                [36m<td />[39m
-                [36m<td>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mAdd Class[0m
-                  [36m</button>[39m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mReset[0m
-                  [36m</button>[39m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0m7[0m
-                [36m</td>[39m
-                [36m<td>[39m
-                  [0mIncomplete[0m
-                [36m</td>[39m
-              [36m</tr>[39m
-            [36m</tbody>[39m
-          [36m</table>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mhide[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      52 |
-      53 |         // Check if the "Add Class" button is present
-    > 54 |         const addButton = getByText("Add Class");
-         |                           ^
-      55 |         expect(addButton).toBeInTheDocument();
-      56 |
-      57 |         // Simulate clicking the "Add Class" button
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
-      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/Audit/SeeAuditPage.test.tsx:54:27)
-
+PASS src/Audit/SeeAuditPage.test.tsx
 PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/semester-modification/EditClassInfoModal.test.tsx
 PASS src/semester-modification/AddToSemester.test.tsx
-FAIL src/Audit/ChosenMajor.test.tsx
-  ● ChosenMajor updates selectedMajor state on change
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: "Data Science Concentration"
-    Received: ""
-
-      32 |         target: { value: "Data Science Concentration" }
-      33 |     });
-    > 34 |     expect(selectElement.title).toBe("Data Science Concentration");
-         |                                 ^
-      35 | });
-      36 |
-
-      at Object.<anonymous> (src/Audit/ChosenMajor.test.tsx:34:33)
-
+PASS src/Audit/ChosenMajor.test.tsx
 PASS src/semester/SemesterTable.test.tsx
 FAIL src/App.test.tsx
   ● Test suite failed to run
@@ -331,11 +161,11 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (src/App.tsx:15:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
 
-PASS src/SideNav/SideNav2.test.tsx (6.632 s)
+PASS src/SideNav/SideNav2.test.tsx (6.576 s)
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                  |   35.48 |    25.33 |   30.55 |    35.8 |                                         
+All files                  |   36.01 |    25.33 |   31.48 |   36.33 |                                         
  src                       |    3.03 |     6.45 |    1.92 |    3.07 |                                         
   App.tsx                  |       0 |        0 |       0 |       0 | 38-168                                  
   AuthDetails.tsx          |       0 |        0 |       0 |       0 | 30-68                                   
@@ -346,9 +176,9 @@ All files                  |   35.48 |    25.33 |   30.55 |    35.8 |
   firebase.ts              |       0 |      100 |     100 |       0 | 19-33                                   
   utils.tsx                |   30.76 |       50 |   16.66 |   33.33 | 16-28                                   
   welcome.tsx              |       0 |        0 |       0 |       0 | 33-46                                   
- src/Audit                 |   37.75 |     14.7 |    37.5 |   37.75 |                                         
+ src/Audit                 |   40.81 |     14.7 |   45.83 |   40.81 |                                         
   ChosenMajor.tsx          |   38.18 |        0 |   42.85 |   38.18 | 169-216,245-252                         
-  SeeAuditPage.tsx         |    37.2 |    27.77 |   35.29 |    37.2 | 64-70,75-111,138-157,205                
+  SeeAuditPage.tsx         |   44.18 |    27.77 |   47.05 |   44.18 | 64-66,75-111,138,154-157,205            
  src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                         
   FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 47,78                                   
  src/Interface             |       0 |        0 |       0 |       0 |                                         
@@ -374,8 +204,8 @@ All files                  |   35.48 |    25.33 |   30.55 |    35.8 |
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                         
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 
-Test Suites: 4 failed, 11 passed, 15 total
-Tests:       2 failed, 32 passed, 34 total
+Test Suites: 2 failed, 13 passed, 15 total
+Tests:       34 passed, 34 total
 Snapshots:   0 total
-Time:        11.659 s
+Time:        11.47 s
 Ran all test suites.
