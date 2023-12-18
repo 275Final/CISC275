@@ -160,3 +160,11 @@
     color: white;
     font-weight: bold;
 }
+.modalPrereq {
+    justify-content: left;
+    align-items: start;
+    color: red;
+    font-weight: 900;
+    font-size: larger;
+    padding-right: 6.2%;
+}

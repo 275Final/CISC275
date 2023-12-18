@@ -6,6 +6,7 @@ import realData from "../data/corrected_data.json";
 import { semester } from "../Interface/semester";
 import { useState } from "react";
 import { classes } from "../Interface/classes";
+import { prequesiteChecker } from "../utils";
 
 export function AddSemesterModal({
     handleClose,
@@ -24,6 +25,7 @@ export function AddSemesterModal({
     const [season, setSeason] = useState("");
     const [filteredCourses, setFilteredCourses] = useState(realData);
     const [visible, setVisible] = useState<boolean>(false);
+    const [showAlert, setShowAlert] = useState<boolean>(false);
 
     const inputChange1 = (event: React.ChangeEvent<HTMLInputElement>) => {
         const searchValue = event.target.value;
@@ -74,7 +76,10 @@ export function AddSemesterModal({
         foundCourse.originalCode = foundCourse.code;
         foundCourse.originalTitle = foundCourse.title;
         foundCourse.originalCredits = foundCourse.credits;
-        if (semesters.length === 0) {
+        if (
+            semesters.length === 0 &&
+            foundCourse.preReq[0].includes("No prerequisites.")
+        ) {
             const newId = 0;
             addSemester(
                 newId,
@@ -84,7 +89,9 @@ export function AddSemesterModal({
                 season
             );
             handleClose();
-        } else {
+        } else if (
+            prequesiteChecker(foundCourse.preReq, semesters, foundCourse)
+        ) {
             const lastSemester: semester = semesters[semesters.length - 1];
             const newId: number = lastSemester.id + 1;
             addSemester(
@@ -95,6 +102,8 @@ export function AddSemesterModal({
                 season
             );
             handleClose();
+        } else {
+            setShowAlert(true);
         }
     }
 
@@ -170,6 +179,11 @@ export function AddSemesterModal({
                     )}
                 </Modal.Body>
                 <Modal.Footer>
+                    {showAlert && (
+                        <div className="modalPrereq">
+                            Prerequisites are not met!
+                        </div>
+                    )}
                     <Button
                         onClick={() => {
                             handleClose();
@@ -205,5 +219,5 @@ through the courses with the help of filtering search. From there, the informati
 the course is extracted and the displayed on the plan, alongside the name of the semester
 
 I have a linter issue currently due to parans issue but it should be fixed before final submission
-
+Get guud.
 */

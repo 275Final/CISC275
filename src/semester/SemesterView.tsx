@@ -1,12 +1,8 @@
-/* eslint-disable no-extra-parens */
 import React from "react";
 import { semester } from "../Interface/semester";
 import { classes } from "../Interface/classes";
 import { RemoveClass } from "../semester-modification/RemoveClass";
 import { EditClassInfoModal } from "../semester-modification/EditClassInfoModal";
-//import { EditClass } from "../semester-modification/EditClass";
-//import { useState } from "react";
-//import { Button } from "react-bootstrap";
 
 export function SemesterView({
     semester,
@@ -27,8 +23,6 @@ export function SemesterView({
     updateSemester: (semester: semester) => void;
     dragCourse: classes | undefined;
 }): JSX.Element {
-    //This grabs the info of the course being dragged.
-    //TODO: Doesn't properly render on its own.
     //const [revertKey, setRevertKey] = useState(0);
     //setRevertKey(revertKey + 1);
     const handleDragStart = (
@@ -103,13 +97,6 @@ export function SemesterView({
                                 onDragStart={(e) =>
                                     handleDragStart(e, classItem)
                                 }
-                                // onDragLeave={(e) =>
-                                //     handleOnDragLeaves(
-                                //         e,
-                                //         classItem,
-                                //         semester.id
-                                //     )
-                                // }
                                 key={classItem.code}
                             >
                                 <td>{classItem.code}</td>
@@ -138,13 +125,6 @@ export function SemesterView({
                                         updateSemester={updateSemester}
                                     />
                                 </td>
-                                {/*<td>
-                                    {classItem.schedule.day.join(", ")},{" "}
-                                    {classItem.schedule.time}
-                                </td>
-                                <td>{classItem.location}</td>
-                                <td>{classItem.instructor}</td>
-                                    */}
                             </tr>
                         );
                     })}

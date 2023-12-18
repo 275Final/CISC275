@@ -2,18 +2,23 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { classes } from "../Interface/classes";
 import { semester } from "../Interface/semester";
+import Alert from "react-bootstrap/Alert";
+import { useState } from "react";
 
 export function AddClass({
+    setShowAlert,
     schedule,
     semester,
     newClass,
     onAddClass
 }: {
+    setShowAlert: (boolean: boolean) => void;
     schedule: semester[];
     semester: semester;
     newClass: classes;
     onAddClass: (updatedSchedule: semester[]) => void;
 }): JSX.Element {
+    const [show, setShow] = useState(false);
     function addClass() {
         // Create a new array of semesters
         const updatedSchedule: semester[] = [...schedule];
@@ -33,6 +38,12 @@ export function AddClass({
             prequesite: string[],
             filteredSemesters: semester[]
         ): boolean {
+            if (newClass.preReq.length === 1) {
+                if (newClass.preReq[0].includes("No prerequisites.")) {
+                    console.log(true);
+                    return true;
+                }
+            }
             //const initArray: string[] = [];
             const previousClassList = filteredSemesters
                 .map((semester: semester): string[] =>
@@ -63,34 +74,38 @@ export function AddClass({
             newClass.preReq,
             semIdsLower
         );
+        setShowAlert(!preReqBoolean);
+        console.log(!preReqBoolean);
         console.log(
             "Does this " + newClass + " have all prereqs met" + preReqBoolean
         );
-        const updatedClasses: classes[] = [
-            ...updatedSchedule[semesterIndex].classList,
-            newClass
-        ];
-        newClass.originalCode = newClass.code;
-        newClass.originalTitle = newClass.title;
-        newClass.originalCredits = newClass.credits;
-        // Get new credit total
-        const totalCredits: number = updatedClasses.reduce(
-            (total: number, currentClass: classes) =>
-                total + currentClass.credits,
-            0
-        );
+        if (preReqBoolean) {
+            const updatedClasses: classes[] = [
+                ...updatedSchedule[semesterIndex].classList,
+                newClass
+            ];
+            newClass.originalCode = newClass.code;
+            newClass.originalTitle = newClass.title;
+            newClass.originalCredits = newClass.credits;
+            // Get new credit total
+            const totalCredits: number = updatedClasses.reduce(
+                (total: number, currentClass: classes) =>
+                    total + currentClass.credits,
+                0
+            );
 
-        // Create a new semester object with the updated values
-        const updatedSemester: semester = {
-            ...updatedSchedule[semesterIndex],
-            classList: updatedClasses,
-            totalCredits: totalCredits
-        };
+            // Create a new semester object with the updated values
+            const updatedSemester: semester = {
+                ...updatedSchedule[semesterIndex],
+                classList: updatedClasses,
+                totalCredits: totalCredits
+            };
 
-        // Update the schedule with the modified semester
-        updatedSchedule[semesterIndex] = updatedSemester;
+            // Update the schedule with the modified semester
+            updatedSchedule[semesterIndex] = updatedSemester;
 
-        onAddClass(updatedSchedule);
+            onAddClass(updatedSchedule);
+        }
     }
 
     return <Button onClick={addClass}>Add Class</Button>;

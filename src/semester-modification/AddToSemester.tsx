@@ -23,6 +23,7 @@ export function AddToSemester({
     const [searchAttribute, setSearchAttribute] = useState("");
     const [filteredCourses, setFilteredCourses] = useState(realData);
     const [visible, setVisible] = useState<boolean>(false);
+    const [showAlert, setShowAlert] = useState<boolean>(false);
     const [changeSemester, setChangeSemester] = useState<semester>(
         semesters[0]
     );
@@ -147,6 +148,11 @@ export function AddToSemester({
                     )}
                 </Modal.Body>
                 <Modal.Footer>
+                    {showAlert && (
+                        <div className="modalPrereq">
+                            Prerequisites are not met!
+                        </div>
+                    )}
                     <Button
                         onClick={() => {
                             handleClose();
@@ -164,6 +170,7 @@ export function AddToSemester({
                         </Button>
                     ) : (
                         <AddClass
+                            setShowAlert={setShowAlert}
                             schedule={semesters}
                             semester={changeSemester}
                             newClass={getRealClass()}
