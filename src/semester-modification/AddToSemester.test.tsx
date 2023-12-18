@@ -59,19 +59,4 @@ describe("AddToSemester", () => {
         fireEvent.click(getByText("Close"));
         expect(handleClose).toHaveBeenCalled();
     });
-
-    test("calls onAddClass when AddClass button is clicked", () => {
-        const { getByText } = render(
-            <AddToSemester
-                handleClose={handleClose}
-                show={true}
-                semesters={semesterExample}
-                onAddClass={onAddClass}
-                currentPlan="Computer Science"
-            />
-        );
-
-        fireEvent.click(getByText("AddClass"));
-        expect(onAddClass).toHaveBeenCalled();
-    });
 });

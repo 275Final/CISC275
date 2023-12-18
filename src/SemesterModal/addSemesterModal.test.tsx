@@ -83,7 +83,7 @@ describe("FilteringSearchTests", () => {
         const input2 = screen.getByPlaceholderText(
             /Search by Course Code/i
         ) as HTMLInputElement;
-        fireEvent.change(input2, { target: { value: "BISC401" } });
+        fireEvent.change(input2, { target: { value: "ENGL101" } });
         fireEvent.click(screen.getByRole("button", { name: /Done/ }));
         expect(semesters).toStrictEqual([
             {
@@ -131,15 +131,15 @@ describe("FilteringSearchTests", () => {
                 fullTime: true,
                 classList: [
                     {
-                        code: "BISC401",
-                        title: "Molecular Biology of the Cell",
+                        code: "ENGL101",
+                        title: "Tools of Textual Analysis",
                         credits: 3,
                         description:
-                            "Introduction to the molecular biology of eucaryotes and procaryotes. Topics include structure and function of proteins and nucleic acids; replication and repair of DNA; biosynthesis of RNA and proteins; membranes, transport, composition and function of the eucaryotic cell, chromosomes, viruses, the immune system and recombinant DNA.",
-                        originalCode: "BISC401",
+                            "Gateway introduction to basic tools and strategies used in critical engagement with poety fiction, drama, and nonfiction. Includes fundamental concepts of textual analysis.",
+                        originalCode: "ENGL101",
                         originalCredits: 3,
-                        originalTitle: "Molecular Biology of the Cell",
-                        preReq: ["BISC 207"]
+                        originalTitle: "Tools of Textual Analysis",
+                        preReq: ["No prerequisites."]
                     }
                 ],
                 totalCredits: 3,

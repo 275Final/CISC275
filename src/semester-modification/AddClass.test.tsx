@@ -106,10 +106,13 @@ describe("AddClass Component tests", () => {
                 schedule={planHolder}
                 semester={currentSemester}
                 newClass={{
-                    code: "ACCT208",
-                    title: "Accounting II",
+                    code: "ACCT207",
                     credits: 3,
-                    preReq: ["ACCT207", " ACCT207"]
+                    originalCode: "ACCT207",
+                    originalCredits: 3,
+                    originalTitle: "Accounting I",
+                    preReq: ["No prerequisites."],
+                    title: "Accounting I"
                 }}
                 onAddClass={updatedSchedule}
             />
@@ -117,10 +120,13 @@ describe("AddClass Component tests", () => {
         const valueText = screen.getByRole("button", { name: /Add Class/i });
         valueText.click();
         expect(planHolder[0].classList).toContainEqual({
-            code: "ACCT208",
-            title: "Accounting II",
+            code: "ACCT207",
             credits: 3,
-            preReq: ["ACCT207", " ACCT207"]
+            originalCode: "ACCT207",
+            originalCredits: 3,
+            originalTitle: "Accounting I",
+            preReq: ["No prerequisites."],
+            title: "Accounting I"
         });
         expect(planHolder[0].classList.length).toEqual(3);
     });
@@ -133,10 +139,13 @@ describe("AddClass Component tests", () => {
                 schedule={planHolder}
                 semester={currentSemester}
                 newClass={{
-                    code: "ACCT208",
-                    title: "Accounting II",
+                    code: "ACCT207",
                     credits: 3,
-                    preReq: ["ACCT207", " ACCT207"]
+                    originalCode: "ACCT207",
+                    originalCredits: 3,
+                    originalTitle: "Accounting I",
+                    preReq: ["No prerequisites."],
+                    title: "Accounting I"
                 }}
                 onAddClass={updatedSchedule}
             />
@@ -144,10 +153,13 @@ describe("AddClass Component tests", () => {
         const valueText = screen.getByRole("button", { name: /Add Class/i });
         valueText.click();
         expect(planHolder[1].classList).toContainEqual({
-            code: "ACCT208",
-            title: "Accounting II",
+            code: "ACCT207",
             credits: 3,
-            preReq: ["ACCT207", " ACCT207"]
+            originalCode: "ACCT207",
+            originalCredits: 3,
+            originalTitle: "Accounting I",
+            preReq: ["No prerequisites."],
+            title: "Accounting I"
         });
         expect(planHolder[1].classList.length).toEqual(3);
     });
