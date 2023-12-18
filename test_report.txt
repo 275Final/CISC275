@@ -19,120 +19,75 @@ PASS src/PlanView/PlanView.test.tsx
 
       at Object.<anonymous> (src/PlanView/PlanView.test.tsx:88:9)
 
-FAIL src/SemesterModal/addSemesterModal.test.tsx
-  ● FilteringSearchTests › Checking if Semester is added
-
-    expect(received).toStrictEqual(expected) // deep equality
-
-    - Expected  - 20
-    + Received  +  0
-
-    @@ -43,26 +43,6 @@
-          "fullTime": true,
-          "id": 2,
-          "season": "Spring 2023",
-          "totalCredits": 6,
-        },
-    -   Object {
-    -     "classList": Array [
-    -       Object {
-    -         "code": "BISC401",
-    -         "credits": 3,
-    -         "description": "Introduction to the molecular biology of eucaryotes and procaryotes. Topics include structure and function of proteins and nucleic acids; replication and repair of DNA; biosynthesis of RNA and proteins; membranes, transport, composition and function of the eucaryotic cell, chromosomes, viruses, the immune system and recombinant DNA.",
-    -         "originalCode": "BISC401",
-    -         "originalCredits": 3,
-    -         "originalTitle": "Molecular Biology of the Cell",
-    -         "preReq": Array [
-    -           "BISC 207",
-    -         ],
-    -         "title": "Molecular Biology of the Cell",
-    -       },
-    -     ],
-    -     "fullTime": true,
-    -     "id": 3,
-    -     "season": "Fall 2025",
-    -     "totalCredits": 3,
-    -   },
-      ]
-
-      86 |         fireEvent.change(input2, { target: { value: "BISC401" } });
-      87 |         fireEvent.click(screen.getByRole("button", { name: /Done/ }));
-    > 88 |         expect(semesters).toStrictEqual([
-         |                           ^
-      89 |             {
-      90 |                 id: 1,
-      91 |                 fullTime: true,
-
-      at Object.<anonymous> (src/SemesterModal/addSemesterModal.test.tsx:88:27)
-
-PASS src/semester/SemesterView.test.tsx
-PASS src/semester-modification/RemoveClass.test.tsx
-FAIL src/semester-modification/AddClass.test.tsx
+PASS src/SemesterModal/addSemesterModal.test.tsx
   ● Console
 
     console.log
-      false
+      true
 
-      at checkPreReqs (src/semester-modification/AddClass.tsx:75:21)
+      at prequesiteChecker (src/utils.tsx:11:21)
+
+    console.log
+      [
+        {
+          id: 1,
+          fullTime: true,
+          classList: [ [Object], [Object] ],
+          totalCredits: 6,
+          season: 'Fall 2023'
+        },
+        {
+          id: 2,
+          fullTime: true,
+          classList: [ [Object], [Object] ],
+          totalCredits: 6,
+          season: 'Spring 2023'
+        },
+        {
+          id: 3,
+          fullTime: true,
+          classList: [ [Object] ],
+          totalCredits: 3,
+          season: 'Fall 2025'
+        }
+      ]
+
+      at addSemester (src/SemesterModal/addSemesterModal.tsx:90:17)
+
+PASS src/semester/SemesterView.test.tsx
+PASS src/semester-modification/RemoveClass.test.tsx
+PASS src/semester-modification/AddClass.test.tsx
+  ● Console
 
     console.log
       true
 
-      at addClass (src/semester-modification/AddClass.tsx:85:17)
-
-    console.log
-      Does this [object Object] have all prereqs metfalse
-
-      at addClass (src/semester-modification/AddClass.tsx:86:17)
+      at checkPreReqs (src/semester-modification/AddClass.tsx:49:29)
 
     console.log
       false
 
-      at checkPreReqs (src/semester-modification/AddClass.tsx:75:21)
+      at addClass (src/semester-modification/AddClass.tsx:85:17)
+
+    console.log
+      Does this [object Object] have all prereqs mettrue
+
+      at addClass (src/semester-modification/AddClass.tsx:86:17)
 
     console.log
       true
 
+      at checkPreReqs (src/semester-modification/AddClass.tsx:49:29)
+
+    console.log
+      false
+
       at addClass (src/semester-modification/AddClass.tsx:85:17)
 
     console.log
-      Does this [object Object] have all prereqs metfalse
+      Does this [object Object] have all prereqs mettrue
 
       at addClass (src/semester-modification/AddClass.tsx:86:17)
-
-  ● AddClass Component tests › Button adds class to semester
-
-    expect(received).toContainEqual(expected) // deep equality
-
-    Expected value: {"code": "ACCT208", "credits": 3, "preReq": ["ACCT207", " ACCT207"], "title": "Accounting II"}
-    Received array: [{"code": "CISC108", "credits": 3, "preReq": [], "title": "Introduction to Computer Science I"}, {"code": "CISC181", "credits": 3, "preReq": ["CISC108"], "title": "Introduction to Computer Science II"}]
-
-      117 |         const valueText = screen.getByRole("button", { name: /Add Class/i });
-      118 |         valueText.click();
-    > 119 |         expect(planHolder[0].classList).toContainEqual({
-          |                                         ^
-      120 |             code: "ACCT208",
-      121 |             title: "Accounting II",
-      122 |             credits: 3,
-
-      at Object.<anonymous> (src/semester-modification/AddClass.test.tsx:119:41)
-
-  ● AddClass Component tests › Button adds class to second semester
-
-    expect(received).toContainEqual(expected) // deep equality
-
-    Expected value: {"code": "ACCT208", "credits": 3, "preReq": ["ACCT207", " ACCT207"], "title": "Accounting II"}
-    Received array: [{"code": "CISC210", "credits": 3, "preReq": ["CISC108"], "title": "Introduction to Systems Programming"}, {"code": "CISC220", "credits": 3, "preReq": ["CISC210"], "title": "Data Structures"}]
-
-      144 |         const valueText = screen.getByRole("button", { name: /Add Class/i });
-      145 |         valueText.click();
-    > 146 |         expect(planHolder[1].classList).toContainEqual({
-          |                                         ^
-      147 |             code: "ACCT208",
-      148 |             title: "Accounting II",
-      149 |             credits: 3,
-
-      at Object.<anonymous> (src/semester-modification/AddClass.test.tsx:146:41)
 
 PASS src/addPlan/AddDeletePlan.test.tsx
   ● Console
@@ -141,124 +96,6 @@ PASS src/addPlan/AddDeletePlan.test.tsx
       []
 
       at Object.<anonymous> (src/addPlan/AddDeletePlan.test.tsx:24:9)
-
-FAIL src/semester-modification/AddToSemester.test.tsx
-  ● AddToSemester › calls onAddClass when AddClass button is clicked
-
-    TestingLibraryElementError: Unable to find an element with the text: AddClass. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body[39m
-      [33mclass[39m=[32m"modal-open"[39m
-      [33mdata-rr-ui-modal-open[39m=[32m""[39m
-      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
-    [36m>[39m
-      [36m<div>[39m
-        [36m<div />[39m
-      [36m</div>[39m
-      [36m<div[39m
-        [33mclass[39m=[32m"modal-backdrop show"[39m
-      [36m/>[39m
-      [36m<div[39m
-        [33maria-modal[39m=[32m"true"[39m
-        [33mclass[39m=[32m"modal show"[39m
-        [33mrole[39m=[32m"dialog"[39m
-        [33mstyle[39m=[32m"display: block;"[39m
-        [33mtabindex[39m=[32m"-1"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"modal-dialog"[39m
-        [36m>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"modal-content"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"modal-header"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"modal-title h4"[39m
-              [36m>[39m
-                [0mSemester[0m
-              [36m</div>[39m
-              [36m<button[39m
-                [33maria-label[39m=[32m"Close"[39m
-                [33mclass[39m=[32m"btn-close"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m/>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"modal-body"[39m
-            [36m>[39m
-              [36m<div>[39m
-                [36m<div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"form-check"[39m
-                  [36m>[39m
-                    [36m<input[39m
-                      [33mchecked[39m=[32m""[39m
-                      [33mclass[39m=[32m"form-check-input"[39m
-                      [33mtype[39m=[32m"radio"[39m
-                      [33mvalue[39m=[32m"Fall 2023"[39m
-                    [36m/>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"form-check-label"[39m
-                      [33mtitle[39m=[32m""[39m
-                    [36m>[39m
-                      [0mFall 2023[0m
-                    [36m</label>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
-                [36m<hr />[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mCourse:[0m
-                [36m</label>[39m
-                [36m<div>[39m
-                  [36m<input[39m
-                    [33mclass[39m=[32m"form-control"[39m
-                    [33mid[39m=[32m"formFilterSearch"[39m
-                    [33mplaceholder[39m=[32m"Search by Course Code"[39m
-                    [33mtype[39m=[32m"text"[39m
-                    [33mvalue[39m=[32m""[39m
-                  [36m/>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"modal-footer"[39m
-            [36m>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mClose[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mAdd Class[0m
-              [36m</button>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      72 |         );
-      73 |
-    > 74 |         fireEvent.click(getByText("AddClass"));
-         |                         ^
-      75 |         expect(onAddClass).toHaveBeenCalled();
-      76 |     });
-      77 | });
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/semester-modification/AddToSemester.test.tsx:74:25)
 
 FAIL src/welcome.test.tsx
   ● Test suite failed to run
@@ -446,6 +283,7 @@ FAIL src/Audit/SeeAuditPage.test.tsx
 
 PASS src/FilteringSearch/FilteringSearch.test.tsx
 PASS src/semester-modification/EditClassInfoModal.test.tsx
+PASS src/semester-modification/AddToSemester.test.tsx
 FAIL src/Audit/ChosenMajor.test.tsx
   ● ChosenMajor updates selectedMajor state on change
 
@@ -493,12 +331,12 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (src/App.tsx:15:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
 
-PASS src/SideNav/SideNav2.test.tsx (6.544 s)
+PASS src/SideNav/SideNav2.test.tsx (6.632 s)
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                  |   35.31 |    25.33 |   34.25 |   35.44 |                                         
- src                       |    8.33 |     6.45 |   11.53 |    7.69 |                                         
+All files                  |   35.48 |    25.33 |   30.55 |    35.8 |                                         
+ src                       |    3.03 |     6.45 |    1.92 |    3.07 |                                         
   App.tsx                  |       0 |        0 |       0 |       0 | 38-168                                  
   AuthDetails.tsx          |       0 |        0 |       0 |       0 | 30-68                                   
   SignUp.tsx               |       0 |      100 |       0 |       0 | 14-43                                   
@@ -506,7 +344,7 @@ All files                  |   35.31 |    25.33 |   34.25 |   35.44 |
   SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 17-26                                   
   databaseconfig.tsx       |       0 |      100 |     100 |       0 | 4-11                                    
   firebase.ts              |       0 |      100 |     100 |       0 | 19-33                                   
-  utils.tsx                |   84.61 |       50 |     100 |   83.33 | 11-12                                   
+  utils.tsx                |   30.76 |       50 |   16.66 |   33.33 | 16-28                                   
   welcome.tsx              |       0 |        0 |       0 |       0 | 33-46                                   
  src/Audit                 |   37.75 |     14.7 |    37.5 |   37.75 |                                         
   ChosenMajor.tsx          |   38.18 |        0 |   42.85 |   38.18 | 169-216,245-252                         
@@ -520,8 +358,8 @@ All files                  |   35.31 |    25.33 |   34.25 |   35.44 |
  src/PlanView              |   33.33 |    16.66 |   38.88 |   33.33 |                                         
   DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 31-123                                  
   PlanView.tsx             |     100 |       50 |     100 |     100 | 50-73                                   
- src/SemesterModal         |    65.9 |    57.14 |   61.53 |    65.9 |                                         
-  addSemesterModal.tsx     |    65.9 |    57.14 |   61.53 |    65.9 | 68,72-90,105-113,117-126,178-182,220    
+ src/SemesterModal         |   79.54 |       50 |   69.23 |   79.54 |                                         
+  addSemesterModal.tsx     |   79.54 |       50 |   69.23 |   79.54 | 68,72,105-113,128,178-182,220           
  src/SideNav               |   11.11 |      100 |    12.5 |   11.11 |                                         
   SideNav2.tsx             |   11.11 |      100 |    12.5 |   11.11 | 42-72                                   
  src/addPlan               |   85.18 |       60 |   84.61 |   85.18 |                                         
@@ -529,15 +367,15 @@ All files                  |   35.31 |    25.33 |   34.25 |   35.44 |
  src/semester              |   15.18 |    18.75 |   17.64 |   15.78 |                                         
   SemesterTable.tsx        |    10.9 |       10 |    9.52 |   11.53 | 30-67,75-123,131-132,146,159-160        
   SemesterView.tsx         |      25 |    33.33 |   30.76 |      25 | 37-39,45-68,74-76,99-118                
- src/semester-modification |   48.43 |    32.25 |   44.68 |   48.43 |                                         
-  AddClass.tsx             |    64.7 |    33.33 |    90.9 |    64.7 | 48-50,90-114                            
+ src/semester-modification |      50 |    35.48 |   36.17 |      50 |                                         
+  AddClass.tsx             |   70.58 |       50 |   54.54 |   70.58 | 55-76                                   
   AddToSemester.tsx        |      50 |       50 |   31.25 |      50 | 40-41,45-51,57-61,68,72,133-137,174-188 
   EditClassInfoModal.tsx   |   25.49 |    23.52 |    12.5 |   25.49 | 35-38,41-42,45-46,52-116,163-187        
   RemoveClass.tsx          |     100 |      100 |     100 |     100 |                                         
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 
-Test Suites: 7 failed, 8 passed, 15 total
-Tests:       6 failed, 29 passed, 35 total
+Test Suites: 4 failed, 11 passed, 15 total
+Tests:       2 failed, 32 passed, 34 total
 Snapshots:   0 total
-Time:        11.911 s
+Time:        11.659 s
 Ran all test suites.
