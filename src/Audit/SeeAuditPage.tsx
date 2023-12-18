@@ -8,6 +8,11 @@ we enter a never-ending loop where prettier both does not like the parentheses a
 does not like the absence of them.
 */
 /* eslint-disable indent */
+/*
+Lint rule regarding indent has been disabled due to an issue with mapping function
+in which prettier wanted spaces removed, however, when those spaces were removed, 
+another error occurred where prettier could not find the adequate number of spaces.
+*/
 import React, { useEffect, useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { semester } from "../Interface/semester";
