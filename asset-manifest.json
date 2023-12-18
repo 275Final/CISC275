@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/CISC275/static/css/main.621f0890.css",
-    "main.js": "/CISC275/static/js/main.a5a39d39.js",
+    "main.css": "/CISC275/static/css/main.6e88bb06.css",
+    "main.js": "/CISC275/static/js/main.7be7abfa.js",
     "static/js/787.4ef7427d.chunk.js": "/CISC275/static/js/787.4ef7427d.chunk.js",
     "static/media/UDFallScene.png": "/CISC275/static/media/UDFallScene.b583f844ff613763fc0f.png",
     "static/media/Udel-Crest.png": "/CISC275/static/media/Udel-Crest.61bede16a3100c83d530.png",
     "static/media/UniversityofDelawareLogo.png": "/CISC275/static/media/UniversityofDelawareLogo.6c67d3e79f7f88ce53cb.png",
     "static/media/Delaware-Blue-Hens-Logo.png": "/CISC275/static/media/Delaware-Blue-Hens-Logo.9807463b2b1aadd132a4.png",
     "index.html": "/CISC275/index.html",
-    "main.621f0890.css.map": "/CISC275/static/css/main.621f0890.css.map",
-    "main.a5a39d39.js.map": "/CISC275/static/js/main.a5a39d39.js.map",
+    "main.6e88bb06.css.map": "/CISC275/static/css/main.6e88bb06.css.map",
+    "main.7be7abfa.js.map": "/CISC275/static/js/main.7be7abfa.js.map",
     "787.4ef7427d.chunk.js.map": "/CISC275/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.621f0890.css",
-    "static/js/main.a5a39d39.js"
+    "static/css/main.6e88bb06.css",
+    "static/js/main.7be7abfa.js"
   ]
 }
