@@ -9218,7 +9218,7 @@
         "code": "CISC181",
         "title": "Introduction to Computer Science II",
         "credits": 3,
-        "preReq": ["CISC 108", "CISC 106"],
+        "preReq": ["CISC 108"],
         "description": "Principles of computer science illustrated and applied through programming in an object oriented language. Programming projects illustrate computational problems, styles and issues that arise in computer systems development and in all application areas of computation."
     },
     {
@@ -9239,7 +9239,7 @@
         "code": "CISC210",
         "title": "Introduction to Systems Programming",
         "credits": 3,
-        "preReq": ["CISC 106", "CISC 108"],
+        "preReq": ["CISC 108"],
         "description": "Description not available."
     },
     {
@@ -22273,7 +22273,7 @@
         "code": "MATH241",
         "title": "Analytic Geometry and Calculus A",
         "credits": 4,
-        "preReq": ["MATH 117"],
+        "preReq": ["No prerequisites."],
         "description": "Functions, limits, continuity, derivatives. Polynomial, rational, exponential, hyperbolic, logarithmic, trigonometric and inverse trigonometric functions. Definite and indefinite integrals and the Fundamental Theorem of Calculus. Simple differential equations (separable ODE, linear ODE). ODE models leading to exponential growth and decay."
     },
     {
