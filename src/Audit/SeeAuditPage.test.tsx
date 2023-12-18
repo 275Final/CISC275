@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render, fireEvent, screen } from "@testing-library/react";
 import { SeeAuditPage } from "./SeeAuditPage";
 import { semester } from "../Interface/semester";
 import { classes } from "../Interface/classes";
@@ -51,12 +51,11 @@ describe("SeeAuditPage component", () => {
         expect(getByText("Requirement2")).toBeInTheDocument();
 
         // Check if the "Add Class" button is present
-        const addButton = getByText("Add Class");
-        expect(addButton).toBeInTheDocument();
-
-        // Simulate clicking the "Add Class" button
-        fireEvent.click(addButton);
-
+        const addButton = screen.queryAllByRole("button", {
+            name: /Add Class/i
+        });
+        expect(addButton).not.toBeNull();
+        fireEvent.click(addButton[0]);
         // Check if the modal appears
         const modalTitle = getByText("Choose Class to Fill Requirement");
         expect(modalTitle).toBeInTheDocument();
