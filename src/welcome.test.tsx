@@ -14,7 +14,7 @@ describe("Welcome screen test", () => {
 
     test("Check for enter name textbox", () => {
         render(<App />);
-        const textBox = screen.getByRole("textbox");
+        const textBox = screen.queryByRole("textbox");
         expect(textBox).toBeInTheDocument();
     });
 
