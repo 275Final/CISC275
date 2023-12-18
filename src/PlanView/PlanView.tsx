@@ -7,6 +7,25 @@ get an error that does not allow for the exclusion of these parentheses. Essenti
 we enter a never-ending loop where prettier both does not like the parentheses and
 does not like the absence of them.
 */
+
+/*
+ 
+This component is used to allow the user to view the plan they have created.
+
+If there are no plans available to view, the user will be told to create a plan. 
+And the user will select either close or done to close the modal.
+
+If a plans is available to view, a modal will pop up and the user will open the drop
+down menu and select which plan they would like to view. The user can select either 
+close or done. When selecting close, nothing will run and the modal will close.
+If user were to click done, the program will execute viewSemesterTable() which will
+use the viewPlan (which holds the user selected plan) to check against the array of 
+plans (all plans) and it will take the array of seemsters and set the usestate 
+changeViewSemesters to that. This is crucial as that usestate is used to display 
+the semester by the code present in SemesterTable, and SemesterView.
+
+*/
+
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { Plan } from "../Interface/Plan";
@@ -32,7 +51,6 @@ export function PlanView({
             const findIndexplan: number = allplans.findIndex(
                 (plan) => plan.name === viewPlan
             );
-            console.log(viewPlan);
             const foundplan: Plan = allplans[findIndexplan];
             changeViewSemesters(foundplan.semesters);
             setCurrentPlan(viewPlan);
@@ -63,6 +81,7 @@ export function PlanView({
                                 value={viewPlan}
                                 onChange={selectedPlan}
                                 style={{ textAlign: "center" }}
+                                data-testid="dropdown"
                             >
                                 <option>Please select a degree plan</option>
                                 {allplans.map((plan) => (

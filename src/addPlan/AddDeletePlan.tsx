@@ -150,6 +150,7 @@ export function AddDeletePlan({
                                         value={selectPlan}
                                         onChange={selectedPlan}
                                         style={{ textAlign: "center" }}
+                                        data-testid="dropdown"
                                     >
                                         <option>
                                             Please select a degree plan
