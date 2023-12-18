@@ -11,10 +11,6 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { classes } from "../Interface/classes";
 import { semester } from "../Interface/semester";
-import { useState } from "react";
-import { Alert } from "react-bootstrap";
-import Alert from "react-bootstrap/Alert";
-import { useState } from "react";
 
 export function AddClass({
     setShowAlert,
@@ -29,7 +25,6 @@ export function AddClass({
     newClass: classes;
     onAddClass: (updatedSchedule: semester[]) => void;
 }): JSX.Element {
-    const [showAlert, setShowAlert] = useState(false);
     function addClass() {
         // Create a new array of semesters
         const updatedSchedule: semester[] = [...schedule];
@@ -117,25 +112,6 @@ export function AddClass({
             updatedSchedule[semesterIndex] = updatedSemester;
 
             onAddClass(updatedSchedule);
-        }
-        if (showAlert) {
-            return (
-                <>
-                    <Alert
-                        variant="danger"
-                        onClose={() => setShowAlert(false)}
-                        dismissible
-                    >
-                        <Alert.Heading>Cannot Add course</Alert.Heading>
-                        <p>
-                            Ths course cannot be added because its pre requisite
-                            courses have not been met in previous semesters.
-                            Please add pre requisite courses before adding
-                            higher lever courses.
-                        </p>
-                    </Alert>
-                </>
-            );
         }
     }
 
