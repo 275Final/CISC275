@@ -308,13 +308,13 @@ FAIL src/welcome.test.tsx
 
     ReferenceError: TextDecoder is not defined
 
-      1 | // Import the functions you need from the SDKs you need
-      2 | import { initializeApp } from "firebase/app";
-    > 3 | import { getAuth } from "firebase/auth";
-        | ^
-      4 | import { getDatabase } from "firebase/database";
-      5 | // TODO: Add SDKs for Firebase products that you want to use
-      6 | // https://firebase.google.com/docs/web/setup#available-libraries
+      10 | // Import the functions you need from the SDKs you need
+      11 | import { initializeApp } from "firebase/app";
+    > 12 | import { getAuth } from "firebase/auth";
+         | ^
+      13 | import { getDatabase } from "firebase/database";
+      14 | // TODO: Add SDKs for Firebase products that you want to use
+      15 | // https://firebase.google.com/docs/web/setup#available-libraries
 
       at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/decodeText.js:4:21)
       at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/parseParams.js:4:20)
@@ -326,9 +326,9 @@ FAIL src/welcome.test.tsx
       at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-fe65684a.js:7:14)
       at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/index.js:5:12)
       at Object.<anonymous> (node_modules/firebase/auth/dist/index.cjs.js:5:12)
-      at Object.<anonymous> (src/firebase.ts:3:1)
-      at Object.<anonymous> (src/Signin.tsx:2:1)
-      at Object.<anonymous> (src/welcome.tsx:6:1)
+      at Object.<anonymous> (src/firebase.ts:12:1)
+      at Object.<anonymous> (src/Signin.tsx:11:1)
+      at Object.<anonymous> (src/welcome.tsx:16:1)
       at Object.<anonymous> (src/App.tsx:7:1)
       at Object.<anonymous> (src/welcome.test.tsx:4:1)
 
@@ -510,13 +510,13 @@ FAIL src/App.test.tsx
 
     ReferenceError: TextDecoder is not defined
 
-      1 | // Import the functions you need from the SDKs you need
-      2 | import { initializeApp } from "firebase/app";
-    > 3 | import { getAuth } from "firebase/auth";
-        | ^
-      4 | import { getDatabase } from "firebase/database";
-      5 | // TODO: Add SDKs for Firebase products that you want to use
-      6 | // https://firebase.google.com/docs/web/setup#available-libraries
+      10 | // Import the functions you need from the SDKs you need
+      11 | import { initializeApp } from "firebase/app";
+    > 12 | import { getAuth } from "firebase/auth";
+         | ^
+      13 | import { getDatabase } from "firebase/database";
+      14 | // TODO: Add SDKs for Firebase products that you want to use
+      15 | // https://firebase.google.com/docs/web/setup#available-libraries
 
       at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/decodeText.js:4:21)
       at Object.<anonymous> (node_modules/undici/node_modules/@fastify/busboy/lib/utils/parseParams.js:4:20)
@@ -528,9 +528,9 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/totp-fe65684a.js:7:14)
       at Object.<anonymous> (node_modules/firebase/node_modules/@firebase/auth/dist/node/index.js:5:12)
       at Object.<anonymous> (node_modules/firebase/auth/dist/index.cjs.js:5:12)
-      at Object.<anonymous> (src/firebase.ts:3:1)
-      at Object.<anonymous> (src/Signin.tsx:2:1)
-      at Object.<anonymous> (src/welcome.tsx:6:1)
+      at Object.<anonymous> (src/firebase.ts:12:1)
+      at Object.<anonymous> (src/Signin.tsx:11:1)
+      at Object.<anonymous> (src/welcome.tsx:16:1)
       at Object.<anonymous> (src/App.tsx:7:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
 
@@ -1405,7 +1405,7 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
 
-FAIL src/SideNav/SideNav2.test.tsx (6.595 s)
+FAIL src/SideNav/SideNav2.test.tsx (6.711 s)
   ● FilteringSearchTests › render the search box
 
     TestingLibraryElementError: Unable to find an element with the text: /Add Degree Plan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -1612,13 +1612,13 @@ File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered 
 All files                  |   35.71 |    23.57 |   32.05 |   35.97 |                                         
  src                       |       0 |        0 |       0 |       0 |                                         
   App.tsx                  |       0 |        0 |       0 |       0 | 30-160                                  
-  AuthDetails.tsx          |       0 |        0 |       0 |       0 | 13-51                                   
-  SignUp.tsx               |       0 |      100 |       0 |       0 | 5-34                                    
-  Signin.tsx               |       0 |      100 |       0 |       0 | 5-34                                    
+  AuthDetails.tsx          |       0 |        0 |       0 |       0 | 22-60                                   
+  SignUp.tsx               |       0 |      100 |       0 |       0 | 14-43                                   
+  Signin.tsx               |       0 |      100 |       0 |       0 | 14-43                                   
   SwitchComponents.tsx     |       0 |        0 |       0 |       0 | 17-26                                   
   databaseconfig.tsx       |       0 |      100 |     100 |       0 | 4-11                                    
-  firebase.ts              |       0 |      100 |     100 |       0 | 10-24                                   
-  welcome.tsx              |       0 |        0 |       0 |       0 | 15-28                                   
+  firebase.ts              |       0 |      100 |     100 |       0 | 19-33                                   
+  welcome.tsx              |       0 |        0 |       0 |       0 | 25-38                                   
  src/Audit                 |      37 |    18.51 |    37.5 |      37 |                                         
   ChosenMajor.tsx          |   36.84 |        0 |   42.85 |   36.84 | 164-213,242-249                         
   SeeAuditPage.tsx         |    37.2 |    27.77 |   35.29 |    37.2 | 51-57,62-98,125-144,192                 
@@ -1649,5 +1649,5 @@ All files                  |   35.71 |    23.57 |   32.05 |   35.97 |
 Test Suites: 9 failed, 5 passed, 14 total
 Tests:       11 failed, 24 passed, 35 total
 Snapshots:   0 total
-Time:        11.291 s
+Time:        11.46 s
 Ran all test suites.
