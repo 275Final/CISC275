@@ -1,5 +1,12 @@
 /* eslint-disable no-extra-parens */
-/* eslint-disable indent */
+/*
+Lint rule regarding no-extra parens has been disabled due to an issue with
+prettier not accepting added parenthesis within our ternary if statements.
+However, when we remove these parentheses as requested by prettier, we then
+get an error that does not allow for the exclusion of these parentheses. Essentially,
+we enter a never-ending loop where prettier both does not like the parentheses and
+does not like the absence of them.
+*/
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 
@@ -158,82 +165,47 @@ export function ChosenMajor({
     function updateMajor(event: React.ChangeEvent<HTMLSelectElement>): void {
         setSelectedMajor(event.target.value);
     }
-
-    //Currently not working and causes indent error, will need to change function
     function setFinalList() {
-        const words: string[] = [...generalClasses];
-        switch (selectedMajor) {
-            //correct spacing causes loop to not run, eslint doesn't accept switch as a function to tab into
-            case "Artificial Intelligence and Robotics Concentration":
-                credits = [...generalCredits, ...AIREQnum];
-                reqList([...generalClasses, ...AIREQ]);
-                break;
-            case "Bioinformatics Concentration":
-                credits = [...generalCredits, ...BIOREQnum];
-                reqList([...generalClasses, ...BIOREQ]);
-                break;
-            case "Cybersecurity Concentration":
-                credits = [...generalCredits, ...CYBERREQnum];
-                reqList([...generalClasses, ...CYBERREQ]);
-                break;
-            case "Data Science Concentration":
-                credits = [...generalCredits, ...DATAREQnum];
-                reqList([...generalClasses, ...DATAREQ]);
-                break;
-            case "High Performance Computing Concentration":
-                credits = [...generalCredits, ...HPCREQnum];
-                reqList([...generalClasses, ...HPCREQ]);
-                break;
-            case "Systems and Networks Concentration":
-                credits = [...generalCredits, ...SNREQnum];
-                reqList([...generalClasses, ...SNREQ]);
-                break;
-            case "Theory and Computation Concentration":
-                credits = [...generalCredits, ...TACREQnum];
-                reqList([...generalClasses, ...TACREQ]);
-                break;
-            case "Traditional Program with Custom Focus Area":
-                credits = [...generalCredits];
-                reqList([...generalClasses]);
-                break;
-            default:
-                credits = [...generalCredits];
-                reqList([...generalClasses]);
-                break;
-        }
-    }
-    */
-    function setFinalList() {
-        const words: string[] = [...generalClasses];
+        let credits: number[] = [...generalCredits];
         if (
             selectedMajor ===
             "Artificial Intelligence and Robotics Concentration"
         ) {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...AIREQnum];
+            reqList([...generalClasses, ...AIREQ]);
         }
         if (selectedMajor === "Bioinformatics Concentration") {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...BIOREQnum];
+            reqList([...generalClasses, ...BIOREQ]);
         }
         if (selectedMajor === "Cybersecurity Concentration") {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...CYBERREQnum];
+            reqList([...generalClasses, ...CYBERREQ]);
         }
         if (selectedMajor === "Data Science Concentration") {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...DATAREQnum];
+            reqList([...generalClasses, ...DATAREQ]);
         }
         if (selectedMajor === "High Performance Computing Concentration") {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...HPCREQnum];
+            reqList([...generalClasses, ...HPCREQ]);
         }
         if (selectedMajor === "Systems and Networks Concentration") {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...SNREQnum];
+            reqList([...generalClasses, ...SNREQ]);
         }
         if (selectedMajor === "Theory and Computation Concentration") {
-            setTotalClasses(words.concat(fix));
+            credits = [...generalCredits, ...TACREQnum];
+            reqList([...generalClasses, ...TACREQ]);
         }
         if (selectedMajor === "Traditional Program with Custom Focus Area") {
-            setTotalClasses(["dumb major that screws up my idea"]);
+            credits = [...generalCredits];
+            reqList([...generalClasses]);
         } else {
-            setTotalClasses([""]);
+            credits = [...generalCredits];
+            reqList([...generalClasses]);
         }
+        creditList(credits);
     }
 
     function handleSubmit(): void {
