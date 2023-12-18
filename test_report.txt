@@ -493,7 +493,7 @@ FAIL src/App.test.tsx
       at Object.<anonymous> (src/App.tsx:15:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
 
-PASS src/SideNav/SideNav2.test.tsx (6.669 s)
+PASS src/SideNav/SideNav2.test.tsx (6.406 s)
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
@@ -518,7 +518,7 @@ All files                  |   35.31 |    25.33 |   34.25 |   35.44 |
   classes.tsx              |       0 |        0 |       0 |       0 |                                         
   semester.tsx             |       0 |        0 |       0 |       0 |                                         
  src/PlanView              |   33.33 |    16.66 |   38.88 |   33.33 |                                         
-  DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 24-116                                  
+  DownloadPlan.tsx         |       0 |        0 |       0 |       0 | 31-123                                  
   PlanView.tsx             |     100 |       50 |     100 |     100 | 50-73                                   
  src/SemesterModal         |    65.9 |    57.14 |   61.53 |    65.9 |                                         
   addSemesterModal.tsx     |    65.9 |    57.14 |   61.53 |    65.9 | 68,72-90,105-113,117-126,178-182,220    
@@ -527,8 +527,8 @@ All files                  |   35.31 |    25.33 |   34.25 |   35.44 |
  src/addPlan               |   85.18 |       60 |   84.61 |   85.18 |                                         
   AddDeletePlan.tsx        |   85.18 |       60 |   84.61 |   85.18 | 72-73,94,173                            
  src/semester              |   15.18 |    18.75 |   17.64 |   15.78 |                                         
-  SemesterTable.tsx        |    10.9 |       10 |    9.52 |   11.53 | 32-69,77-125,133-134,148,161-162        
-  SemesterView.tsx         |      25 |    33.33 |   30.76 |      25 | 32-34,40-63,69-71,98-117                
+  SemesterTable.tsx        |    10.9 |       10 |    9.52 |   11.53 | 30-67,75-123,131-132,146,159-160        
+  SemesterView.tsx         |      25 |    33.33 |   30.76 |      25 | 37-39,45-68,74-76,99-118                
  src/semester-modification |   48.43 |    32.25 |   44.68 |   48.43 |                                         
   AddClass.tsx             |    64.7 |    33.33 |    90.9 |    64.7 | 48-50,90-114                            
   AddToSemester.tsx        |      50 |       50 |   31.25 |      50 | 40-41,45-51,57-61,68,72,133-137,174-188 
@@ -539,5 +539,5 @@ All files                  |   35.31 |    25.33 |   34.25 |   35.44 |
 Test Suites: 7 failed, 8 passed, 15 total
 Tests:       6 failed, 29 passed, 35 total
 Snapshots:   0 total
-Time:        12.163 s
+Time:        11.674 s
 Ran all test suites.
