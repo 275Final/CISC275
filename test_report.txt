@@ -1406,7 +1406,7 @@ FAIL src/semester/SemesterTable.test.tsx
       at Object.toBeInTheDocument (node_modules/expect/build/index.js:387:15)
       at Object.<anonymous> (src/semester/SemesterTable.test.tsx:39:15)
 
-PASS src/SideNav/SideNav2.test.tsx (6.953 s)
+PASS src/SideNav/SideNav2.test.tsx (6.839 s)
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 ---------------------------|---------|----------|---------|---------|-----------------------------------------
@@ -1422,7 +1422,7 @@ All files                  |   34.53 |    23.18 |    31.9 |   34.79 |
   welcome.tsx              |       0 |        0 |       0 |       0 | 33-46                                   
  src/Audit                 |   37.75 |     14.7 |    37.5 |   37.75 |                                         
   ChosenMajor.tsx          |   38.18 |        0 |   42.85 |   38.18 | 169-216,245-252                         
-  SeeAuditPage.tsx         |    37.2 |    27.77 |   35.29 |    37.2 | 59-65,70-106,133-152,200                
+  SeeAuditPage.tsx         |    37.2 |    27.77 |   35.29 |    37.2 | 64-70,75-111,138-157,205                
  src/FilteringSearch       |    87.5 |      100 |   71.42 |    87.5 |                                         
   FilteringSearch.tsx      |    87.5 |      100 |   71.42 |    87.5 | 47,78                                   
  src/Interface             |       0 |        0 |       0 |       0 |                                         
@@ -1451,5 +1451,5 @@ All files                  |   34.53 |    23.18 |    31.9 |   34.79 |
 Test Suites: 8 failed, 7 passed, 15 total
 Tests:       10 failed, 26 passed, 36 total
 Snapshots:   0 total
-Time:        12.625 s
+Time:        11.954 s
 Ran all test suites.
