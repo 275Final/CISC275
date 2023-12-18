@@ -83,6 +83,7 @@ describe("AddClass Component tests", () => {
     test("Button says Add Class", () => {
         render(
             <AddClass
+                setShowAlert={jest.fn()}
                 schedule={planHolder}
                 semester={currentSemester}
                 newClass={{
@@ -101,6 +102,7 @@ describe("AddClass Component tests", () => {
     test("Button adds class to semester", () => {
         render(
             <AddClass
+                setShowAlert={jest.fn()}
                 schedule={planHolder}
                 semester={currentSemester}
                 newClass={{
@@ -127,6 +129,7 @@ describe("AddClass Component tests", () => {
         currentSemester = planHolder[1];
         render(
             <AddClass
+                setShowAlert={jest.fn()}
                 schedule={planHolder}
                 semester={currentSemester}
                 newClass={{

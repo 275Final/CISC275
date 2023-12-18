@@ -12,12 +12,6 @@
                 "schedule": { "day": ["Tuesday"], "time": "9:35AM - 10:55AM" },
                 "location": "Gore208",
                 "instructor": "Bart,Austin Cory"
-            },
-            {
-                "code": "CISC181",
-                "title": "Introduction to Computer Science II",
-                "credits": 3,
-                "preReq": ["CISC108"]
             }
         ],
         "totalCredits": 6,
@@ -32,12 +26,6 @@
                 "title": "Introduction to Systems Programming",
                 "credits": 3,
                 "preReq": ["CISC108"]
-            },
-            {
-                "code": "CISC220",
-                "title": "Data Structures",
-                "credits": 3,
-                "preReq": ["CISC210"]
             }
         ],
         "totalCredits": 6,

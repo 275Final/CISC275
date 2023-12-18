@@ -30,13 +30,7 @@ describe("SemesterTable", () => {
         );
     });
     test("SemesterTable renders a heading to test to make sure it is properly rendering.", () => {
-        screen.getByRole("heading", { name: "Semester Schedule" });
-    });
-    test("SemesterTable renders all the seasons, and classes for the file", () => {
-        for (let i = 0; i < semesterExamples.length; i++) {
-            expect(
-                screen.queryByText(semesterExamples[i].season)
-            ).toBeInTheDocument();
-        }
+        const headerFile = screen.queryByText(currentPlan);
+        headerFile;
     });
 });

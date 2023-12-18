@@ -13,12 +13,17 @@ import { classes } from "../Interface/classes";
 import { semester } from "../Interface/semester";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
+import { useState } from "react";
+
 export function AddClass({
+    setShowAlert,
     schedule,
     semester,
     newClass,
     onAddClass
 }: {
+    setShowAlert: (boolean: boolean) => void;
     schedule: semester[];
     semester: semester;
     newClass: classes;
@@ -50,6 +55,7 @@ export function AddClass({
                     return true;
                 }
             }
+
             //const initArray: string[] = [];
             const previousClassList = filteredSemesters
                 .map((semester: semester): string[] =>
@@ -80,6 +86,8 @@ export function AddClass({
             newClass.preReq,
             semIdsLower
         );
+        setShowAlert(!preReqBoolean);
+        console.log(!preReqBoolean);
         console.log(
             "Does this " + newClass + " have all prereqs met" + preReqBoolean
         );
